@@ -3,7 +3,9 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki';
 
-const theme = 'material-theme-palenight';
+const themes = ['poimandres', 'material-theme-palenight', 'andromeeda', 'aurora-x', 'catppuccin-frappe']
+
+const theme = themes[0];
 const highlighter = await createHighlighter({
 	themes: [theme],
 	langs: ['javascript', 'typescript']
