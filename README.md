@@ -3,5 +3,5 @@
 ### Steps
 
 - [x] setup development environment with pnpm & Sveltekit
-- [ ] setup scss for style management
+- [x] setup scss for style management
 - [ ] create landing page, with Svelte transitions and animations
