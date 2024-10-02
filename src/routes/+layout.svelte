@@ -1,13 +1,15 @@
 <script lang="ts">
-	import '../app.scss';
+	import '../js-highlight.scss';
+	import '../globals.scss';
+	import '../bash-highlight.scss';
 
 	import type { Snippet } from 'svelte';
-	import Navbar from '../components/Navbar.svelte';
+	// import Navbar from '../components/Navbar.svelte';
 
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
-<Navbar />
+<!-- <Navbar /> -->
 
 <main>{@render children()}</main>
 

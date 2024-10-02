@@ -6,7 +6,10 @@
 // large: 769 - 1024
 // xlarge: 1025 - up
 
-// $backgroundcolor: #303446;
+$backgroundcolor: #1b1e28;
+$texcolor: #e4f0fb;
+$texcolor2: #a6accdc0;
+$texcolor3: #5de4c7;
 
 * {
 	padding: 0;
@@ -15,17 +18,19 @@
 }
 
 body {
+	padding-top: 20px;
 	height: 100%;
 	position: relative;
-	background-color: #303446;
+	background-color: $backgroundcolor;
 	font-family: 'Roboto';
-	color: whitesmoke;
+	color: $texcolor2;
 }
 
 code {
 	font-family: '0xProto Nerd Font Mono';
 	font-size: small;
-	padding: 20px 50px;
+	line-height: 1.5;
+	// padding: 20px 50px;
 
 	@media (max-width: 430px) {
 		font-size: x-small;
@@ -33,22 +38,12 @@ code {
 	}
 }
 
-pre {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px auto;
-
-	@media (max-width: 430px) {
-		padding: 5px 5px;
-	}
-}
-
 li {
 	list-style: none;
-	line-height: 2;
-	font-size: 14px;
-	color: #5de4c7;
+	line-height: 1.5;
+	font-weight: 200;
+	// font-size: 14px;
+	// color: #5de4c7;
 
 	@media (max-width: 430px) {
 		font-size: x-small;
@@ -56,8 +51,31 @@ li {
 	}
 }
 
+p {
+	line-height: 1.5;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
 	margin-bottom: 10px;
+}
+
+h2 {
+	color: $texcolor;
+}
+
+h2 {
+	color: #5de4c7;
+	margin-top: 30px;
+}
+
+h5 {
+	font-weight: 200;
+}
+
+input[type='checkbox'] {
+	background-color: aqua;
 }

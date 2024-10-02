@@ -1,0 +1,10 @@
+pre.shiki.bash span.line {
+	background-color: #5de4c717;
+	display: flex;
+	padding: 5px 10px;
+	border-radius: 5px;
+	max-width: fit-content;
+}
+pre.shiki.bash span.line:last-of-type {
+	display: none;
+}

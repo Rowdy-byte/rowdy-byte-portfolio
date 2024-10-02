@@ -3,3 +3,9 @@
 </script>
 
 <main>{@render children()}</main>
+
+<style>
+	main {
+		padding: 0 20px;
+	}
+</style>

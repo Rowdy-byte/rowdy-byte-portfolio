@@ -3,25 +3,30 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki';
 
-const themes = ['poimandres', 'material-theme-palenight', 'andromeeda', 'aurora-x', 'catppuccin-frappe']
+/** Initialiseer Shiki highlighter buiten de async scope */
+let highlighter;
 
-const theme = themes[0];
-const highlighter = await createHighlighter({
-	themes: [theme],
-	langs: ['javascript', 'typescript']
-});
+(async () => {
+	const theme = 'poimandres';
+	highlighter = await createHighlighter({
+		themes: [theme],
+		langs: ['javascript', 'typescript', 'svelte', 'css', 'html', 'bash']
+	});
+})();
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
 	highlight: {
-		highlighter: async (code, lang = 'text') => {
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
-			return `{@html \`${html}\` }`;
+		highlighter: (code, lang = 'text') => {
+			if (!highlighter) return escapeSvelte(code);  // Fallback als de highlighter nog niet is geladen
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
+			return `
+				<pre class="shiki ${lang}"><code>{@html \`${html}\`}</code></pre>
+				`;
 		}
 	},
 }
-
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -30,8 +35,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	kit: {
-
-		adapter: adapter()
+		adapter: adapter(),
 	}
 };
 
