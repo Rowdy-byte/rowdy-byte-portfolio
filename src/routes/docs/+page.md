@@ -1,11 +1,6 @@
-        ## Steps
+        # RowdyByte Documentation
 
-         - [x] &nbsp;setup dev. environment with pnpm & Sveltekit with Typescript, Prettiers & Eslint
-        - [x] &nbsp;setup Git for source control
-        - [x] &nbsp;setup SCSS for style management
-        - [ ] &nbsp;setup MdSvex preprocessor
-        - [ ] &nbsp;setup Shiki for syntax hightlighting
-        - [ ] &nbsp;create landing page, with Svelte transitions and animations
+
 
 
     ## Setup Development Environment
@@ -21,3 +16,22 @@
 
     ```bash
     pnpm create vite@latest
+
+
+
+    <script lang="ts">
+    import { page } from '$app/stores';
+
+    let pathname = $state();
+
+    $effect(() => {
+    	pathname = $page.url.pathname;
+    });
+
+    </script>
+
+    <nav>
+        <a href="/">home</a>
+        <p class={pathname === '/' ? 'homePath' : pathname === '/docs' ? 'docsPath' : ''}>⚧</p>
+        <a href="/docs">docs</a>
+    </nav>

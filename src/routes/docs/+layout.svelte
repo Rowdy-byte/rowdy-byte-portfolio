@@ -6,6 +6,6 @@
 
 <style>
 	main {
-		padding: 0 20px;
+		padding: 100px 50px;
 	}
 </style>
