@@ -1,10 +1,12 @@
-pre.shiki.javascript span.line {
-	background-color: #5de4c717;
-	display: flex;
-	padding: 5px 10px;
+pre.shiki.svelte span.line {
+	// background-color: rgba(93, 228, 199, 0.5);
+	// display: flex;
+	// padding: 5px 10px;
 	border-radius: 5px;
-	max-width: fit-content;
+	// max-width: fit-content;
 }
-pre.shiki.javascript span.line:last-of-type {
-	display: none;
+pre.shiki.svelte span.line:last-of-type {
+	// display: none;
+	margin-bottom: 30px;
+	// margin-top: 30px;
 }

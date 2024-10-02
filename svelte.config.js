@@ -10,7 +10,7 @@ let highlighter;
 	const theme = 'poimandres';
 	highlighter = await createHighlighter({
 		themes: [theme],
-		langs: ['javascript', 'typescript', 'svelte', 'css', 'html', 'bash']
+		langs: ['javascript', 'typescript', 'svelte', 'css', 'scss', 'html', 'bash']
 	});
 })();
 
