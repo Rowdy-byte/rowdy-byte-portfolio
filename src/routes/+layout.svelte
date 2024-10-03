@@ -31,7 +31,7 @@
 		margin: 0 20px;
 
 		@media (min-width: 600px) {
-			margin: 0 auto;
+			margin-inline: auto;
 			max-width: 600px;
 		}
 

@@ -34,7 +34,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: $backgroundcolor;
-		padding: 5px 20px;
+		padding: 10px 20px;
 		height: 10vh;
 		width: 100%;
 		position: sticky;
