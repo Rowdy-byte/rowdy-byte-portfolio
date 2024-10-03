@@ -2,6 +2,8 @@ import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki';
+import { remarkHeaders } from './remark-headers.js'
+// import remarkToc from 'remark-toc';
 
 /** Initialiseer Shiki highlighter buiten de async scope */
 let highlighter;
@@ -17,6 +19,7 @@ let highlighter;
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
+	remarkPlugins: [remarkHeaders],
 	highlight: {
 		highlighter: (code, lang = 'text') => {
 			if (!highlighter) return escapeSvelte(code);  // Fallback als de highlighter nog niet is geladen

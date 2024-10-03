@@ -66,31 +66,19 @@ git init
 
     <br>
 
-    Next, I installed MdsveX so I can Svelte components in markdown files. Also installed Shiki for syntax highlighting.
+    Next, I installed MdsveX so I can use Svelte components in markdown files. Also installed Shiki for syntax highlighting. I imported the createHighlighter function from Shiki and passed a object as an argument with the themes and language property's.
 
     <br>
 
 ```svelte
 <!-- svelte.config.js -->
-
-import { createHighlighter } from 'shiki';
-
-/** Initialiseer Shiki highlighter buiten de async scope */
 let highlighter;
 
 (async () => {
 	const theme = 'poimandres';
 	highlighter = await createHighlighter({
 		themes: [theme],
-		langs: [
-                        'javascript',
-                        'typescript',
-                        'svelte',
-                        'css',
-                        'scss',
-                        'html',
-                        'bash'
-                        ]
+		langs: ['javascript', 'typescript', 'svelte', 'css', 'scss', 'html', 'bash']
 	});
 })();
 ```

@@ -6,26 +6,33 @@
 	import '../scrollbar.scss';
 
 	import type { Snippet } from 'svelte';
+
 	import Navbar from '../components/Navbar.svelte';
+
+	import { fade } from 'svelte/transition';
+	import Sidebar from '../components/Sidebar.svelte';
 
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
 <Navbar />
+<Sidebar />
 
-<main>{@render children()}</main>
+<main in:fade>
+	{@render children()}
+</main>
 
 <style lang="scss">
 	main {
 		height: 100%;
-
-		display: flex;
+		max-width: 600px;
+		display: grid;
 		justify-content: center;
+		margin: 0 20px;
 
-		padding: 0 auto;
-		@media (max-width: 430px) {
-			padding: 0;
-			font-size: xx-small;
+		@media (min-width: 600px) {
+			margin: 0 auto;
+			max-width: 600px;
 		}
 
 		@media (max-width: 700px) {

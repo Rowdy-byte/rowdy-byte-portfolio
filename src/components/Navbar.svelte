@@ -35,7 +35,7 @@
 		align-items: center;
 		background-color: $backgroundcolor;
 		padding: 5px 20px;
-		// margin-bottom: 50px;
+		height: 10vh;
 		width: 100%;
 		position: sticky;
 		top: 0;

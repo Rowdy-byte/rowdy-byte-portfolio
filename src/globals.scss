@@ -30,13 +30,11 @@ body {
 }
 
 pre {
-	// background-color: #e4f0fb;
 	box-sizing: border-box;
 	max-width: 800px;
 	overflow-x: auto;
 	overflow-y: hidden;
-
-	// margin: 5px 0;
+	tab-size: 4;
 }
 
 code {
@@ -62,6 +60,10 @@ h1 {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	@media (min-width: 1000px) {
+		font-size: 44px;
+	}
 }
 
 h2 {
