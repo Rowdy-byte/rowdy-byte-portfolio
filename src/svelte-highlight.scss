@@ -1,7 +1,7 @@
 pre.shiki.svelte span.line {
 	// background-color: rgba(93, 228, 199, 0.5);
 	// display: flex;
-	// padding: 5px 10px;
+	padding: 0 10px;
 	border-radius: 5px;
 	// max-width: fit-content;
 }
@@ -9,4 +9,9 @@ pre.shiki.svelte span.line:last-of-type {
 	// display: none;
 	margin-bottom: 30px;
 	// margin-top: 30px;
+}
+
+pre.shiki.svelte {
+	border: 1px solid #a6accd22;
+	border-radius: 10px;
 }

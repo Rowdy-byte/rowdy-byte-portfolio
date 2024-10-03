@@ -7,18 +7,20 @@ $texcolor3: #c336e5;
 /* Scrollbar style for webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
 	width: 6px; /* Breedte van de scrollbar */
+	height: 6px;
 }
 
-::-webkit-scrollbar-track {
-	background: #e4f0fb; /* Achtergrond van de scrollbar track */
-}
+// ::-webkit-scrollbar-track {
+// 	// background: #a6accdc0; /* Achtergrond van de scrollbar track */
+// }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #1b1e28; /* Kleur van het scroll-thumb */
+	background-color: #a6accdc0; /* Kleur van het scroll-thumb */
 	border-radius: 6px; /* Afgeronde hoeken van het scroll-thumb */
-	border: 1px solid #f1f1f1; /* Ruimte rond het scroll-thumb */
+	// border: 1px solid #a6accdc0; /* Ruimte rond het scroll-thumb */
+	color: #a6accdc0;
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background: #555; /* Kleur bij hover */
-}
+// ::-webkit-scrollbar-thumb:hover {
+// 	// background: #555; /* Kleur bij hover */
+// }

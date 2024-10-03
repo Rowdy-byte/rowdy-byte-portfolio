@@ -6,7 +6,8 @@
 
 <style>
 	main {
-		padding: 100px 50px;
+		display: grid;
+		padding: 0 50px;
 		max-width: 800px;
 	}
 </style>

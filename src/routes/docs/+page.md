@@ -12,13 +12,13 @@
 
     <br>
 
-
-
     ###### create new Sveltkit project with pnpm
 
 ```bash
 pnpm create vite@latest
 ```
+
+    <br>
 
     Instead of npm is used pnpm as my package manager. Pnpm is much quicker since it doesn't have to download all packages. Pnpm reuses some packages.
 
@@ -30,11 +30,15 @@ pnpm create vite@latest
 
     After successfull installation I will create a new Github repository.
 
+    <br>
+
     ###### cd in new project
 
 ```bash
 cd rowdy-byte-portfolio
 ```
+
+    <br>
 
     ###### create new repository
 
@@ -42,15 +46,19 @@ cd rowdy-byte-portfolio
 git init
 ```
 
+    <br>
+
     I've created a main branch and a development branch, new features are first created on the development branch. When everything is ok I will merge the branches.
 
     <br>
 
     I've chosen Sass over the default emmbedded style tag, because I wanted to experiment with variables, mixins & nesting. Also considerd Tailwind but I think it's a bit mesy. Sveltekit supports Sass out of the box. Only needed to install dependencies to support embedded Scss style tags.
 
-    ###### embedded style tags
+    <br>
 
 ```svelte
+<!-- embedded style tags -->
+
 <style lang="scss">
 	/* styles */
 </style>
@@ -60,4 +68,29 @@ git init
 
     Next, I installed MdsveX so I can Svelte components in markdown files. Also installed Shiki for syntax highlighting.
 
-    ###### svelte.config.js
+    <br>
+
+```svelte
+<!-- svelte.config.js -->
+
+import { createHighlighter } from 'shiki';
+
+/** Initialiseer Shiki highlighter buiten de async scope */
+let highlighter;
+
+(async () => {
+	const theme = 'poimandres';
+	highlighter = await createHighlighter({
+		themes: [theme],
+		langs: [
+                        'javascript',
+                        'typescript',
+                        'svelte',
+                        'css',
+                        'scss',
+                        'html',
+                        'bash'
+                        ]
+	});
+})();
+```
