@@ -4,7 +4,7 @@ import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki';
 import { remarkHeaders } from './remark-headers.js'
 
-import remarkToc from 'remark-toc';
+// import remarkToc from 'remark-toc';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
