@@ -30,6 +30,7 @@ body {
 }
 
 pre {
+	position: relative;
 	box-sizing: border-box;
 	max-width: 800px;
 	overflow-x: auto;
@@ -37,7 +38,7 @@ pre {
 	tab-size: 4;
 }
 
-code {
+.cop code {
 	font-family: '0xProto Nerd Font Mono';
 	font-size: small;
 	line-height: 1.5;

@@ -25,7 +25,9 @@ const mdsvexOptions = {
 			if (!highlighter) return escapeSvelte(code);  // Fallback als de highlighter nog niet is geladen
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
 			return `
-				<pre class="shiki ${lang}"><code>{@html \`${html}\`}</code></pre>
+				<pre class="shiki ${lang}"><code>{@html \`${html}\`}</code>
+					<button class="copy-button ${lang}">copy</button>
+				</pre>
 				`;
 		}
 	},
