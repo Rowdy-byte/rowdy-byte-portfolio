@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Hamburger from './Hamburger.svelte';
 
 	let pathname = $state();
 
@@ -10,17 +11,19 @@
 
 {#if pathname === '/docs'}
 	<nav class={pathname === '/docs' ? 'docsPathNav' : ''}>
-		<a href="/">home</a>
+		<a class="hamburger" href="/">home</a>
 
 		<p class={pathname === '/docs' ? 'docsPathLogo' : ''}>⚧</p>
 
-		<a href="/docs">docs</a>
+		<Hamburger />
+		<a class="hamburger" href="/docs">docs</a>
 	</nav>
 {:else}
 	<nav class={pathname === '/' ? 'homePathNav' : ''}>
 		<p class={pathname === '/' ? 'homePathLogo' : ''}>⚧</p>
 
-		<a href="/docs">docs</a>
+		<Hamburger />
+		<a class="hamburger" href="/docs">docs</a>
 	</nav>
 {/if}
 
@@ -35,14 +38,18 @@
 		align-items: center;
 		background-color: $backgroundcolor;
 		padding: 10px 20px;
-		height: 10vh;
 		width: 100%;
 		position: sticky;
+		z-index: 10;
 		top: 0;
 		left: 0;
 
+		@media (max-width: 600px) {
+			justify-content: space-between;
+		}
+
 		.docsPathLogo {
-			font-size: 80px;
+			font-size: 60px;
 			font-weight: 900;
 			background: -webkit-linear-gradient($texcolor3, $texcolor4);
 			-webkit-background-clip: text;
@@ -59,9 +66,8 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 5px 50px;
-
 		background-color: rgba(238, 232, 170, 0);
-		z-index: 100;
+		z-index: 10;
 
 		.homePathLogo {
 			color: #e4f0fb;
@@ -75,5 +81,12 @@
 		color: #e4f0fb;
 		margin: 0 10px;
 		letter-spacing: 1;
+	}
+
+	.hamburger {
+		display: none;
+		@media (min-width: 600px) {
+			display: block;
+		}
 	}
 </style>

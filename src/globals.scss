@@ -20,6 +20,7 @@ $textcolor5: rgba(255, 209, 41, 0.9);
 }
 
 body {
+	scroll-behavior: smooth;
 	height: 100%;
 	position: relative;
 	z-index: 10;
@@ -59,11 +60,11 @@ code {
 }
 
 .lucide-clipboard {
-	fill: none; /* Zorgt ervoor dat de SVG geen vulling heeft, wat standaard is voor deze iconen */
-	stroke: rgba(166, 172, 205, 1); /* Kleur van het icoon */
-	width: 15px; /* Nieuwe breedte van het icoon */
-	height: 15px; /* Nieuwe hoogte van het icoon */
-	cursor: pointer; /* Verandert de cursor naar pointer */
+	fill: none;
+	stroke: rgba(166, 172, 205, 1);
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
 }
 
 p {
@@ -98,4 +99,11 @@ h6 {
 
 input[type='checkbox'] {
 	background-color: aqua;
+}
+
+// hamburger
+.line--first,
+.line--middle,
+.line--bottom {
+	color: #e4f0fb;
 }

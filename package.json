@@ -36,6 +36,7 @@
 		"mdast-util-to-string": "^4.0.0",
 		"remark-toc": "^9.0.0",
 		"shiki": "^1.21.0",
+		"svelte-hamburger": "^1.0.1",
 		"unist-util-visit": "^5.0.0"
 	}
 }

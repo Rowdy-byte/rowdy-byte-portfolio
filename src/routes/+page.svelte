@@ -1,14 +1,7 @@
 <script lang="ts">
-	let { data } = $props();
 </script>
 
-<main>
-	{#each data.articles as article}
-		{article.slug}
-	{/each}
-	<section class="section-1">dfdff</section>
-	<section class="section-2">sdsdsds</section>
-</main>
+<main></main>
 
 <style lang="scss">
 	$blue-light: #11cce8;

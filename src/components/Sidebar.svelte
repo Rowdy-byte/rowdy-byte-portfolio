@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
+	import { quintInOut } from 'svelte/easing';
 </script>
 
-<aside></aside>
+<aside transition:slide={{ delay: 5000, duration: 1000, easing: quintInOut }}></aside>
 
 <style>
 	aside {

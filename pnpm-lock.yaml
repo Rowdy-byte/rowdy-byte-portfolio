@@ -20,6 +20,9 @@ importers:
       shiki:
         specifier: ^1.21.0
         version: 1.21.0
+      svelte-hamburger:
+        specifier: ^1.0.1
+        version: 1.0.1
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
@@ -1287,6 +1290,9 @@ packages:
     peerDependenciesMeta:
       svelte:
         optional: true
+
+  svelte-hamburger@1.0.1:
+    resolution: {integrity: sha512-OU8JNKXSR54FZlmzhm/SCsMTaJQG+gpotphhQ7RAzIPhPDPhTUSfG/lj1ZB5jHVmyGlITnPbFe97Ya4RApgzDg==}
 
   svelte@5.0.0-next.260:
     resolution: {integrity: sha512-TGcvG71DUklf5P4UmJxOQiVxWYLPp4c6o+NUjmVMsAXKsCMXOTXw+QpnmEWw5D95Sj7SrmAGeIT+p/uvHAUZXg==}
@@ -2574,6 +2580,8 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.4.47)
     optionalDependencies:
       svelte: 5.0.0-next.260
+
+  svelte-hamburger@1.0.1: {}
 
   svelte@5.0.0-next.260:
     dependencies:
