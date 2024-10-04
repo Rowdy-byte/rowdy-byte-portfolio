@@ -3,7 +3,7 @@
 	import { quintInOut } from 'svelte/easing';
 </script>
 
-<aside transition:slide={{ delay: 5000, duration: 1000, easing: quintInOut }}></aside>
+<aside transition:slide={{ delay: 750, duration: 1000, easing: quintInOut }}></aside>
 
 <style>
 	aside {
