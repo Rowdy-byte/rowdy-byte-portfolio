@@ -72,6 +72,7 @@ git init
 
 ```svelte
 <!-- svelte.config.js -->
+
 let highlighter;
 
 (async () => {

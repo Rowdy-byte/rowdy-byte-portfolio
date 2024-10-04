@@ -24,15 +24,13 @@
 
 <style lang="scss">
 	main {
-		height: 100%;
-		max-width: 600px;
 		display: grid;
-		justify-content: center;
-		margin: 0 20px;
+		// height: 100%;
+		max-width: 550px;
+		margin-inline: auto;
 
 		@media (min-width: 600px) {
-			margin-inline: auto;
-			max-width: 600px;
+			// padding-inline: 20px;
 		}
 
 		@media (max-width: 700px) {
