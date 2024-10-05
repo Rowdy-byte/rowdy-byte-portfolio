@@ -30,15 +30,15 @@
 <style lang="scss">
 	$texcolor3: #5de4c7;
 	$texcolor4: #c336e5;
-	$backgroundcolor: #1b1e28;
 
 	.docsPathNav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: $backgroundcolor;
+		background-color: #1b1e28;
 		padding: 10px 20px;
 		width: 100%;
+		height: 10vh;
 		position: sticky;
 		z-index: 10;
 		top: 0;
