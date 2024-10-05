@@ -8,7 +8,7 @@ type Article = {
 export const load: PageLoad = async () => {
     const articles: { slug: string; component: unknown }[] = [];
 
-    const paths = import.meta.glob('./docs/*.md', { eager: true });
+    const paths = import.meta.glob('../docs/*.md', { eager: true });
 
     for (const path in paths) {
         const file = paths[path] as object;

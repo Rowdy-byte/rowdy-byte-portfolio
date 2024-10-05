@@ -10,12 +10,16 @@
 	import { fly, scale } from 'svelte/transition';
 	import Sidebar from '../components/Sidebar.svelte';
 
-	let { children } = $props<{ children: Snippet }>();
+	let { children, data } = $props<{ children: Snippet }>();
+	const { url } = data;
 
 	let pathname = $state();
 
+	console.log(url);
+
 	$effect(() => {
 		pathname = $page.url.pathname;
+		console.log(pathname);
 	});
 </script>
 
@@ -25,7 +29,7 @@
 	<Sidebar />
 {/if}
 
-<main in:fly={{ y: 200, duration: 500 }} out:scale={{ duration: 500 }}>
+<main in:fly={{ x: -200, duration: 300, delay: 300 }} out:fly={{ x: 200, duration: 300 }}>
 	{@render children()}
 </main>
 
