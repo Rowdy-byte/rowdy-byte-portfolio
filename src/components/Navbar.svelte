@@ -32,19 +32,18 @@
 	$texcolor4: #c336e5;
 
 	.docsPathNav {
+		position: sticky;
+		top: 0;
+		left: 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 5px 50px;
 		background-color: #1b1e28;
-		padding: 10px 20px;
-		width: 100%;
-		height: 10vh;
-		position: sticky;
 		z-index: 10;
-		top: 0;
-		left: 0;
 
 		@media (max-width: 600px) {
+			display: flex;
 			justify-content: space-between;
 		}
 
