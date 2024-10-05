@@ -17,15 +17,14 @@
 		display: none;
 
 		@media (min-width: 1000px) {
-			height: 60vh;
 			width: 200px;
 			display: flex;
 			flex-direction: column;
-			border: 1px solid rgba(194, 54, 229, 0.202);
+			border: 1px solid rgba(194, 54, 229, 0.2);
 			border-radius: 10px;
-			position: fixed;
-			margin-left: 10px;
-			margin-top: 10%;
+			position: sticky;
+			left: 10px;
+			top: 50%;
 		}
 
 		h1 {
