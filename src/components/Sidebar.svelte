@@ -41,12 +41,12 @@
 					y: -45
 				}
 			]}
-			class="sidebar fixed top-1/2 left-6 z-50 overflow-hidden opacity-0 border-indigo-500 border-[1px] rounded-md bg-[#1b1e28]"
+			class="sidebar fixed top-1/2 left-6 z-50 overflow-hidden opacity-0 border-indigo-500 border-[1px] rounded-md bg-[#1b1e28] xl:left-16"
 		>
 			<header class="w-full h-full bg-indigo-500">
 				<p class="font-bold text-center">Table Of Content</p>
 			</header>
-			<section class="py-5 px-4">
+			<section class="py-5 px-4 xl:py-10 xl:px-14">
 				{#each headers as header}
 					<h1>{header.slug}</h1>
 				{/each}

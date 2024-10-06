@@ -17,7 +17,7 @@ body {
 	scroll-behavior: smooth;
 	height: 100%;
 	position: relative;
-
+	transition: all 3s ease-in-out;
 	background-color: $backgroundcolor;
 	font-family: 'Roboto';
 	color: $texcolor2;
