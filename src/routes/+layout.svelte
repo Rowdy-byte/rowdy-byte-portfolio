@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../globals.scss';
 	import '../scrollbar.scss';
+	import '../app.css';
 
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';
@@ -24,9 +25,9 @@
 
 <Navbar />
 
-{#if pathname === '/docs'}
+<!-- {#if pathname === '/docs'}
 	<Sidebar {headers} />
-{/if}
+{/if} -->
 
 <main in:fly={{ x: -200, duration: 300, delay: 300 }} out:fly={{ x: 200, duration: 300 }}>
 	{@render children()}
@@ -35,6 +36,3 @@
 {#if pathname === '/docs'}
 	<Footer />
 {/if}
-
-<style lang="scss">
-</style>

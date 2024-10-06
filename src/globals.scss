@@ -17,7 +17,7 @@ body {
 	scroll-behavior: smooth;
 	height: 100%;
 	position: relative;
-	z-index: 10;
+
 	background-color: $backgroundcolor;
 	font-family: 'Roboto';
 	color: $texcolor2;
@@ -26,21 +26,27 @@ body {
 
 pre {
 	box-sizing: border-box;
-	max-width: 550px;
+	max-width: 600px;
+
 	overflow-x: auto;
 	overflow-y: hidden;
 	tab-size: 4;
 	padding: 10px;
-	// margin-inline: auto;
+
 	border: 1px solid rgba(166, 172, 205, 0.133);
 	border-radius: 10px;
 }
 
 code {
-	position: relative;
 	font-family: '0xProto Nerd Font Mono';
-	font-size: small;
+	font-size: x-small;
 	line-height: 1.5;
+}
+
+.pre-header {
+	max-width: 600px;
+	position: relative;
+	background-color: #c336e5;
 }
 
 .copy-button {
@@ -49,7 +55,7 @@ code {
 	height: 41.5px;
 	border: none;
 	position: absolute;
-	top: 2px;
+	top: 1px;
 	right: 10px;
 }
 
@@ -63,11 +69,14 @@ code {
 
 p {
 	line-height: 1.5;
+	padding: 0 20px;
+	font-weight: 200;
+	letter-spacing: 2;
 }
 
 h1 {
 	font-weight: 900;
-	text-align: center;
+
 	background: -webkit-linear-gradient(45deg, $texcolor3, $texcolor4);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -79,8 +88,9 @@ h1 {
 }
 
 h2 {
-	text-align: center;
+	padding: 0 20px;
 	color: #5de4c7;
+	font-weight: 900;
 }
 
 h6 {

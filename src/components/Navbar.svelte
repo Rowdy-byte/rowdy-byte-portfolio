@@ -10,20 +10,34 @@
 </script>
 
 {#if pathname === '/docs'}
-	<nav class={pathname === '/docs' ? 'docsPathNav' : ''}>
-		<a class="hamburger" href="/">home</a>
-
-		<p class={pathname === '/docs' ? 'docsPathLogo' : ''}>⚧</p>
+	<nav
+		class="w-full flex fixed z-10 top-0 backdrop-blur-sm items-center py-2 px-32 {pathname ===
+		'/docs'
+			? `justify-between`
+			: ''}"
+	>
+		<a class="hamburger" href="/"
+			><p
+				class="mt-1 {pathname === '/docs'
+					? `text-6xl font-extrabold bg-gradient-to-b from-indigo-500 to-emerald-500 bg-clip-text text-transparent inline-block px-0`
+					: ''}"
+			>
+				⚧
+			</p>
+		</a>
 
 		<Hamburger />
-		<a class="hamburger" href="/docs">docs</a>
 	</nav>
 {:else}
-	<nav class={pathname === '/' ? 'homePathNav' : ''}>
-		<p class={pathname === '/' ? 'homePathLogo' : ''}>⚧</p>
+	<nav
+		class={pathname === '/'
+			? `w-full flex fixed z-10 top-0 items-center justify-between py-2 px-4`
+			: ''}
+	>
+		<p class={pathname === '/' ? `text-6xl text-slate-200 font-extrabold  px-0` : ''}>⚧</p>
 
 		<Hamburger />
-		<a class="hamburger" href="/docs">docs</a>
+		<a class="hidden" href="/docs">docs</a>
 	</nav>
 {/if}
 

@@ -1,12 +1,10 @@
-        # RowdyByte Documentation
+    ## Sveltekit
 
-
-
-
-    ## Setup Development Environment
     RowdyByte is created with Sveltekit. Sveltekit is a modern meta framework and it's easy to use. Sveltekit is a fullstack framework providing state management, reactivity, routing & animations out of the box.
 
     <br>
+
+    ## Vite
 
     I created a new Sveltekit project with Vite. Vite is a modern javascript bundler. The Vite development server comes with Hot Module Replacement (HMR). Wich greatly improves development experience (DX).
 
@@ -20,6 +18,8 @@ pnpm create vite@latest
 
     <br>
 
+    ## Performant Node Package Manager
+
     Instead of npm is used pnpm as my package manager. Pnpm is much quicker since it doesn't have to download all packages. Pnpm reuses some packages.
 
     <br>
@@ -27,6 +27,8 @@ pnpm create vite@latest
     After running the command I choose the Sveltekit barebones skeleton project with Typescript, Prettier & Eslint. Javascript is an dynamic typed language and data types can be reassigned. Typescript is giving me type safety and autocompletion. Pretties for code formatting & Eslint for code linting.
 
     <br>
+
+    ## Github
 
     After successfull installation I will create a new Github repository.
 
