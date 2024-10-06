@@ -10,7 +10,7 @@
 		pathname = $page.url.pathname;
 	});
 
-	let open = $state(true);
+	let open = $state(false);
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />
