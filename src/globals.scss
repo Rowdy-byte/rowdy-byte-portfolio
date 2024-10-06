@@ -5,7 +5,7 @@ $texcolor: #e4f0fb;
 $texcolor2: #a6accdc0;
 $texcolor3: #5de4c7;
 $texcolor4: #c336e5;
-$textcolor5: rgba(255, 209, 41, 0.9);
+$textcolor5: #ffd129e6;
 
 * {
 	padding: 0;
@@ -103,11 +103,4 @@ h6 {
 
 input[type='checkbox'] {
 	background-color: aqua;
-}
-
-// hamburger
-.line--first,
-.line--middle,
-.line--bottom {
-	color: #e4f0fb;
 }

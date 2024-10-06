@@ -31,7 +31,7 @@
 {:else}
 	<nav
 		class={pathname === '/'
-			? `w-full flex fixed z-10 top-0 items-center justify-between py-2 px-4`
+			? `w-full flex fixed z-10 top-0 items-center text-slate-200 justify-between py-2 px-4`
 			: ''}
 	>
 		<p class={pathname === '/' ? `text-6xl text-slate-200 font-extrabold  px-0` : ''}>⚧</p>
@@ -40,6 +40,3 @@
 		<a class="hidden" href="/docs">docs</a>
 	</nav>
 {/if}
-
-<style lang="scss">
-</style>

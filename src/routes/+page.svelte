@@ -38,8 +38,34 @@
 		class="
           antialiased gap-3 text-sm md:text-lg p-4 flex-1 flex flex-col justify-center items-center text-responsive tracking-[.3rem] text-center bg-gradient-to-b from-[#11cce9] to-[#028aba] h-1/2 lg:h-full lg:w-1/2"
 	>
-		<p class="font-bold text-slate-100 text-5xl md:text-6xl lg:text-5xl xl:text-7xl">PROJECTS</p>
-		<p class="max-w-lg text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl">
+		<p
+			use:animate={[
+				{
+					type: 'to',
+					x: -1000
+				},
+				{
+					type: 'to',
+					duration: 1,
+					delay: 3,
+					x: 0
+				}
+			]}
+			class="font-bold text-slate-100 text-5xl md:text-6xl lg:text-5xl xl:text-7xl"
+		>
+			PROJECTS
+		</p>
+		<p
+			use:animate={[
+				{
+					type: 'to',
+					delay: 2,
+					duration: 2,
+					scale: 1
+				}
+			]}
+			class="max-w-lg scale-0 text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl"
+		>
 			I REALLY LIKE UI/UX PROJECTS, AND I ALSO LIKE MORE TECHNICHAL PROJECTS LIKE ANY TYPE OF
 			MANAGEMENT APPLICATION
 		</p>

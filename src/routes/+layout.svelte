@@ -19,7 +19,6 @@
 	console.log(headers);
 
 	let pathname = $state();
-	let desc = $state(false);
 
 	$effect(() => {
 		pathname = $page.url.pathname;
@@ -28,11 +27,12 @@
 
 <Navbar />
 
-<!-- {#if pathname === '/docs'}
-	<Sidebar {headers} />
-{/if} -->
-
-<main>
+<main class="relative h-screen">
+	<nav>
+		{#if pathname === '/docs'}
+			<Sidebar {headers} />
+		{/if}
+	</nav>
 	{@render children()}
 </main>
 
