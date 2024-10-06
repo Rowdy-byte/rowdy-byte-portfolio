@@ -37,17 +37,4 @@
 {/if}
 
 <style lang="scss">
-	main {
-		display: flex;
-		flex-direction: column;
-		max-width: 550px;
-		margin-inline: auto;
-
-		@media (max-width: 600px) {
-			margin-inline: 10px;
-		}
-
-		@media (max-width: 700px) {
-		}
-	}
 </style>

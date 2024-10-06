@@ -21,27 +21,4 @@
 </main>
 
 <style>
-	main {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		@media (min-width: 600px) {
-			display: none;
-		}
-
-		nav {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			position: absolute;
-			top: 10vh;
-			left: 0;
-			width: 100%;
-			height: 90vh;
-			background: rgb(27, 30, 40, 0.9); /* border-radius: 16px; */
-			backdrop-filter: blur(2px);
-			-webkit-backdrop-filter: blur(5px);
-		}
-	}
 </style>
