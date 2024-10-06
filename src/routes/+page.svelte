@@ -1,8 +1,30 @@
 <script lang="ts">
+	import { animate } from '../animate';
 </script>
 
 <main class={`flex flex-col lg:flex-row h-screen -z-10`}>
 	<section
+		use:animate={[
+			{
+				type: 'to',
+				duration: 2,
+				x: 200,
+				rotation: 360,
+				scale: 1.5,
+				opacity: 0.5,
+				ease: 'power2.out'
+			},
+			{
+				type: 'to',
+				duration: 1,
+				x: 0,
+				rotation: 0,
+				scale: 1,
+				opacity: 1,
+				ease: 'power2.inOut',
+				delay: 0.5
+			}
+		]}
 		class="
         gap-3 text-sm md:text-lg p-4 flex-1 flex flex-col justify-center items-center text-responsive tracking-[.3rem] text-center bg-gradient-to-b from-[#f3a704] to-[#f36104] h-1/2 lg:h-full lg:w-1/2"
 	>

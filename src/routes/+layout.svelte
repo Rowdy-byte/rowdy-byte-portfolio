@@ -3,6 +3,8 @@
 	import '../scrollbar.scss';
 	import '../app.css';
 
+	import { animate } from '../animate';
+
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';
 
@@ -17,6 +19,7 @@
 	console.log(headers);
 
 	let pathname = $state();
+	let desc = $state(false);
 
 	$effect(() => {
 		pathname = $page.url.pathname;
@@ -29,7 +32,7 @@
 	<Sidebar {headers} />
 {/if} -->
 
-<main in:fly={{ x: -200, duration: 300, delay: 300 }} out:fly={{ x: 200, duration: 300 }}>
+<main>
 	{@render children()}
 </main>
 

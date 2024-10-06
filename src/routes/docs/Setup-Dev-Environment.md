@@ -1,16 +1,23 @@
     ## Sveltekit
 
-    RowdyByte is created with Sveltekit. Sveltekit is a modern meta framework and it's easy to use. Sveltekit is a fullstack framework providing state management, reactivity, routing & animations out of the box.
+    RowdyByte is built with SvelteKit. SvelteKit is a modern meta-framework that is user-friendly and versatile. It provides a full-stack solution with state management, reactivity, routing, and animations right out of the box.
 
     <br>
+    <br>
+
 
     ## Vite
 
-    I created a new Sveltekit project with Vite. Vite is a modern javascript bundler. The Vite development server comes with Hot Module Replacement (HMR). Wich greatly improves development experience (DX).
+    I created a new SvelteKit project using Vite. Vite is a modern JavaScript bundler that enhances the development experience. The Vite development server features Hot Module Replacement (HMR), which significantly improves the development workflow.
 
     <br>
+    <br>
 
-    ###### create new Sveltkit project with pnpm
+    ## Performant Node Package Manager
+
+    I have chosen pnpm as my package manager instead of npm. This choice allows for a notably faster installation process, as pnpm avoids redundant downloads by reusing previously installed packages.
+
+    <br>
 
 ```bash
 pnpm create vite@latest
@@ -18,27 +25,27 @@ pnpm create vite@latest
 
     <br>
 
-    ## Performant Node Package Manager
-
-    Instead of npm is used pnpm as my package manager. Pnpm is much quicker since it doesn't have to download all packages. Pnpm reuses some packages.
+    After executing the command, I selected the SvelteKit barebones skeleton project with TypeScript, Prettier, and ESLint. JavaScript is a dynamically typed language, allowing data types to be reassigned. TypeScript offers type safety and autocompletion, enhancing code quality. Prettier is employed for code formatting, while ESLint is utilized for code linting.
 
     <br>
-
-    After running the command I choose the Sveltekit barebones skeleton project with Typescript, Prettier & Eslint. Javascript is an dynamic typed language and data types can be reassigned. Typescript is giving me type safety and autocompletion. Pretties for code formatting & Eslint for code linting.
-
-    <br>
-
-    ## Github
-
-    After successfull installation I will create a new Github repository.
-
-    <br>
-
-    ###### cd in new project
 
 ```bash
 cd rowdy-byte-portfolio
 ```
+
+    <br>
+
+```bash
+cd pnpm i
+```
+
+    <br>
+    <br>
+
+
+    ## Github
+
+    Following a successful installation, I will create a new GitHub repository.
 
     <br>
 
@@ -50,25 +57,30 @@ git init
 
     <br>
 
-    I've created a main branch and a development branch, new features are first created on the development branch. When everything is ok I will merge the branches.
+    Then I have established a main branch and a development branch. New features are initially developed on the development branch. Once everything is confirmed to be functioning correctly, I will merge the branches.
 
     <br>
+    <br>
 
-    I've chosen Sass over the default emmbedded style tag, because I wanted to experiment with variables, mixins & nesting. Also considerd Tailwind but I think it's a bit mesy. Sveltekit supports Sass out of the box. Only needed to install dependencies to support embedded Scss style tags.
+
+     ## Tailwind
+
+    I considered using Tailwind CSS for styling due to its utility-first approach, which facilitates rapid UI development. Tailwind allows me to create custom designs directly within my HTML, enhancing productivity and efficiency. It also provides a responsive design system that is highly customizable.
 
     <br>
 
 ```svelte
-<!-- embedded style tags -->
+<!-- utility class -->
 
-<style lang="scss">
-	/* styles */
-</style>
+<p class="max-w-lg text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl">
+	I REALLY LIKE UI/UX PROJECTS, AND I ALSO LIKE MORE TECHNICHAL PROJECTS LIKE ANY TYPE OF MANAGEMENT
+	APPLICATION
+</p>
 ```
 
     <br>
 
-    Next, I installed MdsveX so I can use Svelte components in markdown files. Also installed Shiki for syntax highlighting. I imported the createHighlighter function from Shiki and passed a object as an argument with the themes and language property's.
+    Next, I installed MDsveX to enable the use of Svelte components within markdown files. Additionally, I installed Shiki for syntax highlighting. I imported the createHighlighter function from Shiki and provided an object as an argument containing the desired themes and language properties.
 
     <br>
 
