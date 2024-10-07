@@ -64,7 +64,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="w-full bg-[#1b1e28] h-[50vh] absolute top-20 left-0 flex flex-col justify-center items-center"
+			class="w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex flex-col justify-center items-center"
 			transition:slide={{ delay: 250, duration: 300, easing: quintOut }}
 		>
 			<a href="/">Portfolio</a>

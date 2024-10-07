@@ -42,7 +42,7 @@
 			use:animate={[
 				{
 					type: 'to',
-					x: -1000
+					x: 1000
 				},
 				{
 					type: 'to',

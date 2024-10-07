@@ -54,7 +54,10 @@
 	]}
 	class="mx-auto max-w-[600px] px-2"
 >
-	<h1 use:animate={h1Animation} class="text-center mt-28 mb-14 text-5xl font-bold">
+	<h1
+		use:animate={h1Animation}
+		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
+	>
 		Documentation
 	</h1>
 	{#each data.articles as item}

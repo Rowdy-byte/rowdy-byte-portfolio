@@ -19,7 +19,7 @@
 		<a class="hamburger" href="/"
 			><p
 				class="mt-1 {pathname === '/docs'
-					? `text-6xl font-extrabold bg-gradient-to-b from-indigo-500 to-emerald-500 bg-clip-text text-transparent inline-block px-0`
+					? `text-6xl font-extrabold bg-gradient-to-b from-emerald-500 to-purple-500 bg-clip-text text-transparent inline-block px-0`
 					: ''}"
 			>
 				⚧
