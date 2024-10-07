@@ -12,6 +12,9 @@ export type AnimationConfig = {
     scale?: number;
     opacity?: number;
     ease?: string;
+    fill?: string;
+    repeat?: number;
+    transformOrigin?: string;
 }
 
 export const animate = (node: HTMLElement, animations: AnimationConfig[]) => {
