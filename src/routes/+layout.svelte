@@ -3,14 +3,11 @@
 	import '../scrollbar.scss';
 	import '../app.css';
 
-	import { animate } from '../animate';
-
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';
 
 	import Navbar from '../components/Navbar.svelte';
 
-	import { fly, scale } from 'svelte/transition';
 	import Sidebar from '../components/Sidebar.svelte';
 	import Footer from '../components/Footer.svelte';
 
@@ -34,6 +31,7 @@
 		{/if}
 	</nav>
 	{@render children()}
+	<figure class="absolute top-0 left-0"></figure>
 </main>
 
 {#if pathname === '/docs'}

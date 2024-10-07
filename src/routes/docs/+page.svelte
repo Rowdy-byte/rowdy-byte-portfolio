@@ -52,7 +52,7 @@
 			delay: 0.5
 		}
 	]}
-	class="mx-auto max-w-[600px] px-2"
+	class="mx-auto max-w-[600px] px-2 pb-20"
 >
 	<h1
 		use:animate={h1Animation}

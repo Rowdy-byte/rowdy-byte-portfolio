@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import Hamburger from './Hamburger.svelte';
 
+	import { animate } from '../animate';
+
 	let pathname = $state();
 
 	$effect(() => {
@@ -11,22 +13,39 @@
 
 {#if pathname === '/docs'}
 	<nav
-		class="w-full flex fixed z-10 top-0 backdrop-blur-sm items-center py-2 px-32 {pathname ===
-		'/docs'
-			? `justify-between`
-			: ''}"
+		class="w-full flex fixed z-10 top-0 backdrop-blur-sm justify-between items-center px-32 py-2 xl:px-52 2xl:px-80"
 	>
-		<a class="hamburger" href="/"
-			><p
+		<a
+			use:animate={[
+				{
+					type: 'to',
+
+					y: 80,
+					x: 50
+				},
+				{
+					type: 'to',
+					rotation: 360,
+					y: 0,
+					x: 0,
+					delay: 4.5,
+					duration: 1
+				}
+			]}
+			class="pt-[12.5px] pr-[2.5px] flex justify-center items-center"
+			href="/"
+		>
+			<p
 				class="mt-1 {pathname === '/docs'
-					? `text-6xl font-extrabold bg-gradient-to-b from-emerald-500 to-purple-500 bg-clip-text text-transparent inline-block px-0`
+					? `text-6xl text-center font-extrabold bg-gradient-to-b from-emerald-500 to-purple-500 bg-clip-text text-transparent inline-block px-0`
 					: ''}"
 			>
 				⚧
 			</p>
 		</a>
-
-		<Hamburger />
+		<span class="pt-[10px]">
+			<Hamburger />
+		</span>
 	</nav>
 {:else}
 	<nav
