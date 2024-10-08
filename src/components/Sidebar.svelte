@@ -53,12 +53,15 @@
 				</button>
 			</header>
 			<section class="py-5 px-4 xl:py-10 xl:px-14 2xl:px-20 rounded-l-none rounded-md">
-				{#each data.headers as article}
+				{#each data.headers as { slug, headers }}
 					<ul>
 						<li>
-							<h3 class="text-[#5de4c7] font-light">{article.slug}</h3>
-							{#if article.headers}
-								{#each article.headers as subheader}
+							<a href={`/docs/${slug.replace(/ /g, '-').trim()}`}
+								><h3 class="text-[#5de4c7] font-light">{slug}</h3></a
+							>
+
+							{#if headers}
+								{#each headers as subheader}
 									<p class="text-slate-200">{subheader}</p>
 								{/each}
 							{/if}

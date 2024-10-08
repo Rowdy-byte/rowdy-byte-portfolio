@@ -20,17 +20,17 @@
 
 	let pathname = $state();
 
-	$effect(() => {
-		pathname = $page.url.pathname;
-		gsap.to('.svgElement', {
-			duration: 5, // duur van de animatie
-			yoyo: true,
-			stroke: '#a955f73f',
-			repeat: -1,
-			ease: 'power1.inOut', // Voeg easing toe voor vloeiende animatie
-			transformOrigin: 'center' // Draaipunt van de rotatie
-		});
-	});
+	// $effect(() => {
+	// 	pathname = $page.url.pathname;
+	// 	gsap.to('.svgElement', {
+	// 		duration: 5, // duur van de animatie
+	// 		yoyo: true,
+	// 		stroke: '#a955f73f',
+	// 		repeat: -1,
+	// 		ease: 'power1.inOut', // Voeg easing toe voor vloeiende animatie
+	// 		transformOrigin: 'center' // Draaipunt van de rotatie
+	// 	});
+	// });
 </script>
 
 <Navbar />

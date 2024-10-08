@@ -2,6 +2,9 @@
 	import { animate } from '../../../animate';
 	import type { AnimationConfig } from '../../../animate';
 
+	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
+
 	const h1Animation: AnimationConfig[] = [
 		{
 			type: 'to',
@@ -28,9 +31,13 @@
 		}
 	];
 
+	let Component = $state();
+
 	let { data } = $props();
 
-	const Component = data.content;
+	$effect(() => {
+		Component = data.content;
+	});
 </script>
 
 <main
