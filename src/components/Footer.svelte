@@ -32,6 +32,7 @@
 			></g
 		>
 	</svg>
+	<p>RowdyByte &copy {new Date().getFullYear()}</p>
 </footer>
 
 <style lang="scss">

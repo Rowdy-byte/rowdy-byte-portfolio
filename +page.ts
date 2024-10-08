@@ -1,4 +1,4 @@
-import type { PageLoad } from './$types';
+import type { PageLoad } from '../$types';
 
 type Article = {
     slug: string;
@@ -7,6 +7,8 @@ type Article = {
 
 export const load: PageLoad = async () => {
     const articles: { slug: string; component: unknown }[] = [];
+
+
 
     const paths = import.meta.glob('../docs/*.md', { eager: true });
 
@@ -19,6 +21,7 @@ export const load: PageLoad = async () => {
             const article: Article = { slug, component };
             articles.push(article);
         }
+        console.log(articles)
     }
 
     return { articles };

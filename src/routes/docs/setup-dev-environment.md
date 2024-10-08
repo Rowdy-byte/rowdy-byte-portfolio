@@ -1,3 +1,9 @@
+    ---
+    title: Setup Dev. Environment
+    description:
+    date: '2024-8-10'
+    ---
+
     ## Sveltekit
 
     RowdyByte is built with SvelteKit. SvelteKit is a modern meta-framework that is user-friendly and versatile. It provides a full-stack solution with state management, reactivity, routing, and animations right out of the box.

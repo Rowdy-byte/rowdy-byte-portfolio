@@ -5,7 +5,8 @@
 	import { animate } from '../animate';
 	import gsap from 'gsap';
 
-	let { headers } = $props<{ headers: Snippet }>();
+	let { data } = $props<{ headers: Snippet }>();
+
 	import { EllipsisVertical, CircleX } from 'lucide-svelte';
 
 	let open = $state(false);
@@ -46,14 +47,23 @@
 			<header
 				class="w-full h-ful flex justify-between p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
 			>
-				<h2 class=" 2xl:text-lg text-[#1b1e28] text-center">Table Of Contents</h2>
+				<h3 class="p-0 2xl:text-lg text-left text-[#1b1e28]">Table Of Contents</h3>
 				<button onclick={handleClick} class="text-[#1b1e28]">
-					<CircleX />
+					<CircleX size={16} />
 				</button>
 			</header>
 			<section class="py-5 px-4 xl:py-10 xl:px-14 2xl:px-20 rounded-l-none rounded-md">
-				{#each headers as header}
-					<p class="text-slate-200 font-light">{header.slug}</p>
+				{#each data.headers as article}
+					<ul>
+						<li>
+							<h3 class="text-[#5de4c7] font-light">{article.slug}</h3>
+							{#if article.headers}
+								{#each article.headers as subheader}
+									<p class="text-slate-200">{subheader}</p>
+								{/each}
+							{/if}
+						</li>
+					</ul>
 				{/each}
 			</section>
 		</section>
