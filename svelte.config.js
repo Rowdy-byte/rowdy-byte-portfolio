@@ -3,6 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki';
 import { remarkHeaders } from './remark-headers.js'
+import rehypeSlug from 'rehype-slug';
 
 // import remarkToc from 'remark-toc';
 
@@ -10,6 +11,8 @@ import { remarkHeaders } from './remark-headers.js'
 const mdsvexOptions = {
 	extensions: ['.md'],
 	remarkPlugins: [remarkHeaders],
+	rehypePlugins: [rehypeSlug],
+
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
