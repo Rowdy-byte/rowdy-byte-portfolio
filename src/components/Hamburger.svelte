@@ -12,7 +12,7 @@
 		pathname = $page.url.pathname;
 	});
 
-	let open = $state(false);
+	let open = $state(true);
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />
@@ -39,9 +39,11 @@
 			class="w-2/4 max-w-96 h-[100vh] bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center items-center"
 		>
 			<a href="/">Portfolio</a>
-			<a href="/docs">Document</a>
-			<section>
+			<a href="/docs">Documentation</a>
+			<section class="mt-10">
 				<h2>Projects</h2>
+				<p>Clash Royal Cards</p>
+				<p>Serialmapper</p>
 			</section>
 		</nav>
 	{:else}
@@ -68,8 +70,8 @@
 			transition:slide={{ delay: 250, duration: 300, easing: quintOut }}
 		>
 			<a href="/">Portfolio</a>
-			<a href="/docs">Document</a>
-			<section>
+			<a href="/docs">Documentation</a>
+			<section class="">
 				<h2>Projects</h2>
 			</section>
 		</nav>
