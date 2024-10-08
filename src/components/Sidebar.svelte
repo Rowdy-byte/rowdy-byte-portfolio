@@ -7,9 +7,13 @@
 
 	let { data } = $props<{ headers: Snippet }>();
 
+	import { page } from '$app/stores';
+
+	const pathname = $state($page.url.pathname);
+
 	import { EllipsisVertical, CircleX } from 'lucide-svelte';
 
-	let open = $state(true);
+	let open = $state(false);
 
 	const handleClick = () => {
 		gsap.to('.sidebar', {
@@ -42,7 +46,7 @@
 					y: -45
 				}
 			]}
-			class="sidebar fixed top-1/2 left-6 z-50 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] xl:left-10 2xl:left-32 shadow-custom-sidebar"
+			class="sidebar fixed top-[350px] left-6 z-50 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] xl:left-10 2xl:left-32 2xl:top-[400px] shadow-custom-sidebar"
 		>
 			<header
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
@@ -55,22 +59,37 @@
 			<section class="py-5 px-4 xl:py-8 xl:px-6 2xl:px-18 rounded-l-none rounded-md">
 				{#each data.headers as { slug, headers }}
 					<ul>
-						<li>
+						<li class="mt-4">
 							<a class="flex items-center" href={`/docs/${slug.replace(/ /g, '-').trim()}`}>
-								<span
-									class="flex text-xs justify-center items-center text-center mr-5 h-4 w-4 border rounded-full"
-									>{slug.replace(/[a-z]/g, '')}</span
-								>
-								<h3 class="text-[#5de4c7] font-light">
+								<h3 class="text-[#5de4c7] font-normal">
 									{slug.replace(/[0-9]/, '').replace(/\b\w/g, (match) => match.toUpperCase())}
-								</h3></a
-							>
-
+								</h3>
+							</a>
 							{#if headers}
 								{#each headers as subheader}
-									<a href={`#${subheader.replace(/ /g, '-').toLowerCase()}`}
-										><p class="text-slate-200 ml-9">{subheader}</p></a
-									>
+									{#if pathname === '/docs'}
+										<a
+											class=""
+											href={`/docs/${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
+										>
+											<p
+												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all"
+											>
+												{subheader}
+											</p>
+										</a>
+									{:else}
+										<a
+											class=""
+											href={`${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
+										>
+											<p
+												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all"
+											>
+												{subheader}
+											</p>
+										</a>
+									{/if}
 								{/each}
 							{/if}
 						</li>

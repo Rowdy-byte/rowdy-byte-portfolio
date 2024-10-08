@@ -15,7 +15,7 @@ export default {
           5px 0 500px #a855f7,
           -50px 0 500px #10b981
         `,
-      }
+      },
     },
   },
   plugins: [],

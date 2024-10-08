@@ -12,7 +12,17 @@
 		pathname = $page.url.pathname;
 	});
 
-	let open = $state(true);
+	let open = $state(false);
+
+	const linksRowdyByte = [
+		{ name: 'Portfolio', url: '/' },
+		{ name: 'Documents', url: '/docs' }
+	];
+
+	const linksProjects = [
+		{ name: 'Clash Royale Cards', url: '/cards' },
+		{ name: 'Serialmapper', url: '/mapper' }
+	];
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />
@@ -38,12 +48,18 @@
 			]}
 			class="w-2/4 max-w-96 h-[100vh] bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center items-center"
 		>
-			<a href="/">Portfolio</a>
-			<a href="/docs">Documentation</a>
-			<section class="mt-10">
-				<h2>Projects</h2>
-				<p>Clash Royal Cards</p>
-				<p>Serialmapper</p>
+			<section class="flex flex-col">
+				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
+				{#each linksRowdyByte as { name, url }}
+					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+				{/each}
+			</section>
+
+			<section class="mt-10 flex flex-col">
+				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
+				{#each linksProjects as { name, url }}
+					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+				{/each}
 			</section>
 		</nav>
 	{:else}

@@ -13,11 +13,13 @@ export type AnimationConfig = {
     opacity?: number;
     ease?: string;
     fill?: string;
+    stroke?: string
     repeat?: number;
     transformOrigin?: string;
+    yoyo?: boolean
 }
 
-export const animate = (node: HTMLElement, animations: AnimationConfig[]) => {
+export const animate = (node: HTMLElement | SVGPathElement, animations: AnimationConfig[]) => {
     const tl = gsap.timeline();
 
     animations.forEach((animation: AnimationConfig) => {

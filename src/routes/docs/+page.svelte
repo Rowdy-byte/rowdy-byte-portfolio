@@ -1,9 +1,9 @@
 <script lang="ts">
 </script>
 
-<main class="mx-auto max-h-full mt-[50%] max-w-96">
-	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellendus culpa odit aut
-	recusandae nobis quasi facere repellat modi ipsa tempora eos nihil aspernatur enim dolore,
-	officiis architecto voluptatum tenetur sint distinctio quidem cum. Esse aliquam deleniti maxime
-	tenetur dolor accusamus quis odit, et pariatur quae doloribus itaque optio voluptas.
+<main class="flex justify-center items-center h-full">
+	<p class="text-center text-xl max-w-[600px] tracking-wide side">
+		Hi, welcome to the documents section. This section will be updated regalarly. So there will be
+		more articles on how I implemented reactivity in Sveltes runes mode.
+	</p>
 </main>
