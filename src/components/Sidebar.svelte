@@ -46,7 +46,7 @@
 					y: -45
 				}
 			]}
-			class="sidebar fixed top-[350px] left-6 z-50 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] xl:left-10 2xl:left-32 2xl:top-[400px] shadow-custom-sidebar"
+			class="sidebar fixed top-[350px] left-2 mr-2 z-50 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] xl:left-10 2xl:left-32 2xl:top-[400px] shadow-custom-sidebar"
 		>
 			<header
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
