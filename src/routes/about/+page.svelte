@@ -1,9 +1,29 @@
-<main class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-	<h1 class="">About Me</h1>
-	<p class="p-0">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloremque facilis magnam
-		eius, soluta ea! Tempore dolorem, ex ipsum modi numquam perferendis qui animi ullam quod
-		distinctio nostrum voluptate? Cumque veniam magnam iste veritatis. Autem assumenda illo minima
-		exercitationem. Perferendis a sequi modi harum ipsa similique vitae error itaque debitis.
-	</p>
+<script lang="ts">
+	import { mainAnimation } from '$lib/animations/main-animation.js';
+	import { animate } from '../../animate.js';
+	let Component = $state();
+
+	let { data } = $props();
+
+	$effect(() => {
+		if (data.content) {
+			Component = data.content;
+		}
+	});
+</script>
+
+<main use:animate={mainAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
+	<h1
+		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
+	>
+		About Me
+	</h1>
+
+	{#if Component}
+		<Component>
+			{@const Component = data.content}
+		</Component>
+	{:else}
+		<h1>loading...</h1>
+	{/if}
 </main>
