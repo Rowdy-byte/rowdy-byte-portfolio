@@ -1,6 +1,7 @@
 
-export const aboutText = 'HI I AM ROWDY AND I AM A CREATIVE DEVELOPER, WHEN POSSIBLE FOLLOWING MY HEART AS I ASSESS DESIGNS WITH MY EYES, NOT ONLY BASED ON TRENDS'
+export const aboutText = 'hi i am rowdy and i am a creative developer, when possible following my heart as i assess designs with my eyes, not only based on trends'
 
-export const projectsText = 'I REALLY LIKE UI/UX PROJECTS, AND I ALSO LIKE MORE TECHNICHAL PROJECTS LIKE FORMS AND FORMVALIDATION, SO BOTH CLIENTSIDE & SERVERSIDE'
+export const projectsText = 'i really like ui/ux projects, and i also like more technichal project like forms and formvalidation, so both clietside & serverside'
 
 export const docsText = 'Welcome to the documents section. This section will be updated regularly. So there will be more articles on how I implemented reactivity & state management in Svelte runes mode'
+

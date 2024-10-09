@@ -33,7 +33,7 @@
 		<p
 			class="max-w-lg text-xs font-normal text-slate-100 md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl"
 		>
-			{aboutText}
+			{aboutText.toUpperCase()}
 		</p>
 	</section>
 	<section
@@ -68,7 +68,7 @@
 			]}
 			class="max-w-lg scale-0 font-normal text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl"
 		>
-			{projectsText}
+			{projectsText.toUpperCase()}
 		</p>
 	</section>
 </main>

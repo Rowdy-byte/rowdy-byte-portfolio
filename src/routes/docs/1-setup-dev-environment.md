@@ -72,9 +72,8 @@ git init
 ```svelte
 <!-- utility class -->
 
-<p class="max-w-lg text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl">
-	I REALLY LIKE UI/UX PROJECTS, AND I ALSO LIKE MORE TECHNICHAL PROJECTS LIKE ANY TYPE OF MANAGEMENT
-	APPLICATION
+<p class="max-w-lg scale-0 font-normal text-slate-100 text-xs">
+	{projectsText.toUpperCase()}
 </p>
 ```
 
