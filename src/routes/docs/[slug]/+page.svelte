@@ -36,7 +36,8 @@
 	let { data } = $props();
 
 	$effect(() => {
-		Component = data.content;
+		componentState = Component;
+		contentState = data.content;
 	});
 </script>
 
