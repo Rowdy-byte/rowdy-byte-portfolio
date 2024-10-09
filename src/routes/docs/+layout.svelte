@@ -10,12 +10,42 @@
 	import Sidebar from '../../components/Sidebar.svelte';
 	import Footer from '../../components/Footer.svelte';
 
-	import { page } from '$app/stores';
 	import { animate } from '../../animate';
 
 	let { children, data } = $props<{ children: Snippet }>();
 
-	console.log(data);
+	let paths;
+	let svgElement;
+
+	$effect(() => {
+		svgElement = document.getElementById('circuit');
+		paths = svgElement?.querySelectorAll('path');
+		paths?.forEach((path, i) => {
+			const length = path.getTotalLength();
+
+			// Zet de stroke-dasharray en stroke-dashoffset voor de animatie
+			gsap.set(path, {
+				strokeDasharray: length,
+				strokeDashoffset: length, // Begin met het pad dat niet zichtbaar i
+				// delay: 0.5,
+				strokeWidth: 2,
+				stroke: '#10b981',
+				ease: 'power1.inOut'
+			});
+
+			// Animatie naar de uiteindelijke kleur
+			gsap.to(path, {
+				strokeDashoffset: 0, // Maak het pad zichtbaar
+				stroke: '#a855f7', // Doel kleur
+				duration: 10,
+				delay: i * 0.01, // Vertraging op basis van index
+				strokeWidth: 2,
+				ease: 'power1.inOut',
+
+				repeat: -1
+			});
+		});
+	});
 </script>
 
 <main class="relative h-screen">
@@ -26,7 +56,7 @@
 	<figure class="hidden md:block xl:block -z-10 fixed -top-[60px] right-[500px]">
 		<svg
 			version="1.1"
-			id="Layer_1"
+			id="circuit"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			x="500px"
@@ -42,15 +72,6 @@
 				</filter>
 			</defs>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -71,16 +92,6 @@ M2640.000000,4502.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.1
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -110,16 +121,6 @@ M2272.000000,2022.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.2
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -133,16 +134,6 @@ M2508.000000,3342.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.3
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -155,16 +146,6 @@ M2816.000000,3233.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.4
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -178,16 +159,6 @@ M2300.000000,3546.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.5
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -211,16 +182,6 @@ M2193.000000,2100.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -242,16 +203,6 @@ M2250.000000,2788.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.7
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -269,16 +220,6 @@ M2582.000000,2488.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.7
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -293,16 +234,6 @@ M3156.000000,2070.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -318,16 +249,6 @@ M2782.000000,2096.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -346,16 +267,6 @@ M2206.000000,3808.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -372,16 +283,6 @@ M2072.000000,3010.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -399,16 +300,6 @@ M2546.000000,2444.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -423,16 +314,6 @@ M2473.000000,3376.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -452,16 +333,6 @@ M2434.000000,1468.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -479,16 +350,6 @@ M2441.000000,3408.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -511,16 +372,6 @@ M2438.000000,2536.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -539,16 +390,6 @@ M2728.000000,788.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -563,16 +404,6 @@ M1950.000000,2248.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -588,16 +419,6 @@ M2610.000000,2746.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -615,16 +436,7 @@ M1768.000000,622.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
+				class="path"
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -647,16 +459,6 @@ M1050.000000,2032.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -673,16 +475,6 @@ M1760.000000,2882.000000
 "
 			/>
 			<path
-				use:animate={[
-					{
-						type: 'to',
-						duration: 5,
-						stroke: '#a855f7',
-						yoyo: true,
-						repeat: -1,
-						delay: 0.6
-					}
-				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"
@@ -2663,6 +2455,16 @@ M2572.000000,2414.000000
 "
 			/>
 			<path
+				use:animate={[
+					{
+						type: 'to',
+						duration: 5,
+						stroke: '#10b981',
+						yoyo: true,
+						repeat: -1,
+						delay: 0.6
+					}
+				]}
 				fill="none"
 				opacity="1.000000"
 				stroke="#000000"

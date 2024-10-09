@@ -36,8 +36,9 @@
 	let { data } = $props();
 
 	$effect(() => {
-		componentState = Component;
-		contentState = data.content;
+		if (data.content) {
+			Component = data.content;
+		}
 	});
 </script>
 
@@ -72,7 +73,11 @@
 		Documentation
 	</h1>
 
-	<Component>
-		{@const Component = data.content}
-	</Component>
+	{#if Component}
+		<Component>
+			{@const Component = data.content}
+		</Component>
+	{:else}
+		<h1>loading...</h1>
+	{/if}
 </main>

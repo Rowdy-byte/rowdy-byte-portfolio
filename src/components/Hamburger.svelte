@@ -46,16 +46,16 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="w-2/4 max-w-96 h-[100vh] bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center items-center"
+			class="w-2/4 max-w-96 h-[100vh] bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
 		>
-			<section class="flex flex-col">
+			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
 					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
 				{/each}
 			</section>
 
-			<section class="mt-10 flex flex-col">
+			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
 					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
@@ -85,10 +85,18 @@
 			class="w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex flex-col justify-center items-center"
 			transition:slide={{ delay: 250, duration: 300, easing: quintOut }}
 		>
-			<a href="/">Portfolio</a>
-			<a href="/docs">Documentation</a>
-			<section class="">
-				<h2>Projects</h2>
+			<section class="flex flex-col justify-center items-center">
+				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
+				{#each linksRowdyByte as { name, url }}
+					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+				{/each}
+			</section>
+
+			<section class="mt-10 flex flex-col justify-center items-center">
+				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
+				{#each linksProjects as { name, url }}
+					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+				{/each}
 			</section>
 		</nav>
 	{/if}

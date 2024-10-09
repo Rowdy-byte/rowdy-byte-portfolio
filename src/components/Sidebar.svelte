@@ -13,7 +13,7 @@
 
 	import { EllipsisVertical, CircleX } from 'lucide-svelte';
 
-	let open = $state(false);
+	let open = $state(true);
 
 	const handleClick = () => {
 		gsap.to('.sidebar', {
@@ -52,8 +52,8 @@
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
 			>
 				<h3 class="p-0 2xl:text-lg text-center text-[#1b1e28]">Table Of Contents</h3>
-				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-3">
-					<CircleX size={17} />
+				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
+					<CircleX size={24} />
 				</button>
 			</header>
 			<section class="py-5 px-4 xl:py-8 xl:px-6 2xl:px-18 rounded-l-none rounded-md">
