@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { slide, fade } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 	import Hamburger from 'svelte-hamburger';
 	import { page } from '$app/stores';
 
 	import { animate } from '../animate';
+	import { linksProjects, linksRowdyByte } from '$lib/links';
 
 	let pathname = $state();
 
@@ -14,15 +13,18 @@
 
 	let open = $state(false);
 
-	const linksRowdyByte = [
-		{ name: 'Portfolio', url: '/' },
-		{ name: 'Documentation', url: '/docs' }
-	];
-
-	const linksProjects = [
-		{ name: 'Clash Royale Cards', url: '/cards' },
-		{ name: 'Serialmapper', url: '/mapper' }
-	];
+	const handleClick = () => {
+		if (open) {
+			gsap.to('.sidebar', {
+				rotation: 45,
+				opacity: 0,
+				duration: 0.5,
+				onComplete: () => {
+					open = false;
+				}
+			});
+		}
+	};
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />

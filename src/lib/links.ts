@@ -1,5 +1,6 @@
 export const linksRowdyByte = [
-    { name: 'Portfolio', url: '/' },
+    { name: 'Homepage', url: '/' },
+    { name: 'About', url: '/about' },
     { name: 'Documentation', url: '/docs' }
 ];
 

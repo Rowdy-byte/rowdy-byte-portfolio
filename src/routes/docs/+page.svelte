@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { docsText } from '$lib/about-text';
 </script>
 
-<main class="flex justify-center items-center h-full">
+<main class="max-w-[600px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 	<p class="text-center text-xl max-w-[600px] tracking-wide side">
-		Hi, welcome to the documents section. This section will be updated regalarly. So there will be
-		more articles on how I implemented reactivity in Sveltes runes mode.
+		{docsText}
 	</p>
 </main>
