@@ -16,7 +16,7 @@
 
 	const linksRowdyByte = [
 		{ name: 'Portfolio', url: '/' },
-		{ name: 'Documents', url: '/docs' }
+		{ name: 'Documentation', url: '/docs' }
 	];
 
 	const linksProjects = [
@@ -46,7 +46,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="w-2/4 max-w-96 h-[100vh] bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
+			class="w-2/4 max-w-96 h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
@@ -82,7 +82,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex flex-col justify-center items-center"
+			class="w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500"
 			transition:slide={{ delay: 250, duration: 300, easing: quintOut }}
 		>
 			<section class="flex flex-col justify-center items-center">
@@ -101,6 +101,3 @@
 		</nav>
 	{/if}
 {/if}
-
-<style>
-</style>
