@@ -2,7 +2,7 @@
 	let { type, rarity } = $props();
 </script>
 
-<div class="flex w-full justify-between gap-2">
+<div class="flex w-full font-supercell justify-between gap-2">
 	<div
 		class="flex-1 flex flex-col justify-center bg-[rgba(245,245,245,.1)] text-center rounded p-1"
 	>

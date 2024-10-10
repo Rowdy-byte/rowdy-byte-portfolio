@@ -3,8 +3,9 @@
 
 	import CardNameLevel from './CardNameLevel.svelte';
 	import CardTypeRarity from './CardTypeRarity.svelte';
+	import type { CardType } from '$lib/cards-data';
 
-	let { id, name, level, cost, type, rarity, img } = $props();
+	let { id, name, level, cost, type, rarity, img }: CardType = $props();
 </script>
 
 <a href={`/cards/${id}`}>
@@ -28,7 +29,9 @@
 			<CardNameLevel {name} {level} {rarity} />
 		</header>
 
-		<div class=" rounded p-8 h-[50%] flex justify-center items-center"></div>
+		<div class=" rounded p-8 h-[50%] flex justify-center items-center">
+			<img src={img} alt="" />
+		</div>
 
 		<section class="flex w-full rounded p-2 bg-[rgb(75,85,99,.5)]">
 			<CardTypeRarity {type} {rarity} />

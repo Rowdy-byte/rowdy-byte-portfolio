@@ -3,7 +3,7 @@
 </script>
 
 <h4
-	class="w-full text-shadow font-semibold rounded rounded-b-lg text-center p-2 bg-[rgb(75,85,99,.5)]"
+	class="w-full font-supercell text-shadow font-semibold rounded rounded-b-lg text-center p-2 bg-[rgb(75,85,99,.5)]"
 >
 	elixer
 

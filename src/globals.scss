@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+	font-family: 'supercell-magic';
+	src: url('/fonts/supercell-magic.ttf') format('truetype');
+}
+
 $backgroundcolor: #1b1e28;
 $texcolor: #a955f73f;
 $texcolor2: #a6accdc0;

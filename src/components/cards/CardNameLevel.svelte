@@ -3,9 +3,9 @@
 </script>
 
 <div>
-	<h1 class="font-bold text-xl text-shadow">{name}</h1>
+	<h1 class="font-bold font-supercell text-xl text-shadow">{name}</h1>
 	<p
-		class={`text-sm ${
+		class={`text-sm font-supercell ${
 			rarity === 'Common'
 				? 'text-[#4299e1] font-bold text-shadow '
 				: rarity === 'Rare'
