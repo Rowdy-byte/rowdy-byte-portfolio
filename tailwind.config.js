@@ -18,7 +18,10 @@ export default {
       },
       fontFamily: {
         montserrat: ['montserrat', 'sans-serif']
-      }
+      },
+      screens: {
+        'fullscreen': { 'raw': '(min-width: 1920px) and (min-height: 1080px)' }, // Custom media query for fullscreen
+      },
     },
   },
   plugins: [

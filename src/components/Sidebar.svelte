@@ -35,20 +35,20 @@
 	{#if open}
 		<section
 			use:animate={openSidebarAnimation}
-			class="sidebar z-40 fixed top-[350px] left-2 mr-2 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] xl:left-10 2xl:left-32 2xl:top-[400px] shadow-custom-sidebar"
+			class="sidebar z-40 fixed top-[55%] left-2 2xl:left-20 fullscreen:left-40 transform -translate-y-1/2 mr-2 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] shadow-custom-sidebar"
 		>
 			<header
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
 			>
-				<h3 class="p-0 2xl:text-lg text-center text-[#1b1e28]">Table Of Contents</h3>
+				<h3 class="p-0 text-center text-[#1b1e28]">Table Of Contents</h3>
 				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
 					<CircleX size={24} />
 				</button>
 			</header>
-			<section class="py-5 px-4 xl:py-8 xl:px-6 2xl:px-18 rounded-l-none rounded-md">
+			<section class="py-4 px-4 rounded-l-none rounded-md">
 				{#each data.headers as { slug, headers }}
 					<ul>
-						<li class="mt-4">
+						<li class="">
 							<a class="flex items-center" href={`/docs/${slug.replace(/ /g, '-').trim()}`}>
 								<h3 class="text-[#5de4c7] font-normal">
 									{slug.replace(/[0-9]/, '').replace(/\b\w/g, (match) => match.toUpperCase())}

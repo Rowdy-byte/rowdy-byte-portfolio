@@ -20,7 +20,7 @@
 	</nav>
 {:else}
 	<nav
-		class="w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-32 py-2 xl:px-52 2xl:px-80"
+		class="w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-40 py-2 2xl:px-60 fullscreen:px-80"
 	>
 		<a
 			use:animate={[
