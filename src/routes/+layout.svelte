@@ -20,31 +20,21 @@
 
 	let pathname = $state();
 
-	// $effect(() => {
-	// 	pathname = $page.url.pathname;
-	// 	gsap.to('.svgElement', {
-	// 		duration: 5, // duur van de animatie
-	// 		yoyo: true,
-	// 		stroke: '#a955f73f',
-	// 		repeat: -1,
-	// 		ease: 'power1.inOut', // Voeg easing toe voor vloeiende animatie
-	// 		transformOrigin: 'center' // Draaipunt van de rotatie
-	// 	});
-	// });
+	$effect(() => {
+		pathname = $page.url.pathname;
+	});
 </script>
 
 <Navbar />
 
 <main class="relative h-screen">
-	<nav>
+	<!-- <nav>
 		{#if pathname === '/docs'}
 			<Sidebar {data} />
 		{/if}
-	</nav>
+	</nav> -->
 	{@render children()}
-	<figure class="-z-10 2xl:fixed 2xl:top-36 2xl:-right-60"></figure>
+	<!-- <figure class="-z-10 2xl:fixed 2xl:top-36 2xl:-right-60"></figure> -->
 </main>
 
-{#if pathname === '/docs'}
-	<Footer />
-{/if}
+<Footer {pathname} />

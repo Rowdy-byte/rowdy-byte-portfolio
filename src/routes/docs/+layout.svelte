@@ -8,7 +8,6 @@
 	import gsap from 'gsap';
 
 	import Sidebar from '../../components/Sidebar.svelte';
-	import Footer from '../../components/Footer.svelte';
 
 	import { animate } from '../../animate';
 
@@ -4012,5 +4011,3 @@ M2308.000000,1344.000000
 		</svg>
 	</figure>
 </main>
-
-<Footer />

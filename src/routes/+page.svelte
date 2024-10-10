@@ -1,31 +1,16 @@
 <script lang="ts">
 	import { animate } from '../animate';
 	import { aboutText, projectsText } from '$lib/about-text';
+	import { mainAnimation } from '$lib/animations/main-animation';
+	import {
+		landingProjectsHeaderAnimation,
+		landingProjectsTextAnimation
+	} from '$lib/animations/landing-animation';
 </script>
 
-<main class={`flex flex-col lg:flex-row h-screen -z-10`}>
+<main class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">
 	<section
-		use:animate={[
-			{
-				type: 'to',
-				duration: 2,
-				x: 200,
-				rotation: 360,
-				scale: 1.5,
-				opacity: 0.5,
-				ease: 'power2.out'
-			},
-			{
-				type: 'to',
-				duration: 1,
-				x: 0,
-				rotation: 0,
-				scale: 1,
-				opacity: 1,
-				ease: 'power2.inOut',
-				delay: 0.5
-			}
-		]}
+		use:animate={mainAnimation}
 		class="
         gap-3 text-sm md:text-lg p-4 flex-1 flex flex-col justify-center items-center text-responsive tracking-[.3rem] text-center bg-gradient-to-b from-[#f3a704] to-[#f36104] h-1/2 lg:h-full lg:w-1/2"
 	>
@@ -36,36 +21,19 @@
 			{aboutText.toUpperCase()}
 		</p>
 	</section>
+
 	<section
 		class="
           antialiased gap-3 text-sm md:text-lg p-4 flex-1 flex flex-col justify-center items-center text-responsive tracking-[.3rem] text-center bg-gradient-to-b from-[#11cce9] to-[#028aba] h-1/2 lg:h-full lg:w-1/2"
 	>
 		<p
-			use:animate={[
-				{
-					type: 'to',
-					x: 1000
-				},
-				{
-					type: 'to',
-					duration: 1,
-					delay: 3,
-					x: 0
-				}
-			]}
+			use:animate={landingProjectsHeaderAnimation}
 			class="font-bold text-slate-100 text-5xl md:text-6xl lg:text-5xl xl:text-7xl"
 		>
 			PROJECTS
 		</p>
 		<p
-			use:animate={[
-				{
-					type: 'to',
-					delay: 2,
-					duration: 2,
-					scale: 1
-				}
-			]}
+			use:animate={landingProjectsTextAnimation}
 			class="max-w-lg scale-0 font-normal text-slate-100 text-xs md:text-sm lg:text-sm xl:text-lg lg:max-w-4xl"
 		>
 			{projectsText.toUpperCase()}

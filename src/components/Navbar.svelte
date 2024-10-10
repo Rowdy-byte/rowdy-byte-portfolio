@@ -12,8 +12,8 @@
 </script>
 
 {#if pathname === '/'}
-	<nav class="w-full flex fixed z-50 top-0 items-center text-slate-200 justify-between py-2 px-4">
-		<p class="text-6xl text-slate-200 font-extrabold px-0">⚧</p>
+	<nav class="w-full flex fixed z-50 top-0 items-center text-slate-200 justify-between px-10 py-2">
+		<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
 
 		<Hamburger />
 		<a class="hidden" href="/docs">docs</a>

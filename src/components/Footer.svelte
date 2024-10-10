@@ -1,7 +1,12 @@
 <script lang="ts">
+	let { pathname } = $props();
+	console.log(pathname);
 </script>
 
-<footer class="flex justify-center items-center w-full fixed h-20 bottom-0 bg-[#1b1e28]">
+<footer
+	class="flex justify-center items-center w-full fixed h-20 bottom-0
+	{`${pathname === '/' ? 'bg-transparent' : 'bg-[#1b1e28]'}`} "
+>
 	<a aria-label="link-to-github-profile" href="https://github.com/Rowdy-byte"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +17,7 @@
 			viewBox="0,0,256,256"
 		>
 			<g
-				fill="#10b981"
+				fill="{`${pathname === '/' ? '#e2e8f0' : '#10b981'}`} "
 				fill-rule="nonzero"
 				stroke="none"
 				stroke-width="1"
