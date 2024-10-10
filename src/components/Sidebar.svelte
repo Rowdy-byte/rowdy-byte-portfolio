@@ -1,19 +1,19 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
 	import { animate } from '../animate';
 	import gsap from 'gsap';
 
 	import { openSidebarAnimation } from '$lib/animations/sidebar-animations';
 
-	let { data } = $props<{ headers: Snippet }>();
+	let { data } = $props<{ data: PageData }>();
 
 	import { page } from '$app/stores';
 
 	const pathname = $state($page.url.pathname);
 
 	import { EllipsisVertical, CircleX } from 'lucide-svelte';
+	import type { PageData } from '../routes/$types';
 
-	let open = $state(true);
+	let open = $state(false);
 
 	const handleClick = () => {
 		gsap.to('.sidebar', {
@@ -51,7 +51,9 @@
 						<li class="">
 							<a class="flex items-center" href={`/docs/${slug.replace(/ /g, '-').trim()}`}>
 								<h3 class="text-[#5de4c7] font-normal">
-									{slug.replace(/[0-9]/, '').replace(/\b\w/g, (match) => match.toUpperCase())}
+									{slug
+										.replace(/[0-9]/, '')
+										.replace(/\b\w/g, (match: string) => match.toUpperCase())}
 								</h3>
 							</a>
 							{#if headers}

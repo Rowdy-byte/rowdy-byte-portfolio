@@ -12,19 +12,6 @@
 	});
 
 	let open = $state(false);
-
-	const handleClick = () => {
-		if (open) {
-			gsap.to('.sidebar', {
-				rotation: 45,
-				opacity: 0,
-				duration: 0.5,
-				onComplete: () => {
-					open = false;
-				}
-			});
-		}
-	};
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />
@@ -48,7 +35,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="w-2/4 max-w-96 h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
+			class="hamburger__menu w-2/4 max-w-96 h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
@@ -60,7 +47,11 @@
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
-					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+					<a
+						onclick={() => (open = !open)}
+						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+						href={url}>{name}</a
+					>
 				{/each}
 			</section>
 		</nav>
@@ -70,8 +61,7 @@
 				{
 					type: 'from',
 					duration: 0.5,
-					y: -200,
-					// scale: 0,
+					y: 0,
 					opacity: 0,
 					ease: 'power2.in'
 				},
@@ -79,18 +69,20 @@
 					type: 'to',
 					duration: 1,
 					y: 0,
-					// scale: 1,
 					opacity: 1,
 					ease: 'power2.out'
 				}
 			]}
-			class="w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500"
-			transition:slide={{ delay: 250, duration: 300, easing: quintOut }}
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
-					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+					<a
+						onclick={() => (open = !open)}
+						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+						href={url}>{name}</a
+					>
 				{/each}
 			</section>
 

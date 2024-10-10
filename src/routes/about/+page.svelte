@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { mainAnimation } from '$lib/animations/main-animation.js';
 	import { animate } from '../../animate.js';
+	import { hamburgerMenuAnimation } from '$lib/animations/hamburger-animation.js';
 	let Component = $state();
 
 	let { data } = $props();
@@ -12,7 +12,7 @@
 	});
 </script>
 
-<main use:animate={mainAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
+<main use:animate={hamburgerMenuAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
 	<h1
 		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
 	>
@@ -20,9 +20,7 @@
 	</h1>
 
 	{#if Component}
-		<Component>
-			{@const Component = data.content}
-		</Component>
+		{@const Component = data.content}
 	{:else}
 		<h1>loading...</h1>
 	{/if}

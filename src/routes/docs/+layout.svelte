@@ -10,8 +10,9 @@
 	import Sidebar from '../../components/Sidebar.svelte';
 
 	import { animate } from '../../animate';
+	import type { PageData } from '../$types';
 
-	let { children, data } = $props<{ children: Snippet }>();
+	let { children, data } = $props<{ children: Snippet; data: PageData }>();
 
 	let paths;
 	let svgElement;
@@ -22,22 +23,20 @@
 		paths?.forEach((path, i) => {
 			const length = path.getTotalLength();
 
-			// Zet de stroke-dasharray en stroke-dashoffset voor de animatie
 			gsap.set(path, {
 				strokeDasharray: length,
-				strokeDashoffset: length, // Begin met het pad dat niet zichtbaar i
+				strokeDashoffset: length,
 				// delay: 0.5,
 				strokeWidth: 2,
 				stroke: '#10b981',
 				ease: 'power1.inOut'
 			});
 
-			// Animatie naar de uiteindelijke kleur
 			gsap.to(path, {
-				strokeDashoffset: 0, // Maak het pad zichtbaar
-				stroke: '#a855f7', // Doel kleur
+				strokeDashoffset: 0,
+				stroke: '#a855f7',
 				duration: 10,
-				delay: i * 0.01, // Vertraging op basis van index
+				delay: i * 0.01,
 				strokeWidth: 2,
 				ease: 'power1.inOut',
 

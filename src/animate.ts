@@ -17,6 +17,7 @@ export type AnimationConfig = {
     repeat?: number;
     transformOrigin?: string;
     yoyo?: boolean
+    onComplete?: () => void
 }
 
 export const animate = (node: HTMLElement | SVGPathElement, animations: AnimationConfig[]) => {
