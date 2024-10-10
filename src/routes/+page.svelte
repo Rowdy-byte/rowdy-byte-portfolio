@@ -2,13 +2,15 @@
 	import { animate } from '../animate';
 	import { aboutText, projectsText } from '$lib/about-text';
 	import { mainAnimation } from '$lib/animations/main-animation';
+	import { pageAnimation } from '$lib/animations/page-animation';
 	import {
 		landingProjectsHeaderAnimation,
 		landingProjectsTextAnimation
 	} from '$lib/animations/landing-animation';
+	import { hamburgerMenuAnimation } from '$lib/animations/hamburger-animation';
 </script>
 
-<main class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">
+<main use:animate={pageAnimation} class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">
 	<section
 		use:animate={mainAnimation}
 		class="

@@ -20,7 +20,9 @@
 	</h1>
 
 	{#if Component}
-		{@const Component = data.content}
+		<Component>
+			{@const Component = data.content}
+		</Component>
 	{:else}
 		<h1>loading...</h1>
 	{/if}

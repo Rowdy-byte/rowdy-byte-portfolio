@@ -1,0 +1,51 @@
+.background-common {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, var(--common-color) 100%);
+}
+
+.border-common {
+    border-width: 2px;
+    /* Adjust the border width as needed */
+    border-color: var(--common-color);
+    /* Tailwind's blue-400 */
+}
+
+.glow-common {
+    position: relative;
+    box-shadow:
+        inset 0 5px 30px 1px var(--background-color-shadow),
+        inset 0 0 0px var(--common-color),
+        inset 0 0 0px var(--common-color),
+        inset 0 0 0px #0ff,
+        -5px 0 50px var(--common-color),
+        10px 0 50px var(--common-color);
+    /* -5px 0 2px white, */
+    /* 2px 0 3px 2px white; */
+
+    transition: all .3s ease-in-out;
+}
+
+.glow-common:hover {
+    scale: 1.1;
+    box-shadow:
+        inset 0 5px 10px var(--background-color-shadow),
+        -5px 0 100px var(--common-color),
+        10px 0 100px var(--common-color);
+    transition: all .3s ease-in-out;
+}
+
+.glow-common:hover::after {
+    opacity: 1;
+}
+
+.glow-common::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    box-shadow:
+        -5px 10 120px var(--common-color),
+        10px 10 120px var(--common-color);
+    ;
+    transition: opacity 0.3s ease-in-out;
+}

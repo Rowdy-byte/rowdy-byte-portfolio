@@ -16,6 +16,7 @@ export default {
           -50px 0 500px #10b981
         `,
       },
+
       fontFamily: {
         montserrat: ['montserrat', 'sans-serif']
       },
