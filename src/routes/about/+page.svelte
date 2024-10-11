@@ -14,10 +14,8 @@
 	});
 </script>
 
-<main use:animate={pageAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
-	<h1
-		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
-	>
+<main use:animate={pageAnimation} class="mx-auto max-w-[600px] px-2 pt-40 pb-40">
+	<h1 class="text-center text-3xl mb-14 bg-gradient-to-r from-purple-500 to-emerald-500">
 		About me
 	</h1>
 

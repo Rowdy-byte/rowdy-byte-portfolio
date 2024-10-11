@@ -25,12 +25,44 @@
 			}
 		});
 	};
+
+	$effect(() => {
+		let circles = document.querySelectorAll('circle');
+
+		circles.forEach((dot, i) => {
+			gsap.to(dot, {
+				scale: 1.1,
+				// fill: i === 0 ? '#10b981' : i === 1 ? '#a855f7' : '#10b981',
+				duration: 2,
+				delay: i * 1,
+				repeat: -1,
+				yoyo: true,
+				ease: 'power1.inOut'
+			});
+		});
+	});
 </script>
 
 <aside class="">
-	<button onclick={() => (open = true)} class="fixed top-1/2 text-slate-100 w- h-5 p-1 z-40 rounded"
-		><EllipsisVertical /></button
+	<button
+		aria-label="side-menu-button"
+		onclick={() => (open = true)}
+		class="fixed top-1/2 text-slate-100 w- h-5 p-1 z-40 rounded"
 	>
+		<svg
+			class="flex justify-center"
+			id="dots-svg"
+			xmlns="http://www.w3.org/2000/svg"
+			width="40"
+			height="40"
+			viewBox="0 0 20 20"
+			><g fill="currentColor"
+				><circle class="dot" cx="10" cy="15" r="2" />
+				<circle class="dot" cx="10" cy="10" r="2" />
+				<circle class="dot" cx="10" cy="5" r="2" />
+			</g></svg
+		>
+	</button>
 
 	{#if open}
 		<section

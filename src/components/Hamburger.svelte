@@ -18,7 +18,6 @@
 
 	const closeMenuFromLinks = () => {
 		gsap.to('.hamburger__menu', {
-			rotation: 45,
 			opacity: 0,
 			duration: 0.5,
 			onComplete: () => {
@@ -49,27 +48,31 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="hamburger__menu w-2/4 max-w-96 h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
+			class="hamburger__menu w-full h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
-					<a
-						onclick={closeMenuFromLinks}
-						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
-						href={url}>{name}</a
-					>
+					{#if pathname !== url}
+						<a
+							onclick={closeMenuFromLinks}
+							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							href={url}>{name}</a
+						>
+					{/if}
 				{/each}
 			</section>
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
-					<a
-						onclick={closeMenuFromLinks}
-						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
-						href={url}>{name}</a
-					>
+					{#if pathname !== url}
+						<a
+							onclick={closeMenuFromLinks}
+							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							href={url}>{name}</a
+						>
+					{/if}
 				{/each}
 			</section>
 		</nav>
@@ -96,22 +99,26 @@
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
-					<a
-						onclick={closeMenuFromLinks}
-						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
-						href={url}>{name}</a
-					>
+					{#if pathname !== url}
+						<a
+							onclick={closeMenuFromLinks}
+							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							href={url}>{name}</a
+						>
+					{/if}
 				{/each}
 			</section>
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
-					<a
-						onclick={closeMenuFromLinks}
-						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
-						href={url}>{name}</a
-					>
+					{#if pathname !== url}
+						<a
+							onclick={closeMenuFromLinks}
+							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							href={url}>{name}</a
+						>
+					{/if}
 				{/each}
 			</section>
 		</nav>

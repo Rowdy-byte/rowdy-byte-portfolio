@@ -19,3 +19,13 @@ As I got older, I got my first personal computer. I’ll never forget it—it wa
 ## Curiosity
 
 How did this beautiful menu pop up when I put the DVD in the player? How did all the titles appear in the menu, and when I clicked on one, an article loaded in another section? My curiosity led me to dig into the hidden files and folders, where I discovered that the menu was simply a text document with code. I downloaded all the files from the DVD to my computer, started changing values, and watched the menu change. Before long, I was creating my own menus. I also collected as many cracks and patches as I could find and made my own DVD.
+
+<br>
+<br>
+
+## Path of Life
+
+I really never had the nerve to make my hobby my job. I didn't know how. I had many different jobs but never got the fealing like: this is what I can do for the rest of my life. Made some mistakes along the road, but hey, we're al here to learn right? In the mean while I spent a lot of my free time behind the computer. I was writing stories, rhymes, learning 3d modeling, building computers.
+
+<br>
+<br>

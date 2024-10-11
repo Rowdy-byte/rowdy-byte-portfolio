@@ -22,13 +22,9 @@
 		class="w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80"
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/">
-			<p
-				class="mt-1 text-6xl text-center font-extrabold bg-gradient-to-b from-emerald-500 to-purple-500 bg-clip-text text-transparent inline-block px-0"
-			>
-				⚧
-			</p>
+			<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
 		</a>
-		<span class="pt-[10px]">
+		<span class="pt-[10px] text-slate-200">
 			<Hamburger />
 		</span>
 	</nav>
