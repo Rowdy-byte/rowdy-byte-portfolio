@@ -5,7 +5,7 @@ As you might have guessed, my name is Rowdy, and I am 41 years young.
 <br>
 <br>
 
-## A Bit of History
+## Brief History
 
 I've always been a creative and curious person. As a child, I spent a lot of time drawing, crafting, and writing. I made membership cards for imaginary libraries and Super Mario cards for my classmates. Back then, I didn’t have a computer, so everything I designed was handmade. I had beautiful handwriting, which surprised people because I was often told it looked more like a girl’s or woman’s handwriting.
 
@@ -25,18 +25,18 @@ How did this beautiful menu pop up when I put the DVD in the player? How did all
 
 ## Path of Life
 
-I really never had the nerve to make my hobby my job. I didn't know how. I had many different jobs but never got the fealing like: this is what I can do for the rest of my life. Made some mistakes along the road, but hey, we're al here to learn right? In the mean while I spent a lot of my free time behind the computer. I was writing stories, rhymes, learning 3d modeling, building computers.
+I never really had the nerve to turn my hobby into a job. I didn’t know how. I’ve held many different jobs, but I never experienced that feeling of “this is what I can do for the rest of my life.” I made some mistakes along the way, but hey, we’re all here to learn, right? In the meantime, I spent a lot of my free time behind the computer, writing stories and rhymes, learning 3D modeling, and building computers.
 
 <br>
 <br>
 
 ## Coding
 
-So, about 3 years ago I really started to learn webdevelopment. I started with HTML5 and CSS3, which I picked-up farly quick. But building a full blown website from scratch is another piece of cookie. How do I get the right alignment between elements? Which font to choose? What about colors, line-height and letter spacing. Webdevelop can become overwhelming pretty quick. I didn't even mentioned JavaScript yet.
+About three years ago, I really started to learn web development. I began with HTML5 and CSS3, which I picked up fairly quickly. However, building a full-blown website from scratch is another matter entirely. How do I get the right alignment between elements? Which font should I choose? What about colors, line height, and letter spacing? Web development can become overwhelming pretty quickly. I haven’t even mentioned JavaScript yet.
 
 <br>
 <br>
 
 ## Js
 
-JavaScript, is kinda...well. I found it kinda hard to learn. In the begining I was avoiding it because I didn't had te confidence that I could ever wrap my head around it. I can quickly learn by visualising things. But, with JavaScript I couldn't visualize it.
+JavaScript is kind of… well, I found it challenging to learn. In the beginning, I avoided it because I didn’t have the confidence that I could ever wrap my head around it. I learn quickly by visualizing things, but with JavaScript, I struggled to visualize it.
