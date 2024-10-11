@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<h1 class="font-bold font-supercell text-xl text-shadow">{name}</h1>
+	<p class="font-bold text-slate-200 font-supercell text-shadow text-base">{name}</p>
 	<p
 		class={`text-sm font-supercell ${
 			rarity === 'Common'

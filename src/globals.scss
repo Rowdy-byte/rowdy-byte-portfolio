@@ -129,3 +129,34 @@ h6 {
 input[type='checkbox'] {
 	background-color: aqua;
 }
+
+.text-shadow {
+	text-shadow: 0 1px 0 #000;
+}
+
+.text-legendary {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, #d68ab0),
+		color-stop(0.25, #d8ce5d),
+		color-stop(0.5, #6bd85d),
+		color-stop(0.75, #5db9d8),
+		color-stop(1, #d85dcb)
+	);
+	background-image: -webkit-linear-gradient(
+		left,
+		#d68ab0 0%,
+		#d8ce5d 25%,
+		#6bd85d 50%,
+		#5db9d8 75%,
+		#d85dcb 100%
+	);
+	background-size: 1000% 1000%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #33cccc;
+	white-space: nowrap;
+}

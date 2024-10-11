@@ -16,7 +16,15 @@ export default {
           -50px 0 500px #10b981
         `,
       },
-
+      keyframes: {
+        'text-legendary': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
+      animation: {
+        'text-legendary': 'text-legendary 6s infinite',
+      },
       fontFamily: {
         montserrat: ['montserrat', 'sans-serif'],
         supercell: ['supercell-magic']
