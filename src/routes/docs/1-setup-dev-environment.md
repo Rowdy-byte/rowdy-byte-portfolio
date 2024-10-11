@@ -36,7 +36,7 @@ cd rowdy-byte-portfolio
     <br>
 
 ```bash
-cd pnpm i
+pnpm i
 ```
 
     <br>

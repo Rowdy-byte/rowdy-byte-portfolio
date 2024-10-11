@@ -1,17 +1,17 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
+	import { EllipsisVertical, CircleX } from 'lucide-svelte';
+
+	import type { PageData } from '../routes/$types';
+
 	import { animate } from '../animate';
 	import gsap from 'gsap';
-
 	import { openSidebarAnimation } from '$lib/animations/sidebar-animations';
-
-	let { data } = $props<{ data: PageData }>();
-
-	import { page } from '$app/stores';
 
 	const pathname = $state($page.url.pathname);
 
-	import { EllipsisVertical, CircleX } from 'lucide-svelte';
-	import type { PageData } from '../routes/$types';
+	let { data } = $props<{ data: PageData }>();
 
 	let open = $state(false);
 
@@ -28,7 +28,7 @@
 </script>
 
 <aside class="">
-	<button onclick={() => (open = true)} class="fixed top-1/2 w- h-5 p-1 rounded"
+	<button onclick={() => (open = true)} class="fixed top-1/2 w- h-5 p-1 z-40 rounded"
 		><EllipsisVertical /></button
 	>
 

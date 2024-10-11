@@ -12,12 +12,9 @@
 	import { page } from '$app/stores';
 
 	import Navbar from '../components/Navbar.svelte';
-
 	import Footer from '../components/Footer.svelte';
 
-	let { children, data } = $props<{ children: Snippet }>();
-
-	console.log(data);
+	let { children } = $props<{ children: Snippet }>();
 
 	let pathname = $state();
 

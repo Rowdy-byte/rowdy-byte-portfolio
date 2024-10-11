@@ -1,6 +1,5 @@
 <script lang="ts">
 	let { pathname } = $props();
-	console.log(pathname);
 </script>
 
 <footer
@@ -41,6 +40,3 @@
 	>
 	<p>RowdyByte &copy {new Date().getFullYear()}</p>
 </footer>
-
-<style lang="scss">
-</style>

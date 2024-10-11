@@ -7,7 +7,6 @@
 		landingProjectsHeaderAnimation,
 		landingProjectsTextAnimation
 	} from '$lib/animations/landing-animation';
-	import { hamburgerMenuAnimation } from '$lib/animations/hamburger-animation';
 </script>
 
 <main use:animate={pageAnimation} class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">

@@ -1,16 +1,16 @@
 <script lang="ts">
+	import type { PageData } from '../$types';
+	import type { Snippet } from 'svelte';
+
 	import '../../globals.scss';
 	import '../../scrollbar.scss';
 	import '../../app.css';
-
-	import type { Snippet } from 'svelte';
 
 	import gsap from 'gsap';
 
 	import Sidebar from '../../components/Sidebar.svelte';
 
 	import { animate } from '../../animate';
-	import type { PageData } from '../$types';
 
 	let { children, data } = $props<{ children: Snippet; data: PageData }>();
 

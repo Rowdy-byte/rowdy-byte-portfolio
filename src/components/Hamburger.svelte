@@ -1,8 +1,11 @@
 <script lang="ts">
-	import Hamburger from 'svelte-hamburger';
 	import { page } from '$app/stores';
 
+	import Hamburger from 'svelte-hamburger';
+	import gsap from 'gsap';
+
 	import { animate } from '../animate';
+
 	import { linksProjects, linksRowdyByte } from '$lib/links';
 
 	let pathname = $state();
@@ -12,6 +15,17 @@
 	});
 
 	let open = $state(false);
+
+	const closeMenuFromLinks = () => {
+		gsap.to('.hamburger__menu', {
+			rotation: 45,
+			opacity: 0,
+			duration: 0.5,
+			onComplete: () => {
+				open = false;
+			}
+		});
+	};
 </script>
 
 <Hamburger {open} on:click={() => (open = !open)} />
@@ -40,7 +54,11 @@
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
-					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+					<a
+						onclick={closeMenuFromLinks}
+						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+						href={url}>{name}</a
+					>
 				{/each}
 			</section>
 
@@ -48,7 +66,7 @@
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
 					<a
-						onclick={() => (open = !open)}
+						onclick={closeMenuFromLinks}
 						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
 						href={url}>{name}</a
 					>
@@ -79,7 +97,7 @@
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
 					<a
-						onclick={() => (open = !open)}
+						onclick={closeMenuFromLinks}
 						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
 						href={url}>{name}</a
 					>
@@ -89,7 +107,11 @@
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
 				{#each linksProjects as { name, url }}
-					<a class="hover:text-purple-500 hover:scale-[1.05] transition-all" href={url}>{name}</a>
+					<a
+						onclick={closeMenuFromLinks}
+						class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+						href={url}>{name}</a
+					>
 				{/each}
 			</section>
 		</nav>

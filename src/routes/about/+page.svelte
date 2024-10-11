@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { animate } from '../../animate.js';
-	import { hamburgerMenuAnimation } from '$lib/animations/hamburger-animation.js';
+	import { pageAnimation } from '$lib/animations/page-animation.js';
 	let Component = $state();
 
 	let { data } = $props();
@@ -12,7 +12,7 @@
 	});
 </script>
 
-<main use:animate={hamburgerMenuAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
+<main use:animate={pageAnimation} class="mx-auto max-w-[600px] px-2 pb-20">
 	<h1
 		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
 	>

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import CardElixer from './CardElixer.svelte';
+	import type { CardType } from '$lib/cards-data';
 
+	import CardElixer from './CardElixer.svelte';
 	import CardNameLevel from './CardNameLevel.svelte';
 	import CardTypeRarity from './CardTypeRarity.svelte';
-	import type { CardType } from '$lib/cards-data';
 
 	let { id, name, level, cost, type, rarity, img }: CardType = $props();
 </script>
