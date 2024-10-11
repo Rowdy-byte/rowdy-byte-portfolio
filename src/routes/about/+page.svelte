@@ -5,6 +5,8 @@
 
 	let { data } = $props();
 
+	console.log(data.content);
+
 	$effect(() => {
 		if (data.content) {
 			Component = data.content;
@@ -16,7 +18,7 @@
 	<h1
 		class="text-center mt-28 mb-14 text-5xl font-bold bg-gradient-to-r from-purple-500 to-emerald-500"
 	>
-		About Me
+		About me
 	</h1>
 
 	{#if Component}

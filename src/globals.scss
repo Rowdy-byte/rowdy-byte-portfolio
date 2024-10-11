@@ -78,13 +78,20 @@ code {
 p {
 	line-height: 1.5;
 	padding: 0 20px;
-	font-weight: 200;
-	letter-spacing: 2;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #f1f5f9;
+	font-family: 'montserrat';
+}
+
+a {
+	font-family: 'montserrat';
 }
 
 h1 {
-	font-weight: 900;
 	scroll-margin: 120px;
+	font-family: 'supercell-magic';
+	font-size: 48px;
 	background: -webkit-linear-gradient(45deg, $texcolor3, $texcolor4);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -99,7 +106,16 @@ h2 {
 	scroll-margin: 120px;
 	padding: 0 20px;
 	color: #5de4c7;
-	font-weight: 900;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-family: 'supercell-magic';
+	line-height: 2;
+}
+
+h3 {
+	letter-spacing: 1px;
+	font-family: 'montserrat';
 }
 
 h6 {

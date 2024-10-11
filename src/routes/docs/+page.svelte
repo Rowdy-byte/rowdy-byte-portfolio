@@ -8,7 +8,7 @@
 	use:animate={pageAnimation}
 	class="max-w-[600px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
 >
-	<p class="text-center text-xl max-w-[600px] tracking-wide side">
+	<p class="text-center text-xl font-light max-w-[600px] tracking-wide side">
 		{docsText}
 	</p>
 </main>

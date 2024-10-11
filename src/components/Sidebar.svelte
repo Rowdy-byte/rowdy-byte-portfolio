@@ -28,7 +28,7 @@
 </script>
 
 <aside class="">
-	<button onclick={() => (open = true)} class="fixed top-1/2 w- h-5 p-1 z-40 rounded"
+	<button onclick={() => (open = true)} class="fixed top-1/2 text-slate-100 w- h-5 p-1 z-40 rounded"
 		><EllipsisVertical /></button
 	>
 
@@ -40,7 +40,7 @@
 			<header
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
 			>
-				<h3 class="p-0 text-center text-[#1b1e28]">Table Of Contents</h3>
+				<h3 class="p-0 text-center font-bold text-[#1b1e28]">Table Of Contents</h3>
 				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
 					<CircleX size={24} />
 				</button>
@@ -50,7 +50,7 @@
 					<ul>
 						<li class="">
 							<a class="flex items-center" href={`/docs/${slug.replace(/ /g, '-').trim()}`}>
-								<h3 class="text-[#5de4c7] font-normal">
+								<h3 class="text-[#5de4c7] font-bold">
 									{slug
 										.replace(/[0-9]/, '')
 										.replace(/\b\w/g, (match: string) => match.toUpperCase())}
