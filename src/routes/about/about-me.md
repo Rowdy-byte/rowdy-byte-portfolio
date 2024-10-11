@@ -29,3 +29,14 @@ I really never had the nerve to make my hobby my job. I didn't know how. I had m
 
 <br>
 <br>
+
+## Coding
+
+So, about 3 years ago I really started to learn webdevelopment. I started with HTML5 and CSS3, which I picked-up farly quick. But building a full blown website from scratch is another piece of cookie. How do I get the right alignment between elements? Which font to choose? What about colors, line-height and letter spacing. Webdevelop can become overwhelming pretty quick. I didn't even mentioned JavaScript yet.
+
+<br>
+<br>
+
+## Js
+
+JavaScript, is kinda...well. I found it kinda hard to learn. In the begining I was avoiding it because I didn't had te confidence that I could ever wrap my head around it. I can quickly learn by visualising things. But, with JavaScript I couldn't visualize it.

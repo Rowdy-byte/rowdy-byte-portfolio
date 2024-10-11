@@ -11,6 +11,12 @@ export type CardType = {
 export const cards: CardType[] = [
     { id: 1, name: "Archer Queen", level: 15, cost: 5, type: 'Troop', rarity: 'Champion', img: '/Archer_Queen_card_render.webp' },
     { id: 2, name: "Night Witch", level: 15, cost: 4, type: 'Troop', rarity: 'Legendary', img: '/Night_Witch_2.webp' },
+    { id: 3, name: "Monk", level: 15, cost: 4, type: 'Troop', rarity: 'Champion', img: '/Monk_card_render.webp' },
+    { id: 4, name: "Prince", level: 15, cost: 5, type: 'Troop', rarity: 'Epic', img: '/Prince_3.webp' },
+    { id: 5, name: "Goblins", level: 15, cost: 2, type: 'Troop', rarity: 'common', img: '/Goblins_Full_Body.webp' },
+    { id: 6, name: "Rascals", level: 15, cost: 5, type: 'Troop', rarity: 'common', img: '/Rascals_1.webp' },
+    { id: 7, name: "Goblin Barrel", level: 15, cost: 3, type: 'Troop', rarity: 'epic', img: '/Goblin_Barrel_card_render.webp' },
+    { id: 8, name: "Baby Dragon", level: 15, cost: 4, type: 'Troop', rarity: 'epic', img: '/Baby_Dragon_card_render.webp' },
 
 ]
 
