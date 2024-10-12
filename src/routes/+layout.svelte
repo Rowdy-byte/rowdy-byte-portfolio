@@ -18,7 +18,6 @@
 	let { children } = $props<{ children: Snippet }>();
 
 	let pathname = $state();
-	let highlight = $state();
 
 	$effect(() => {
 		pathname = $page.url.pathname;
