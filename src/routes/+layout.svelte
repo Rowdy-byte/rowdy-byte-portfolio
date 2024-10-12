@@ -3,11 +3,11 @@
 	import '../globals.scss';
 	import '../scrollbar.scss';
 	import '../app.css';
-	// import '../common-card.css';
-	// import '../rare-card.css';
-	// import '../epic-card.css';
-	// import '../legendary-card.css';
-	// import '../champion-card.css';
+	import '../common-card.css';
+	import '../rare-card.css';
+	import '../epic-card.css';
+	import '../legendary-card.css';
+	import '../champion-card.css';
 
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';

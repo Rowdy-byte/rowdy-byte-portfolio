@@ -14,7 +14,7 @@ export default {
           inset 0 0 0px #0ff,
           5px 0 500px #a855f7,
           -50px 0 500px #10b981
-        `,
+        `
       },
       keyframes: {
         'text-legendary': {
