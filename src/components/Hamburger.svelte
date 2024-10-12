@@ -55,6 +55,7 @@
 				{#each linksRowdyByte as { name, url }}
 					{#if pathname !== url}
 						<a
+							aria-label={`link-to-${name}`}
 							onclick={closeMenuFromLinks}
 							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
 							href={url}>{name}</a

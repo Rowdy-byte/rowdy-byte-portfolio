@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { createHighlighter } from 'shiki';
 	import '../globals.scss';
 	import '../scrollbar.scss';
 	import '../app.css';
@@ -17,6 +18,7 @@
 	let { children } = $props<{ children: Snippet }>();
 
 	let pathname = $state();
+	let highlight = $state();
 
 	$effect(() => {
 		pathname = $page.url.pathname;

@@ -20,7 +20,7 @@
     <br>
 
 ```bash
-pnpm create vite@latest
+    pnpm create vite@latest
 ```
 
     <br>
@@ -30,13 +30,13 @@ pnpm create vite@latest
     <br>
 
 ```bash
-cd rowdy-byte-portfolio
+    cd rowdy-byte-portfolio
 ```
 
     <br>
 
 ```bash
-pnpm i
+    pnpm i
 ```
 
     <br>
@@ -52,7 +52,7 @@ pnpm i
     ###### create new repository
 
 ```bash
-git init
+    git init
 ```
 
     <br>
@@ -81,7 +81,7 @@ git init
 
     Next, I installed MDsveX to enable the use of Svelte components within markdown files. Additionally, I installed Shiki for syntax highlighting. I imported the createHighlighter function from Shiki and provided an object as an argument containing the desired themes and language properties.
 
-    <br>
+    <br tabIndex="-1">
 
 ```svelte
 <!-- svelte.config.js -->
