@@ -22,3 +22,16 @@
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
+
+/* .legendary-glow {
+    box-shadow:
+        10px 0 50px #10b981,
+        -10px 0px 50px #a855f7,
+        0px 10px 50px #ffcc70,
+        0px -10px 50px #ffcc70;
+
+} */
+
+.legendary-padding {
+    padding: 6px 8px;
+}

@@ -88,10 +88,6 @@ a {
 	font-family: 'montserrat';
 }
 
-a:active {
-	color: #c336e5;
-}
-
 h1 {
 	scroll-margin: 120px;
 	font-family: 'supercell-magic';
@@ -159,4 +155,8 @@ input[type='checkbox'] {
 	-webkit-text-fill-color: transparent;
 	color: #33cccc;
 	white-space: nowrap;
+}
+
+.line--first {
+	height: 10px;
 }

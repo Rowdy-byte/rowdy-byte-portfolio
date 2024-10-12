@@ -18,10 +18,12 @@
 
 <div>
 	<main
-		class="grid w-full grid-cols-1 gap-2 justify-center md:grid-cols-2 lg:grid-cols-3 lg:mx-auto xl:grid-cols-4"
+		class="grid w-full grid-cols-1 gap-4 justify-center md:grid-cols-2 lg:grid-cols-3 lg:mx-auto xl:grid-cols-4"
 	>
 		{#each cards as card (card.id)}
-			<article class={`mx-auto w-72 max-h-[420px] border-${card.rarity?.toLowerCase()}`}>
+			<article
+				class={`mx-auto px-1 hover:scale-105 w-72 max-h-[420px] ${card.rarity?.toLowerCase()}-glow border-${card.rarity?.toLowerCase()} ${card.rarity?.toLowerCase() === 'legendary' ? 'legendary-padding' : ''}`}
+			>
 				<Card
 					id={card.id}
 					name={card.name}

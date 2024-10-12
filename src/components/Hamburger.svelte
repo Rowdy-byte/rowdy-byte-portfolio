@@ -50,6 +50,9 @@
 			]}
 			class="hamburger__menu w-full h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
 		>
+			<div class="absolute top-0 right-0 p-8">
+				<Hamburger {open} on:click={() => (open = !open)} />
+			</div>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
 				{#each linksRowdyByte as { name, url }}
