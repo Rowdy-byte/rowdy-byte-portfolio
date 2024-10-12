@@ -39,4 +39,16 @@ About three years ago, I really started to learn web development. I began with H
 
 ## Js
 
-JavaScript is kind of… well, I found it challenging to learn. In the beginning, I avoided it because I didn’t have the confidence that I could ever wrap my head around it. I learn quickly by visualizing things, but with JavaScript, I struggled to visualize it.
+JavaScript is kind of… well, I found it challenging to learn. In the beginning, I avoided it because I didn’t have the confidence that I could ever wrap my head around it. I learn quickly by visualizing things, but with JavaScript, I struggled to visualize it. Basic variable assignments or creating simple arrays and objects weren’t too hard. However, writing pure functions, understanding asynchronous code, callbacks, promises, and closures proved to be much more difficult.
+
+<br>
+<br>
+
+## Bad Marriage
+
+The struggle was real. Many times, I left JavaScript behind and started learning Ruby instead. I even got my feet wet with Ruby on Rails. Using the Rails CLI, I could set up a basic frontend and backend with authentication in just a few commands. This helped me understand the structure of a full-stack app and the MVC pattern. But I didn’t want to rely on setting up projects with a few commands—I wanted a deeper understanding of how everything worked.
+
+<br>
+<br>
+
+So, back to my love-hate relationship with JavaScript: I wanted to know how to get a basic full-stack app running with JavaScript. For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell," I finally made up my mind about which framework clicked with me the most—SvelteKit.
