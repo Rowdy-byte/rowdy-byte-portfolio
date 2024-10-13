@@ -5,7 +5,7 @@
 
 	import CopyCodeInjector from '../../../components/CopyCodeInjector.svelte';
 
-	let Content = $state();
+	let Content: ConstructorOfATypedSvelteComponent | undefined = $state();
 
 	let { data } = $props();
 
