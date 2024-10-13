@@ -22,7 +22,7 @@
 	>
 		{#each cards as card (card.id)}
 			<article
-				class={`mx-auto px-1 hover:scale-105 w-72 max-h-[420px] ${card.rarity?.toLowerCase()}-glow border-${card.rarity?.toLowerCase()} ${card.rarity?.toLowerCase() === 'legendary' ? 'legendary-padding' : ''}`}
+				class={`mx-auto px-1 scale-90 hover:scale-105 w-72 max-h-[420px] ${card.rarity?.toLowerCase()}-glow border-${card.rarity?.toLowerCase()} ${card.rarity?.toLowerCase() === 'legendary' ? 'legendary-padding' : ''}`}
 			>
 				<Card
 					id={card.id}

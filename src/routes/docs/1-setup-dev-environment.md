@@ -20,7 +20,7 @@
     <br>
 
 ```bash
-    pnpm create vite@latest
+pnpm create vite@latest
 ```
 
     <br>
@@ -30,13 +30,13 @@
     <br>
 
 ```bash
-    cd rowdy-byte-portfolio
+cd rowdy-byte-portfolio
 ```
 
     <br>
 
 ```bash
-    pnpm i
+pnpm i
 ```
 
     <br>
@@ -52,7 +52,7 @@
     ###### create new repository
 
 ```bash
-    git init
+git init
 ```
 
     <br>

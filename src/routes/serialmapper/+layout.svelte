@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { animate } from '../../animate';
+	import { pageAnimation } from '$lib/animations/page-animation';
 
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
-<main class="h-screen relative bg-black">
+<main use:animate={pageAnimation} class="h-screen relative bg-black">
 	{@render children()}
 </main>
