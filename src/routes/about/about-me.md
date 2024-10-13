@@ -25,7 +25,7 @@ How did this beautiful menu pop up when I put the DVD in the player? How did all
 
 ## Path of Life
 
-I never really had the nerve to turn my hobby into a job. I didn’t know how. I’ve held many different jobs, but I never experienced that feeling of “this is what I can do for the rest of my life.” I made some mistakes along the way, but hey, we’re all here to learn, right? In the meantime, I spent a lot of my free time behind the computer, writing stories and rhymes, learning 3D modeling, and building computers.
+I never really had the nerve to turn my hobby into a job. I didn’t know how. I’ve held many different jobs, but I never experienced that feeling of “this is what I can do for the rest of my life”. I made some mistakes along the way, but hey, we’re all here to learn, right? In the meantime, I spent a lot of my free time behind the computer, writing stories and rhymes, learning 3D modeling, and building computers.
 
 <br>
 <br>
@@ -51,4 +51,4 @@ The struggle was real. Many times, I left JavaScript behind and started learning
 <br>
 <br>
 
-So, back to my love-hate relationship with JavaScript: I wanted to know how to get a basic full-stack app running with JavaScript. For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell," I finally made up my mind about which framework clicked with me the most—SvelteKit.
+So, back to my love-hate relationship with JavaScript: I wanted to know how to get a basic full-stack app running with JavaScript. For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—SvelteKit.
