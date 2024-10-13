@@ -22,19 +22,14 @@ const mdsvexOptions = {
 				});
 			}
 
-			// Generate the highlighted HTML
 			let html = highlighter.codeToHtml(code, { lang, theme: 'poimandres' });
 
-			// Modify the `tabindex` of the <pre> element from 0 to -1
 			html = html.replace('tabindex="0"', 'tabindex="-1"');
 
-			// Escape Svelte-specific syntax
 			html = escapeSvelte(html);
 
-			// Dispose of the highlighter instance after use
 			highlighter.dispose();
 
-			// Return the modified HTML
 			return /*html */`
 			<div class="wrapper">
 							<div class="pre-header">
