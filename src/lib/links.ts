@@ -6,5 +6,5 @@ export const linksRowdyByte = [
 
 export const linksProjects = [
     { name: 'Clash Royale Cards', url: '/cards' },
-    { name: 'Serialmapper', url: '/mapper' }
+    { name: 'Serialmapper', url: '/serialmapper' }
 ];

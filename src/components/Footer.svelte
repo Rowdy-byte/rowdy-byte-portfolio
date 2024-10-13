@@ -4,7 +4,7 @@
 
 <footer
 	class="flex justify-center items-center w-full fixed h-20 bottom-0
-	{`${pathname === '/' ? 'bg-transparent' : 'bg-[#1b1e28]'}`} "
+	{`${pathname === '/' ? 'bg-transparent' : 'bg-[#1b1e28]'} ${pathname === '/serialmapper' ? 'bg-black' : ''}`} "
 >
 	<a aria-label="link-to-github-profile" href="https://github.com/Rowdy-byte"
 		><svg

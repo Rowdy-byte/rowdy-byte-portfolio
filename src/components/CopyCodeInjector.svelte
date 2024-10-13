@@ -24,7 +24,6 @@
 					navigator.clipboard.writeText(code.trim()).then(() => {
 						showToast = true;
 
-						// Animate the toast when it shows
 						gsap.from(toastElement, {
 							duration: 0.5,
 							scale: 0,
@@ -32,7 +31,6 @@
 							ease: 'power2.out'
 						});
 
-						// Hide the toast after 5 seconds
 						setTimeout(() => {
 							hideToast();
 						}, 2000);
@@ -50,7 +48,7 @@
 				opacity: 0,
 				ease: 'power2.in',
 				onComplete: () => {
-					showToast = false; // Remove the toast from DOM after animation
+					showToast = false;
 				}
 			});
 		}

@@ -98,7 +98,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500"
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500 {`${pathname === '/serialmapper' ? 'bg-black' : ''}`}"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>

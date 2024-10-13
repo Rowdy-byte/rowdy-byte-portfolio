@@ -17,7 +17,7 @@
 	</nav>
 {:else}
 	<nav
-		class="w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80"
+		class={`w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80 ${pathname === '/serialmapper' ? 'bg-black' : ''} `}
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/">
 			<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
