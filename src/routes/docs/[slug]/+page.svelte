@@ -3,13 +3,15 @@
 	import { h1Animation } from '$lib/animations/h1-animation';
 	import { mainAnimation } from '$lib/animations/main-animation';
 
-	let Component = $state();
+	import CopyCodeInjector from '../../../components/CopyCodeInjector.svelte';
+
+	let Content = $state();
 
 	let { data } = $props();
 
 	$effect(() => {
 		if (data.content) {
-			Component = data.content;
+			Content = data.content;
 		}
 	});
 </script>
@@ -22,10 +24,12 @@
 		Documentation
 	</h1>
 
-	{#if Component}
-		<Component>
-			{@const Component = data.content}
-		</Component>
+	{#if Content}
+		<CopyCodeInjector>
+			<Content>
+				{@const Component = data.content}
+			</Content>
+		</CopyCodeInjector>
 	{:else}
 		<h1>loading...</h1>
 	{/if}

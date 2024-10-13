@@ -2,8 +2,6 @@
 	import { page } from '$app/stores';
 	import Hamburger from './Hamburger.svelte';
 
-	// import { animate } from '../animate';
-
 	let pathname = $state();
 
 	$effect(() => {

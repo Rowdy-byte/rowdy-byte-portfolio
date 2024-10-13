@@ -122,41 +122,55 @@ h6 {
 	font-weight: 300;
 }
 
-input[type='checkbox'] {
-	background-color: aqua;
-}
-
+// cr cards
 .text-shadow {
 	text-shadow: 0 1px 0 #000;
 }
 
-.text-legendary {
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(0, #d68ab0),
-		color-stop(0.25, #d8ce5d),
-		color-stop(0.5, #6bd85d),
-		color-stop(0.75, #5db9d8),
-		color-stop(1, #d85dcb)
-	);
-	background-image: -webkit-linear-gradient(
-		left,
-		#d68ab0 0%,
-		#d8ce5d 25%,
-		#6bd85d 50%,
-		#5db9d8 75%,
-		#d85dcb 100%
-	);
-	background-size: 1000% 1000%;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #33cccc;
-	white-space: nowrap;
+span.line.line--first,
+span.line.line--middle,
+span.line.line--bottom {
+	height: 4px;
+	width: 30px;
 }
 
-.line--first {
-	height: 10px;
+pre:has(code) {
+	position: relative;
+}
+
+pre button.copy {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	height: 28px;
+	width: 28px;
+	padding: 0;
+	display: flex;
+
+	& span {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	& .ready {
+		background-image: url(/icons/copy.svg);
+	}
+
+	& .success {
+		display: none;
+		background-image: url(/icons/copy-success.svg);
+	}
+
+	&.copied {
+		& .success {
+			display: block;
+		}
+
+		& .ready {
+			display: none;
+		}
+	}
 }

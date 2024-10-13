@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { createHighlighter } from 'shiki';
+	import type { Snippet } from 'svelte';
+	import { page } from '$app/stores';
+
 	import '../globals.scss';
 	import '../scrollbar.scss';
 	import '../app.css';
@@ -8,9 +10,6 @@
 	import '../epic-card.css';
 	import '../legendary-card.css';
 	import '../champion-card.css';
-
-	import type { Snippet } from 'svelte';
-	import { page } from '$app/stores';
 
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
