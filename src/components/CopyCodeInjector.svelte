@@ -81,7 +81,7 @@
 			}
 		]}
 		bind:this={toastElement}
-		class="bg-purple-500 rounded mx-auto text-center p-4 text-[#1b1e28] text-sm font-semibold sticky top-1/2 left-2 z-[99999999999]"
+		class="bg-purple-500 rounded mx-auto ml-6 mr-6 text-center p-4 text-[#1b1e28] text-sm font-semibold sticky top-1/2 left-2 z-[99999999999]"
 	>
 		Successfully copied code!
 	</p>
