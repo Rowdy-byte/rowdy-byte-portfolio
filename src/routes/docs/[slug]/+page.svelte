@@ -16,7 +16,7 @@
 	});
 </script>
 
-<main use:animate={mainAnimation} class="mx-auto max-w-[600px] pt-40 pb-40 px-2">
+<main use:animate={mainAnimation} class="mx-auto max-w-[600px] pt-40 pb-40 z-50 px-2">
 	<h1
 		use:animate={h1Animation}
 		class="text-center mb-14 text-3xl bg-gradient-to-r from-purple-500 to-emerald-500"

@@ -52,3 +52,10 @@ The struggle was real. Many times, I left JavaScript behind and started learning
 <br>
 
 So, back to my love-hate relationship with JavaScript: I wanted to know how to get a basic full-stack app running with JavaScript. For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—SvelteKit.
+
+<br>
+<br>
+
+## First App
+
+I'll tell more about this story on this page: [Serialmapper](/serialmapper)

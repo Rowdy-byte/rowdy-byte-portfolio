@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	import { EllipsisVertical, CircleX } from 'lucide-svelte';
+	import { CircleX } from 'lucide-svelte';
 
 	import type { PageData } from '../routes/$types';
 
@@ -47,10 +47,10 @@
 	<button
 		aria-label="side-menu-button"
 		onclick={() => (open = true)}
-		class="fixed top-1/2 -left-2 text-slate-100 h-5 p-1 z-40 rounded"
+		class="fixed top-1/2 -left-2 text-slate-100 h-5 z-10 p-1 rounded"
 	>
 		<svg
-			class="flex justify-center"
+			class="flex justify-center z-50"
 			id="dots-svg"
 			xmlns="http://www.w3.org/2000/svg"
 			width="40"
