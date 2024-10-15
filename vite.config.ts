@@ -5,5 +5,5 @@ import { enhancedImages } from '@sveltejs/enhanced-img'
 
 export default defineConfig({
 	plugins: [enhancedImages(), sveltekit()],
-	base: process.env.NODE_ENV === 'production' ? '/' : ''
+
 });
