@@ -18,13 +18,17 @@
 
 	let { children, data } = $props<{ children: Snippet; data: PageData }>();
 
-	const { session, supabase } = data;
+	const { session, supabase } = $state(data);
+
+	console.log(data);
 
 	let pathname = $state();
 
 	$effect(() => {
 		pathname = $page.url.pathname;
+	});
 
+	$effect(() => {
 		const { data } = supabase.auth.onAuthStateChange((_, newSession) => {
 			if (newSession?.expires_at !== session?.expires_at) {
 				invalidate('supabase:auth');

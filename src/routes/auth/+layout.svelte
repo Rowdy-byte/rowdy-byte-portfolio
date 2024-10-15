@@ -4,9 +4,6 @@
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
-<header>
-	<nav>
-		<a href="/">Home</a>
-	</nav>
-</header>
-{@render children()}
+<main class="h-screen relative">
+	{@render children()}
+</main>
