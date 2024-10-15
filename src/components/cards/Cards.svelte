@@ -17,7 +17,7 @@
 </script>
 
 <main
-	class="grid w-full grid-cols-1 gap-4 justify-center md:grid-cols-2 lg:grid-cols-3 lg:mx-auto xl:grid-cols-4 fullscreen:gap-4 fullscreen:max-w-[1200px]"
+	class="grid w-full grid-cols-1 gap-4 justify-center md:grid-cols-2 lg:grid-cols-3 lg:mx-auto xl:grid-cols-4 2xl:max-w-[1200px] 2xl:gap-4 fullscreen:gap-4 fullscreen:max-w-[1200px]"
 >
 	{#each cards as card (card.id)}
 		<article
