@@ -36,6 +36,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/ssr": "^0.5.1",
+		"@supabase/supabase-js": "^2.45.4",
 		"gsap": "^3.12.5",
 		"lucide-svelte": "^0.447.0",
 		"mdast-util-to-string": "^4.0.0",

@@ -13,8 +13,10 @@
 
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
+	import type { PageData } from './$types';
 
-	let { children } = $props<{ children: Snippet }>();
+	let { children, data } = $props<{ children: Snippet; data: PageData }>();
+	console.log(data);
 
 	let pathname = $state();
 
