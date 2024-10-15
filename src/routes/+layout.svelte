@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';
+	import { invalidate } from '$app/navigation';
 
 	import '../globals.scss';
 	import '../scrollbar.scss';
@@ -16,12 +17,21 @@
 	import type { PageData } from './$types';
 
 	let { children, data } = $props<{ children: Snippet; data: PageData }>();
-	console.log(data);
+
+	const { session, supabase } = data;
 
 	let pathname = $state();
 
 	$effect(() => {
 		pathname = $page.url.pathname;
+
+		const { data } = supabase.auth.onAuthStateChange((_, newSession) => {
+			if (newSession?.expires_at !== session?.expires_at) {
+				invalidate('supabase:auth');
+			}
+		});
+
+		return () => data.subscription.unsubscribe();
 	});
 </script>
 

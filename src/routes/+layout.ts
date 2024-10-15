@@ -10,6 +10,10 @@ type Article = {
 };
 
 export const load: LayoutLoad = async ({ fetch, data, depends }) => {
+    /**
+  * Declare a dependency so the layout can be invalidated, for example, on
+  * session refresh.
+  */
     depends('supabase:auth')
 
     const supabase = isBrowser()
@@ -38,6 +42,10 @@ export const load: LayoutLoad = async ({ fetch, data, depends }) => {
         data: { session },
     } = await supabase.auth.getSession()
 
+    const {
+        data: { user },
+    } = await supabase.auth.getUser()
+
 
     const headers: { slug: string }[] = [];
 
@@ -54,6 +62,6 @@ export const load: LayoutLoad = async ({ fetch, data, depends }) => {
         }
     }
 
-    return { headers, supabase, session };
+    return { headers, supabase, session, user };
 };
 
