@@ -20,8 +20,6 @@
 
 	const { session, supabase } = $state(data);
 
-	console.log(data);
-
 	let pathname = $state();
 
 	$effect(() => {
