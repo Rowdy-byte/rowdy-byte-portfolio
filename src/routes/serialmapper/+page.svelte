@@ -21,8 +21,9 @@
 			/>
 		</figure>
 	</section>
-	<section class="flex justify-center items-center md:w-[100v]">
-		<button class="bg-emerald-500 rounded mx-auto max-w-60 py-2 px-8 text-slate-200 hover:scale-100"
+	<section class="flex justify-center items-center">
+		<button
+			class="bg-emerald-500 rounded py-2 px-8 text-slate-200 hover:scale-[1.01] hover:bg-black hover:text-emerald-500 hover:border hover:border-emerald-500"
 			><a href="/private/serialmapper-app">Go to App</a></button
 		>
 	</section>

@@ -46,7 +46,7 @@ JavaScript is kind of… well, I found it challenging to learn. In the beginning
 
 ## Bad Marriage
 
-The struggle was real. Many times, I left JavaScript behind and started learning Ruby instead. I even got my feet wet with Ruby on Rails. Using the Rails CLI, I could set up a basic frontend and backend with authentication in just a few commands. This helped me understand the structure of a full-stack app and the MVC pattern. But I didn’t want to rely on setting up projects with a few commands—I wanted a deeper understanding of how everything worked.
+The struggle was / is real. Many times, I left JavaScript behind and started learning Ruby instead. I even got my feet wet with Ruby on Rails. Using the Rails CLI, I could set up a basic frontend and backend with authentication in just a few commands. This helped me understand the structure of a full-stack app and the MVC pattern. But I didn’t want to rely on setting up projects with a few commands—I wanted a deeper understanding of how everything worked.
 
 <br>
 <br>
