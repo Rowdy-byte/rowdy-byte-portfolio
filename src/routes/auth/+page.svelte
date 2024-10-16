@@ -2,23 +2,35 @@
 </script>
 
 <form
-	class="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-auto gap-4 p-4"
 	method="POST"
 	action="?/login"
 >
-	<div class="flex flex-col">
-		<label>
-			Email
-			<input name="email" type="email" />
-		</label>
-	</div>
-	<div class="flex flex-col">
-		<label>
-			Password
-			<input name="password" type="password" />
-		</label>
-	</div>
+	<label class="flex flex-col text-xs">
+		Email
+		<input
+			class="bg-transparent text-lg m-2 p-2 border rounded border-blue-500 text-gray-500"
+			name="email"
+			type="email"
+		/>
+	</label>
 
-	<button>Login</button>
-	<button formaction="?/signup">Sign up</button>
+	<label class="flex flex-col text-xs">
+		Password
+
+		<input
+			class="bg-transparent text-lg m-2 p-2 border rounded border-blue-500 text-gray-500"
+			name="password"
+			type="password"
+		/>
+	</label>
+
+	<button class="bg-blue-500 rounded m-2 py-2 px-8 text-slate-200 hover:scale-100">Login</button>
+	<button
+		formaction="?/signup"
+		class="bg-blue-500 rounded m-2 py-2 px-8 text-slate-200 hover:scale-100">Sign up</button
+	>
 </form>
+
+<style>
+</style>

@@ -17,10 +17,14 @@
 	</nav>
 {:else}
 	<nav
-		class={`w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80 ${pathname === '/serialmapper' ? 'bg-black' : ''} `}
+		class={`w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80 ${pathname === '/serialmapper' ? 'bg-black' : ''} ${pathname === '/auth' ? 'bg-slate-100' : ''} `}
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/">
-			<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
+			<p
+				class={`mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0  ${pathname === '/auth' ? 'text-slate-200' : ''}`}
+			>
+				⚧
+			</p>
 		</a>
 		<span class="pt-[10px] text-slate-200">
 			<Hamburger />

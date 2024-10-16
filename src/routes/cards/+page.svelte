@@ -4,6 +4,6 @@
 	import Cards from '../../components/cards/Cards.svelte';
 </script>
 
-<main use:animate={pageAnimation} class="pt-40 pb-40">
+<main use:animate={pageAnimation} class="pt-40 pb-40 h-full">
 	<Cards />
 </main>

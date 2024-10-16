@@ -7,6 +7,11 @@
 	src: url('/fonts/supercell-magic.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'cubano';
+	src: url('/fonts/Cubano.ttf') format('truetype');
+}
+
 $backgroundcolor: #1b1e28;
 $texcolor: #a955f73f;
 $texcolor2: #a6accdc0;
@@ -19,6 +24,9 @@ $textcolor6: #f1f5f91a;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+html {
 }
 
 body {
