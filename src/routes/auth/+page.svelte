@@ -3,16 +3,18 @@
 	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 
+<p>You must login to use the Serialmapper.</p>
+
 <form
 	use:animate={pageAnimation}
-	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-2 md:mx-auto gap-4 p-4"
+	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-auto gap-4 p-4"
 	method="POST"
 	action="?/login"
 >
 	<label class="flex flex-col text-xs">
 		Email
 		<input
-			class="bg-transparent text-lg m-2 p-2 border rounded border-blue-500 text-gray-500"
+			class="bg-transparent outline-blue-600 text-lg m-2 p-2 border rounded border-blue-500 text-gray-800"
 			name="email"
 			type="email"
 		/>
@@ -22,7 +24,7 @@
 		Password
 
 		<input
-			class="bg-transparent text-lg m-2 p-2 border rounded border-blue-500 text-gray-500"
+			class="bg-transparent outline-blue-600 text-lg m-2 p-2 border rounded border-blue-500 text-gray-800"
 			name="password"
 			type="password"
 		/>

@@ -4,6 +4,6 @@
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
-<main class="h-full pt-40 relative bg-slate-100">
+<main class="h-screen pt-40 p-2 bg-slate-100">
 	{@render children()}
 </main>

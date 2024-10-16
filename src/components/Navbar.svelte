@@ -10,7 +10,9 @@
 </script>
 
 {#if pathname === '/'}
-	<nav class="w-full flex fixed z-50 top-0 items-center text-slate-200 justify-between px-10 py-2">
+	<nav
+		class={`w-full flex fixed z-50 top-0 items-center text-slate-200 justify-between px-10 py-2  `}
+	>
 		<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
 		<Hamburger />
 		<a class="hidden" href="/docs">docs</a>
@@ -21,12 +23,12 @@
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/">
 			<p
-				class={`mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0  ${pathname === '/auth' ? 'text-slate-200' : ''}`}
+				class={`mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0  ${pathname === '/auth' ? 'text-blue-500 font-black' : ''}`}
 			>
 				⚧
 			</p>
 		</a>
-		<span class="pt-[10px] text-slate-200">
+		<span class="pt-[10px] text-slate-200 {`${pathname === '/auth' ? 'text-blue-500' : ''}`}">
 			<Hamburger />
 		</span>
 	</nav>
