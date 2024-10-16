@@ -48,7 +48,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="hamburger__menu w-full h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] backdrop-blur-sm absolute top-0 left-0 flex flex-col justify-center"
+			class="hamburger__menu w-full h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] absolute top-0 left-0 flex flex-col justify-center"
 		>
 			<div class="absolute top-0 right-0 p-8">
 				<Hamburger {open} on:click={() => (open = !open)} />
@@ -98,7 +98,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] border-emerald-500 {`${pathname === '/serialmapper' ? 'bg-black' : pathname === '/auth' ? 'bg-slate-100 border-b-[1px] border-blue-500' : ''}`}"
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`${pathname === '/serialmapper' ? 'bg-black border-emerald-500' : pathname === '/auth' ? 'bg-slate-100 border-blue-500' : 'border-emerald-500'}`}"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2
@@ -110,7 +110,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : ''}`}"
+							class="hover:text-purple-500 hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:scale-0 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : ''}`}"
 							href={url}>{name}</a
 						>
 					{/if}

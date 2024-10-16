@@ -4,7 +4,6 @@
 </script>
 
 <figure
-	use:animate={pageAnimation}
 	class="gap-20 flex flex-col absolute top-1/2 transform -translate-y-1/2 lg:left-1/2 lg:-translate-x-1/2"
 >
 	<p class="text-slate-200 font-cubano text-2xl font-bold text-center">

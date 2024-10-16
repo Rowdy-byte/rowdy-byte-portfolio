@@ -15,7 +15,6 @@
 	>
 		<p class="mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0">⚧</p>
 		<Hamburger />
-		<a class="hidden" href="/docs">docs</a>
 	</nav>
 {:else}
 	<nav
@@ -23,12 +22,12 @@
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/">
 			<p
-				class={`mt-1 text-6xl text-center font-extrabold text-slate-200 inline-block px-0  ${pathname === '/auth' ? 'text-blue-500 font-black' : ''}`}
+				class={`mt-1 font-black text-6xl text-center font-extrabo inline-block px-0  ${pathname === '/auth' ? 'text-blue-500' : ''}`}
 			>
 				⚧
 			</p>
 		</a>
-		<span class="pt-[10px] text-slate-200 {`${pathname === '/auth' ? 'text-blue-500' : ''}`}">
+		<span class="pt-[10px] {`${pathname === '/auth' ? 'text-blue-500' : 'text-slate-200'}`}">
 			<Hamburger />
 		</span>
 	</nav>
