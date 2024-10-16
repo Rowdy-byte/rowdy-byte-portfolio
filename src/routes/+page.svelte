@@ -9,6 +9,7 @@
 	} from '$lib/animations/landing-animation';
 
 	let { data } = $props();
+	console.log(data);
 </script>
 
 <main use:animate={pageAnimation} class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">
