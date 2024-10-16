@@ -6,6 +6,6 @@
 	let { children } = $props<{ children: Snippet }>();
 </script>
 
-<main use:animate={pageAnimation} class="h-screen relative bg-black">
+<main use:animate={pageAnimation} class=" bg-black">
 	{@render children()}
 </main>
