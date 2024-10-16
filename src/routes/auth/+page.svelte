@@ -14,7 +14,7 @@
 	<label class="flex flex-col text-xs">
 		Email
 		<input
-			class="bg-transparent outline-blue-600 text-lg m-2 p-2 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-blue-600 text-lg m-2 p-1 border rounded border-blue-500 text-gray-800"
 			name="email"
 			type="email"
 		/>
@@ -24,7 +24,7 @@
 		Password
 
 		<input
-			class="bg-transparent outline-blue-600 text-lg m-2 p-2 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-blue-600 text-lg m-2 p-1 border rounded border-blue-500 text-gray-800"
 			name="password"
 			type="password"
 		/>
