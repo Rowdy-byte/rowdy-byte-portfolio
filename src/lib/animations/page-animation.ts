@@ -3,11 +3,11 @@ import type { AnimationConfig } from "../../animate";
 export const pageAnimation: AnimationConfig[] = [
     {
         type: 'from',
-        duration: 1,
+        duration: 2,
 
-        y: 0,
+        // y: 0,
         opacity: 0,
-        ease: 'power1.in'
+        // ease: 'power1.in'
     },
     {
         type: 'to',

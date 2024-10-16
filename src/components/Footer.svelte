@@ -38,7 +38,7 @@
 			>
 		</svg></a
 	>
-	<p class={`${pathname === '/auth' ? 'text-gray-900' : ''}`}>
+	<p class={`text-xs ${pathname === '/auth' ? 'text-gray-900' : ''}`}>
 		RowdyByte &copy {new Date().getFullYear()}
 	</p>
 </footer>

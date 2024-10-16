@@ -1,8 +1,11 @@
 <script lang="ts">
+	import { animate } from '../../animate';
+	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 
 <form
-	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-auto gap-4 p-4"
+	use:animate={pageAnimation}
+	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-2 md:mx-auto gap-4 p-4"
 	method="POST"
 	action="?/login"
 >
