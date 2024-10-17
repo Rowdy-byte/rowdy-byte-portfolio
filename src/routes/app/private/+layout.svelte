@@ -23,7 +23,7 @@
 		};
 	});
 
-	let open = $state(true);
+	let open = $state(false);
 </script>
 
 <Navbar>
