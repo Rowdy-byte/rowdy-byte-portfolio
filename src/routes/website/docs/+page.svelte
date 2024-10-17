@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { docsText } from '$lib/about-text';
-	import { animate } from '../../animate';
+	import { animate } from '$lib/animate';
 	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { animate } from '../../../animate';
+	import { animate } from '$lib/animate';
 	import { h1Animation } from '$lib/animations/h1-animation';
 	import { mainAnimation } from '$lib/animations/main-animation';
 
-	import CopyCodeInjector from '../../../components/CopyCodeInjector.svelte';
+	import CopyCodeInjector from '../../../../components/CopyCodeInjector.svelte';
 
 	let Content: ConstructorOfATypedSvelteComponent | undefined = $state();
 

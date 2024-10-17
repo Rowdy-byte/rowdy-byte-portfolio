@@ -4,7 +4,7 @@
 
 <footer
 	class={`flex justify-center items-center w-full fixed h-20 bottom-0
-	${pathname === '/' ? 'bg-transparent' : 'bg-[#1b1e28]'} ${pathname === '/serialmapper' ? 'bg-black' : ''} ${pathname === '/auth' ? 'bg-slate-100' : ''}  `}
+	${pathname === '/website' ? 'bg-transparent' : 'bg-[#1b1e28]'} ${pathname === '/website/serialmapper' ? 'bg-black' : ''} ${pathname === '/auth' ? 'bg-slate-100' : ''}  `}
 >
 	<a aria-label="link-to-github-profile" href="https://github.com/Rowdy-byte"
 		><svg
@@ -16,7 +16,7 @@
 			viewBox="0,0,256,256"
 		>
 			<g
-				fill={`${pathname === '/' ? '#e2e8f0' : pathname === '/auth' ? '#3b82f6' : pathname === '/docs' ? '#10b981' : '#10b981'}`}
+				fill={`${pathname === '/website' ? '#e2e8f0' : pathname === '/auth' ? '#3b82f6' : pathname === 'website/docs' ? '#10b981' : '#10b981'}`}
 				fill-rule="nonzero"
 				stroke="none"
 				stroke-width="1"

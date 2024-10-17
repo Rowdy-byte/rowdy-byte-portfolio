@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { animate } from '../../animate';
+	import { animate } from '$lib/animate';
 	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 
@@ -7,35 +7,30 @@
 
 <form
 	use:animate={pageAnimation}
-	class="flex flex-col bg-slate-200 border rounded max-w-[500px] mx-auto gap-4 p-4"
+	class="flex flex-col border rounded max-w-[500px] mx-auto gap-4 p-4"
 	method="POST"
 	action="?/login"
 >
-	<label class="flex flex-col text-xs">
-		Email
+	<div class="flex flex-col">
+		<label for="email" class="text-slate-400 text-xs"> Email </label>
 		<input
-			class="bg-transparent outline-blue-600 text-lg m-2 p-1 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-blue-600 text-lg p-1 border rounded border-blue-500 text-gray-800"
 			name="email"
 			type="email"
 		/>
-	</label>
-
-	<label class="flex flex-col text-xs">
-		Password
-
+	</div>
+	<div class="flex flex-col">
+		<label for="password" class="text-slate-400 text-xs"> Password </label>
 		<input
-			class="bg-transparent outline-blue-600 text-lg m-2 p-1 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-blue-600 text-lg p-1 border rounded border-blue-500 text-gray-800"
 			name="password"
 			type="password"
 		/>
-	</label>
+	</div>
 
-	<button class="bg-blue-500 rounded m-2 py-2 px-8 text-slate-200 hover:scale-100">Login</button>
-	<button
-		formaction="?/signup"
-		class="bg-blue-500 rounded m-2 py-2 px-8 text-slate-200 hover:scale-100">Sign up</button
+	<button class="bg-blue-500 rounded py-2 px-8 text-slate-200 hover:scale-100">Login</button>
+	<p class="text-slate-400 text-center text-xs font-bold">or</p>
+	<button formaction="?/signup" class="bg-blue-500 rounded py-2 px-8 text-slate-200 hover:scale-100"
+		>Sign up</button
 	>
 </form>
-
-<style>
-</style>

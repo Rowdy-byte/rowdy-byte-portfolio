@@ -4,7 +4,7 @@
 	import Hamburger from 'svelte-hamburger';
 	import gsap from 'gsap';
 
-	import { animate } from '../animate';
+	import { animate } from '$lib/animate';
 
 	import { linksProjects, linksRowdyByte } from '$lib/links';
 
@@ -30,7 +30,7 @@
 <Hamburger {open} on:click={() => (open = !open)} />
 
 {#if open}
-	{#if pathname === '/'}
+	{#if pathname === '/website'}
 		<nav
 			use:animate={[
 				{
@@ -98,7 +98,7 @@
 					ease: 'power2.out'
 				}
 			]}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`${pathname === '/serialmapper' ? 'bg-black border-emerald-500' : pathname === '/auth' ? 'bg-slate-100 border-blue-500' : 'border-emerald-500'}`}"
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`${pathname === '/website/serialmapper' ? 'bg-black border-emerald-500' : pathname === '/auth' ? 'bg-slate-100 border-blue-500' : 'border-emerald-500'}`}"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2

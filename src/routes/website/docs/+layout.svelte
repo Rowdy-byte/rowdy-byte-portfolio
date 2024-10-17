@@ -4,9 +4,9 @@
 
 	import gsap from 'gsap';
 
-	import Sidebar from '../../components/Sidebar.svelte';
+	import Sidebar from '../../../components/Sidebar.svelte';
 
-	import { animate } from '../../animate';
+	import { animate } from '$lib/animate';
 
 	let { children, data } = $props<{ children: Snippet; data: PageData }>();
 

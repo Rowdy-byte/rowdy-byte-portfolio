@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { animate } from '../../animate.js';
+	import { animate } from '$lib/animate';
 	import { pageAnimation } from '$lib/animations/page-animation.js';
 	let Component = $state();
 

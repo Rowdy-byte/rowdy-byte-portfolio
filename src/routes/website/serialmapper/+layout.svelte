@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { animate } from '../../animate';
+	import { animate } from '$lib/animate';
 	import { pageAnimation } from '$lib/animations/page-animation';
 
 	let { children } = $props<{ children: Snippet }>();

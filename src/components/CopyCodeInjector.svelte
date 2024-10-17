@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { animate } from '../animate';
+	import { animate } from '$lib/animate';
 	import { onDestroy } from 'svelte';
 
 	import gsap from 'gsap';

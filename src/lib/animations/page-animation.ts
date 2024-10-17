@@ -1,4 +1,4 @@
-import type { AnimationConfig } from "../../animate";
+import type { AnimationConfig } from "../animate";
 
 export const pageAnimation: AnimationConfig[] = [
     {

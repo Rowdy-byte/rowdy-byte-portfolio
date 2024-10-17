@@ -5,7 +5,7 @@
 
 	import type { PageData } from '../routes/$types';
 
-	import { animate } from '../animate';
+	import { animate } from '$lib/animate';
 	import gsap from 'gsap';
 	import { openSidebarAnimation } from '$lib/animations/sidebar-animations';
 
@@ -81,7 +81,7 @@
 				{#each data.headers as { slug, headers }}
 					<ul>
 						<li class="">
-							<a class="flex items-center" href={`/docs/${slug.replace(/ /g, '-').trim()}`}>
+							<a class="flex items-center" href={`/website/docs/${slug.replace(/ /g, '-').trim()}`}>
 								<h3 class="text-[#5de4c7] font-bold">
 									{slug
 										.replace(/[0-9]/, '')
@@ -93,7 +93,7 @@
 									{#if pathname === '/docs'}
 										<a
 											class=""
-											href={`/docs/${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
+											href={`/website/docs/${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
 										>
 											<p
 												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all tracking-normal"
@@ -104,7 +104,7 @@
 									{:else}
 										<a
 											class=""
-											href={`${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
+											href={`/website/docs/${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
 										>
 											<p
 												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all"

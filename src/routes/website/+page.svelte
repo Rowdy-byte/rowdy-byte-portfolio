@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { animate } from '../animate';
+	import { animate } from '$lib/animate';
 	import { aboutText, projectsText } from '$lib/about-text';
 	import { mainAnimation } from '$lib/animations/main-animation';
 	import { pageAnimation } from '$lib/animations/page-animation';
@@ -7,8 +7,6 @@
 		landingProjectsHeaderAnimation,
 		landingProjectsTextAnimation
 	} from '$lib/animations/landing-animation';
-
-	let { data } = $props();
 </script>
 
 <main use:animate={pageAnimation} class="flex flex-col lg:flex-row h-screen -z-10 font-montserrat">
@@ -17,7 +15,7 @@
 		class="
         gap-3 text-sm md:text-lg p-4 flex-1 flex flex-col justify-center items-center text-responsive tracking-[.3rem] text-center bg-gradient-to-b from-[#f3a704] to-[#f36104] h-1/2 lg:h-full lg:w-1/2"
 	>
-		<a href="/about"
+		<a href="/website/about"
 			><p class="font-bold text-slate-100 text-5xl md:text-6xl lg:text-5xl xl:text-7xl">ABOUT</p></a
 		>
 
