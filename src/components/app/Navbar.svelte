@@ -6,7 +6,7 @@
 
 <nav class="w-full flex p-2 justify-between items-center">
 	<section class="flex">
-		<span class="font-modak text-xl text-blue-400">serialmapper</span>
+		<span class="font-montserrat font-black text-xl text-blue-400">serialmapper</span>
 	</section>
 	<section class="flex justify-center items-center">
 		{@render children()}

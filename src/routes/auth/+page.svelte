@@ -34,3 +34,7 @@
 		>Sign up</button
 	>
 </form>
+
+<footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+	<a href="/website">RowdyByte</a>
+</footer>

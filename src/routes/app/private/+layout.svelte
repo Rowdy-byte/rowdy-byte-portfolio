@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { LogOut } from 'lucide-svelte';
 
 	import Navbar from '../../../components/app/Navbar.svelte';
 	import SettingsMenu from '../../../components/app/SettingsMenu.svelte';
@@ -35,14 +36,22 @@
 		>
 		{#if open}
 			<SettingsMenu>
-				<p>{user?.email}</p>
+				<button
+					><span
+						class="w-14 h-14 mb-2 rounded-sm flex justify-center items-center bg-blue-500 text-slate-200 text-3xl font-bold"
+						>{user?.email?.match(/^[a-zA-Z]/)?.[0]?.toUpperCase() || ''}</span
+					></button
+				>
+
 				<section class="">
 					<button
-						class="bg-slate-200 text-slate-600 font-bold w-full rounded-xl px-8 py-2 mb-2 hover:bg-slate-400"
-						onclick={logout}>Sign out</button
+						class="bg-slate-200 text-slate-500 font-bold w-full rounded-sm px-8 py-2 mb-2 hover:bg-slate-400 hover:text-slate-200"
+						onclick={logout}
+					>
+						Sign out</button
 					>
 					<button
-						class="bg-slate-200 text-slate-600 font-bold w-full rounded-xl px-8 py-2 hover:bg-slate-400"
+						class="bg-slate-200 text-slate-500 font-bold w-full rounded-sm px-8 py-2 hover:bg-slate-400 hover:text-slate-200"
 						onclick={logout}>Profile settings</button
 					>
 				</section>
