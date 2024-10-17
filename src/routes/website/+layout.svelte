@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/stores';
 
-	import '../../globals.scss';
+	import '../../website-globals.scss';
 	import '../../scrollbar.scss';
 	import '../../app.css';
 	import '../../common-card.css';

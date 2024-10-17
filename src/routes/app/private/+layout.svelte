@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 
 	import Navbar from '../../../components/app/Navbar.svelte';
+	import SettingsMenu from '../../../components/app/SettingsMenu.svelte';
 
 	let { data, children } = $props();
 
@@ -20,10 +21,34 @@
 			goto('/auth');
 		};
 	});
+
+	let open = $state(true);
 </script>
 
-<Navbar {user}>
-	<button onclick={logout}>Logout</button>
+<Navbar>
+	{#if user}
+		<button onclick={() => (open = !open)}
+			><span
+				class="w-9 h-9 rounded-full flex justify-center items-center bg-blue-500 text-slate-200 text-lg font-bold"
+				>{user?.email?.match(/^[a-zA-Z]/)?.[0]?.toUpperCase() || ''}</span
+			></button
+		>
+		{#if open}
+			<SettingsMenu>
+				<p>{user?.email}</p>
+				<section class="">
+					<button
+						class="bg-slate-200 text-slate-600 font-bold w-full rounded-xl px-8 py-2 mb-2 hover:bg-slate-400"
+						onclick={logout}>Sign out</button
+					>
+					<button
+						class="bg-slate-200 text-slate-600 font-bold w-full rounded-xl px-8 py-2 hover:bg-slate-400"
+						onclick={logout}>Profile settings</button
+					>
+				</section>
+			</SettingsMenu>
+		{/if}
+	{/if}
 </Navbar>
 
 <main class="relative p-2">{@render children()}</main>

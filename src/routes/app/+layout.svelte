@@ -4,6 +4,7 @@
 	let { children } = $props<{ children: Snippet }>();
 
 	import '../../app.css';
+	import '../../app-globals.scss';
 </script>
 
 {@render children()}

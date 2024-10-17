@@ -28,7 +28,8 @@ export default {
       fontFamily: {
         montserrat: ['montserrat', 'sans-serif'],
         supercell: ['supercell-magic'],
-        cubano: ['cubano']
+        cubano: ['cubano'],
+        modak: ['Modak']
       },
       screens: {
         'fullscreen': { 'raw': '(min-width: 1920px) and (min-height: 1080px)' },
