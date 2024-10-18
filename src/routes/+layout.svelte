@@ -1,5 +1,8 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	// import '../app.css';
+	// import '../app-globals.scss';
+	// import '../website-globals.scss';
 
 	import { invalidate } from '$app/navigation';
 
