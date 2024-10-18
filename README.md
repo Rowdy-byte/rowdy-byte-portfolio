@@ -23,3 +23,15 @@
 - [x] &nbsp;added customs utilitie classes for the cr cards shadows and animated gradient text
 - [x] &nbsp;added functionality for proper display route links based on current route
 - [x] &nbsp;added functionality for proper closing hamburger menu while clicking links
+- [x] &nbsp;added separate routes and layout for serialmapper app
+- [x] &nbsp;installed supabase and prisma
+- [x] &nbsp;configured supabase auth /app/private is now authenticated
+- [x] &nbsp;created new style for app
+- [x] &nbsp;created navbar and settings menu
+- [x] &nbsp;created proto layout for app
+- [x] &nbsp;created a basic form action
+- [ ] &nbsp;configure prisma with supabase / supabase auth
+- [ ] &nbsp;installing zod
+- [ ] &nbsp;configure zod scheme for form validation
+- [ ] &nbsp;setup load function for loading serialnumbers objects from db
+- [ ] &nbsp;checking returned data with zod
