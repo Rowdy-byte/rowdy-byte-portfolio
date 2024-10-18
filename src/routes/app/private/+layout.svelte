@@ -4,6 +4,7 @@
 
 	import Navbar from '../../../components/app/Navbar.svelte';
 	import SettingsMenu from '../../../components/app/SettingsMenu.svelte';
+	import Footer from '../../../components/app/Footer.svelte';
 
 	let { data, children } = $props();
 
@@ -60,4 +61,6 @@
 	{/if}
 </Navbar>
 
-<main class="relative h-full p-2">{@render children()}</main>
+<main class="relative h-4/5 p-2">{@render children()}</main>
+
+<Footer />

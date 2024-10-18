@@ -27,7 +27,7 @@
 <form
 	method="post"
 	action="?/createSnObj"
-	class="bg-slate-200 h-full flex flex-col p-2 rounded gap-1"
+	class="bg-slate-200 h-full max-w-[600px] mx-auto flex flex-col mt-8 p-2 rounded gap-1 lg:flex-row lg:max-w-[1000px] 2xl:flex-row 2xl:max-w-[1300px] fullscreen:flex-row fullscreen:max-w-[1600px]"
 >
 	<section class="flex flex-1 flex-col">
 		<textarea name="serialnumbers" class="h-full rounded p-1" placeholder="paste serialnumbers"
