@@ -5,7 +5,7 @@
 </script>
 
 <aside
-	class="text-center w-full sm:max-w-[450px] absolute top-1/4 right-0 p-4 shadow-lg rounded-sm"
+	class="text-center w-full sm:max-w-[450px] bg-slate-50 z-50 absolute top-1/4 right-0 p-4 shadow-lg border rounded-sm"
 >
 	{@render children()}
 </aside>

@@ -60,4 +60,4 @@
 	{/if}
 </Navbar>
 
-<main class="relative p-2">{@render children()}</main>
+<main class="relative h-full p-2">{@render children()}</main>

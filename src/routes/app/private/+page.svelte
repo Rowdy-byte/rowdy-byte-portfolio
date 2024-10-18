@@ -21,3 +21,37 @@
 		Welcome, {email}
 	</p>
 {/if}
+
+<main class="bg-slate-200 h-full flex flex-col p-2 rounded gap-1">
+	<section class="flex flex-1 flex-col">
+		<textarea class="h-full rounded p-1" placeholder="paste serialnumbers"></textarea>
+	</section>
+	<section class="flex flex-1 flex-col gap-1">
+		<header class="flex gap-1 rounded">
+			<aside class="bg-slate-50 overflow-hidden rounded flex flex-col flex-1">
+				<h1 class="bg-blue-500 text-slate-200 text-center p-2">serialnumbers</h1>
+				<p class="text-center text-slate-600 text-7xl p-10">100</p>
+			</aside>
+			<aside class="bg-slate-50 flex rounded overflow-hidden flex-col flex-1">
+				<h1 class="bg-blue-500 text-slate-200 text-center p-2">numbers</h1>
+				<p class="text-center text-slate-600 text-7xl p-10">1000</p>
+			</aside>
+		</header>
+
+		<input type="text" placeholder="filename" class="rounded p-2" />
+		<input type="date" name="createdAt" id="createdAt" class="rounded p-2" />
+		<button class="bg-blue-500 text-slate-200 rounded py-2">Add to List</button>
+		<article class="bg-slate-50 rounded p-1">
+			<ul>
+				<li class="bg-slate-200 rounded p-1 mb-1">item one</li>
+				<li class="bg-slate-200 rounded p-1 mb-1">item one</li>
+				<li class="bg-slate-200 rounded p-1 mb-1">item one</li>
+				<li class="bg-slate-200 rounded p-1 mb-1">item one</li>
+			</ul>
+		</article>
+		<button class="bg-blue-500 text-slate-200 rounded py-2">Generate Map</button>
+	</section>
+</main>
+
+<style>
+</style>
