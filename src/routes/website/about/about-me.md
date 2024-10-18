@@ -58,4 +58,4 @@ So, back to my love-hate relationship with JavaScript: I wanted to know how to g
 
 ## First App
 
-I'll tell more about this story on this page: [Serialmapper](/serialmapper)
+I'll tell more about this story on this page: [Serialmapper](/app/private)

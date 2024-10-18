@@ -33,10 +33,7 @@
 
 <svelte:window on:mousemove={updateGlowEffect} />
 
-<main use:animate={pageAnimation} class="mx-auto max-w-[600px] relative px-2 pt-40 pb-40">
-	<div class="glow-container" bind:this={glowEffect}>
-		<!-- Dit is het element dat de glow bevat -->
-	</div>
+<main use:animate={pageAnimation} class="mx-auto max-w-[600px] px-2 pt-40 pb-40">
 	<h1 class="text-center text-3xl mb-14 bg-gradient-to-r from-purple-500 to-emerald-500">
 		About me
 	</h1>
