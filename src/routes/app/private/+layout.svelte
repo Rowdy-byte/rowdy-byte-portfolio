@@ -31,7 +31,7 @@
 	{#if user}
 		<button onclick={() => (open = !open)}
 			><span
-				class="w-9 h-9 rounded-full flex justify-center items-center bg-blue-500 text-slate-200 text-lg font-bold"
+				class="w-9 h-9 rounded flex justify-center items-center bg-blue-500 text-slate-200 text-lg font-bold"
 				>{user?.email?.match(/^[a-zA-Z]/)?.[0]?.toUpperCase() || ''}</span
 			></button
 		>
@@ -39,20 +39,20 @@
 			<SettingsMenu>
 				<button
 					><span
-						class="w-14 h-14 mb-2 rounded-sm flex justify-center items-center bg-blue-500 text-slate-200 text-3xl font-bold"
+						class="w-14 h-14 mb-2 rounded flex justify-center items-center bg-blue-500 text-slate-200 text-3xl font-bold"
 						>{user?.email?.match(/^[a-zA-Z]/)?.[0]?.toUpperCase() || ''}</span
 					></button
 				>
 
 				<section class="">
 					<button
-						class="bg-slate-200 text-slate-500 font-bold w-full rounded-sm px-8 py-2 mb-2 hover:bg-slate-400 hover:text-slate-200"
+						class="bg-slate-200 text-slate-500 font-bold w-full rounded px-8 py-2 mb-2 hover:bg-slate-400 hover:text-slate-200"
 						onclick={logout}
 					>
 						Sign out</button
 					>
 					<button
-						class="bg-slate-200 text-slate-500 font-bold w-full rounded-sm px-8 py-2 hover:bg-slate-400 hover:text-slate-200"
+						class="bg-slate-200 text-slate-500 font-bold w-full rounded px-8 py-2 hover:bg-slate-400 hover:text-slate-200"
 						onclick={logout}>Profile settings</button
 					>
 				</section>
