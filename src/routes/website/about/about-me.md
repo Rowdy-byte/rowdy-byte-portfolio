@@ -1,4 +1,4 @@
-<h2 class="about__heading">Instroduction</h2>
+<h2 class="about__heading">Introduction</h2>
 
 <p class="about__paragraph">As you might have guessed, my name is Rowdy, and I am 41 years young.</p>
 
@@ -51,7 +51,7 @@
 <br>
 <br>
 
-<p class="about__paragraph oran">So, back to my love-hate relationship with <span class="mvc__span">MVC</span>: I wanted to know how to get a basic full-stack app running with <span class="javascript__span">JavaScript</span> . For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—<span class="svelte__span">SvelteKit</span>.</p>
+<p class="about__paragraph oran">So, back to my love-hate relationship with <span class="javascript__span">JavaScript</span>: I wanted to know how to get a basic full-stack app running with <span class="javascript__span">JavaScript</span> . For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—<span class="svelte__span">SvelteKit</span>.</p>
 
 <br>
 <br>
