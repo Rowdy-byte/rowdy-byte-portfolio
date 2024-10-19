@@ -1,11 +1,13 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { animate } from '$lib/animate';
-	import { onDestroy } from 'svelte';
 
+	import { animate } from '$lib/animate';
 	import gsap from 'gsap';
 
+	import { onDestroy } from 'svelte';
+
 	let { children } = $props<{ children: Snippet }>();
+
 	let showToast = $state(false);
 
 	let toastElement: HTMLElement | undefined = $state();
@@ -40,7 +42,7 @@
 		});
 	});
 
-	function hideToast() {
+	const hideToast = () => {
 		if (toastElement) {
 			gsap.to(toastElement, {
 				duration: 0.5,
@@ -52,7 +54,7 @@
 				}
 			});
 		}
-	}
+	};
 
 	onDestroy(() => {
 		let buttons = document.querySelectorAll('#clipboardBtn');

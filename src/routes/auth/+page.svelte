@@ -3,7 +3,7 @@
 	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 
-<p class="text-slate-800 mb-10 text-center">Only logged in users can access this application.</p>
+<p class="text-slate-800 mb-10 text-center">Only autheticated users can access this application.</p>
 
 <form
 	use:animate={pageAnimation}
@@ -36,5 +36,5 @@
 </form>
 
 <footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-	<a href="/website">RowdyByte</a>
+	<a href="/">RowdyByte</a>
 </footer>

@@ -1,8 +1,6 @@
 <script lang="ts">
+	import '../about.scss';
 	import type { Snippet } from 'svelte';
-	// import '../app.css';
-	// import '../app-globals.scss';
-	// import '../website-globals.scss';
 
 	import { invalidate } from '$app/navigation';
 
@@ -23,6 +21,6 @@
 	});
 </script>
 
-<main class="relative h-screen">
+<main class="">
 	{@render children()}
 </main>

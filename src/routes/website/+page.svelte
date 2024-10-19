@@ -34,7 +34,7 @@
 			use:animate={landingProjectsHeaderAnimation}
 			class="font-bold text-slate-100 text-5xl md:text-6xl lg:text-5xl xl:text-7xl"
 		>
-			SKILLS
+			Skills
 		</p>
 		<p
 			use:animate={landingProjectsTextAnimation}

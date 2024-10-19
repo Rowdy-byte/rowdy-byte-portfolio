@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import type { PageData } from '../routes/$types';
 
 	import { CircleX } from 'lucide-svelte';
-
-	import type { PageData } from '../routes/$types';
 
 	import { animate } from '$lib/animate';
 	import gsap from 'gsap';
@@ -25,22 +24,6 @@
 			}
 		});
 	};
-
-	// $effect(() => {
-	// 	let circles = document.querySelectorAll('circle');
-
-	// 	circles.forEach((dot, i) => {
-	// 		gsap.to(dot, {
-	// 			scale: 1.1,
-	// 			// fill: i === 0 ? '#10b981' : i === 1 ? '#a855f7' : '#10b981',
-	// 			duration: 2,
-	// 			delay: i * 1,
-	// 			repeat: -1,
-	// 			yoyo: true,
-	// 			ease: 'power1.inOut'
-	// 		});
-	// 	});
-	// });
 </script>
 
 <aside class="">
@@ -93,7 +76,8 @@
 									{#if pathname === '/docs'}
 										<a
 											class=""
-											href={`/website/docs/${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
+											href={`/website/docs/
+												${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
 										>
 											<p
 												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all tracking-normal"

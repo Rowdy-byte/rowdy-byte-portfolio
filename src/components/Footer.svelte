@@ -4,7 +4,9 @@
 
 <footer
 	class={`flex justify-center items-center w-full fixed h-20 bottom-0
-	${pathname === '/website' ? 'bg-transparent' : 'bg-[#1b1e28]'} ${pathname === '/website/serialmapper' ? 'bg-black' : ''} ${pathname === '/auth' ? 'bg-slate-100' : ''}  `}
+		${pathname === '/website' ? 'bg-transparent' : 'bg-[#1b1e28]'} 
+		${pathname === '/website/serialmapper' ? 'bg-black' : ''} 
+		${pathname === '/auth' ? 'bg-slate-100' : ''}`}
 >
 	<a aria-label="link-to-github-profile" href="https://github.com/Rowdy-byte"
 		><svg
@@ -38,7 +40,10 @@
 			>
 		</svg></a
 	>
-	<p class={`text-xs ${pathname === '/auth' ? 'text-gray-900' : ''}`}>
+	<p
+		class={`text-xs 
+			${pathname === '/auth' ? 'text-gray-900' : ''}`}
+	>
 		RowdyByte &copy {new Date().getFullYear()}
 	</p>
 </footer>

@@ -3,6 +3,13 @@
 </div>
 
 <style>
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #1b1e28;
+	}
+
 	a {
 		font-size: 500px;
 		text-decoration: none;

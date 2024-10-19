@@ -18,11 +18,16 @@
 	</nav>
 {:else}
 	<nav
-		class={`w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80 ${pathname === '/website/serialmapper' ? 'bg-black' : ''} ${pathname === '/auth' ? 'bg-slate-100' : ''} `}
+		class={`
+			w-full flex fixed z-50 top-0 bg-[#1b1e28] justify-between items-center px-5 py-2 2xl:px-60 fullscreen:px-80 
+			${pathname === '/website/serialmapper' ? 'bg-black' : ''} 
+			${pathname === '/auth' ? 'bg-slate-100' : ''} 
+			
+			`}
 	>
 		<a class="pt-[12.5px] pr-[2.5px] flex justify-center items-center" href="/website">
 			<p
-				class={`mt-1 font-black text-6xl text-center font-extrabo inline-block px-0  ${pathname === '/auth' ? 'text-blue-500' : ''}`}
+				class={`mt-1 font-black text-6xl text-center font-extrabo inline-block px-0 ${pathname === '/auth' ? 'text-blue-500' : ''}`}
 			>
 				⚧
 			</p>

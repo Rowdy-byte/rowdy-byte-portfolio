@@ -11,9 +11,16 @@ const mdsvexOptions = {
 	remarkPlugins: [remarkHeaders],
 	rehypePlugins: [rehypeSlug],
 
+	smartypants: {
+		quotes: true
+	},
+
+
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			let highlighter;
+
+
 
 			if (!highlighter) {
 				highlighter = await createHighlighter({
