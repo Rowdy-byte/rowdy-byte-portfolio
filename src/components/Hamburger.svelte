@@ -72,10 +72,10 @@
 			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`
 				${
 					pathname === '/website/serialmapper'
-						? 'bg-black border-emerald-500'
+						? 'bg-black border-[#5de4c7]'
 						: pathname === '/auth'
 							? 'bg-slate-100 border-blue-500'
-							: 'border-emerald-500'
+							: 'border-[#5de4c7]'
 				}
 				`}"
 		>

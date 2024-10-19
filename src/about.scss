@@ -8,6 +8,12 @@
 
 .about__paragraph {
 	font-weight: 400;
+
+	@media screen and (min-width: 1000px) {
+		padding: 10px 100px;
+		background-color: rgba(245, 245, 245, 0.03);
+		border-radius: 50px;
+	}
 }
 
 .drawing__span {

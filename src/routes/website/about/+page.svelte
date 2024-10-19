@@ -20,7 +20,7 @@
 	});
 </script>
 
-<main class="mx-auto max-w-[600px] px-2 pt-40 pb-40">
+<main class="mx-auto max-w-[800px] px-2 pt-40 pb-40">
 	<h1 class="text-center font-cubano text-6xl mb-14 bg-gradient-to-b from-purple-300 to-purple-500">
 		About me
 	</h1>
