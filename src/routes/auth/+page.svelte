@@ -3,7 +3,9 @@
 	import { pageAnimation } from '$lib/animations/page-animation';
 </script>
 
-<p class="text-slate-800 mb-10 text-center">Only autheticated users can access this application.</p>
+<p class="text-slate-800 mb-10 text-center">
+	Only authenticated users can access this application.
+</p>
 
 <form
 	use:animate={pageAnimation}

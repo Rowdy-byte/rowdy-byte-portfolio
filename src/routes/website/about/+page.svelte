@@ -1,5 +1,6 @@
 <script lang="ts">
 	import gsap from 'gsap';
+	import FindTags from '../../../components/FindTags.svelte';
 
 	let Component = $state(false);
 	let { data } = $props();
@@ -20,19 +21,23 @@
 	});
 </script>
 
-<main class="mx-auto max-w-[800px] px-2 pt-40 pb-40">
-	<h1 class="text-center font-cubano text-6xl mb-14 bg-gradient-to-b from-purple-300 to-purple-500">
-		About me
-	</h1>
+<FindTags>
+	<main class="mx-auto max-w-[800px] px-2 pt-40 pb-40">
+		<h1
+			class="text-center font-cubano text-6xl mb-14 bg-gradient-to-b from-purple-300 to-purple-500"
+		>
+			About me
+		</h1>
 
-	{#if Component}
-		<!-- Toon de geladen content als het beschikbaar is -->
-		<Component>
-			{@const Component = data.content}
-		</Component>
-	{:else}
-		<!-- Loading bar terwijl de content nog wordt geladen -->
-		<span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
-		></span>
-	{/if}
-</main>
+		{#if Component}
+			<!-- Toon de geladen content als het beschikbaar is -->
+			<Component>
+				{@const Component = data.content}
+			</Component>
+		{:else}
+			<!-- Loading bar terwijl de content nog wordt geladen -->
+			<span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
+			></span>
+		{/if}
+	</main>
+</FindTags>
