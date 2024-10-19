@@ -162,6 +162,32 @@
 	padding: 0 5px;
 }
 
+.brackets__span {
+	color: #d946ef;
+	font-weight: 600;
+}
+
+.curly__span {
+	color: #eab308;
+	font-weight: 600;
+}
+
+.async__span {
+	font-style: italic;
+	font-weight: 600;
+	color: #a855f7;
+}
+
+.callback__span {
+	font-weight: 600;
+	color: #eab308;
+}
+
+.arrow__span {
+	font-weight: 600;
+	color: #a855f7;
+}
+
 .about__serialmapper__link {
 	font-family: 'cubano';
 	font-size: 20px;
