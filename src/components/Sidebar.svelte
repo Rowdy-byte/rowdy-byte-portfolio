@@ -55,7 +55,7 @@
 			<header
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
 			>
-				<h3 class="p-0 text-center font-bold text-[#1b1e28]">Table Of Contents</h3>
+				<h3 class="p-0 green text-center font-bold text-[#1b1e28]">Table Of Contents</h3>
 				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
 					<CircleX size={24} />
 				</button>
