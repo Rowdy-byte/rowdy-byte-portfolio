@@ -72,16 +72,16 @@
 			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`
 				${
 					pathname === '/website/serialmapper'
-						? 'bg-black border-[#5de4c7]'
+						? 'bg-black border-emerald-500'
 						: pathname === '/auth'
 							? 'bg-slate-100 border-blue-500'
-							: 'border-[#5de4c7]'
+							: 'border-emerald-500'
 				}
 				`}"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2
-					class="text-2xl mb-4 font-bold p-0 {`
+					class="text-3xl mb-4 font-bold p-0 text-emerald-500 {`
 						${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 				>
 					RowdyByte
@@ -90,7 +90,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:scale-0 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+							class="hover:text-purple-500 text-xl hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:scale-0 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -99,7 +99,7 @@
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2
-					class="text-2xl mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+					class="text-3xl text-emerald-500 mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 				>
 					Projects
 				</h2>
@@ -107,7 +107,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+							class="hover:text-purple-500 text-xl hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 							href={url}>{name}</a
 						>
 					{/if}
