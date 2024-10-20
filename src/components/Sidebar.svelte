@@ -8,7 +8,11 @@
 	import gsap from 'gsap';
 	import { openSidebarAnimation } from '$lib/animations/sidebar-animations';
 
-	const pathname = $state($page.url.pathname);
+	let pathname = $state();
+
+	$effect(() => {
+		pathname = $page.url.pathname;
+	});
 
 	let { data } = $props<{ data: PageData }>();
 

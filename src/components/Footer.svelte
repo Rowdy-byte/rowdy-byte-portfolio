@@ -18,7 +18,7 @@
 			viewBox="0,0,256,256"
 		>
 			<g
-				fill={`${pathname === '/website' ? '#f5f5f580' : pathname === '/auth' ? '#3b82f6' : pathname === 'website/docs' ? 'rgba(245, 245, 245, 0.5)' : 'rgba(245, 245, 245, 0.5)'}`}
+				fill={`${pathname === '/website' ? '#a6accd22' : pathname === '/auth' ? '#3b82f6' : pathname === 'website/docs' ? '#a6accd22' : '#a6accd22'}`}
 				fill-rule="nonzero"
 				stroke="none"
 				stroke-width="1"

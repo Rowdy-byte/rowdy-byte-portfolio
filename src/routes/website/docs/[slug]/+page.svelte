@@ -25,7 +25,10 @@
 	});
 </script>
 
-<main use:animate={mainAnimation} class="mx-auto max-w-[600px] pt-40 pb-40 z-50 px-2">
+<main
+	use:animate={mainAnimation}
+	class="mx-auto max-w-[600px] font-montserrat pt-40 pb-40 z-50 px-2"
+>
 	<h1
 		use:animate={h1Animation}
 		class="text-center mb-14 font-montserrat font-bold text-4xl md:text-6xl px-5 bg-gradient-to-r from-purple-500 to-[#5de4c7]"

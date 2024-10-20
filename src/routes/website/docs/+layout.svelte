@@ -2,6 +2,8 @@
 	import type { PageData } from '../$types';
 	import type { Snippet } from 'svelte';
 
+	import '../../../website-globals.scss';
+
 	import gsap from 'gsap';
 
 	import Sidebar from '../../../components/Sidebar.svelte';
