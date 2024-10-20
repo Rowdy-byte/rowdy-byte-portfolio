@@ -36,17 +36,21 @@
 			use:animate={hamburgerMenuAnimation}
 			class="hamburger__menu w-full h-[100vh] z-50 bg-[rgba(27,30,40,0.9)] absolute top-0 left-0 flex flex-col justify-center"
 		>
-			<div class="absolute top-0 right-0 p-8">
+			<div class="absolute top-0 right-2 p-8">
 				<Hamburger {open} on:click={() => (open = !open)} />
 			</div>
 			<section class="flex flex-col justify-center items-center">
-				<h2 class="text-2xl mb-4 font-bold p-0">RowdyByte</h2>
+				<h2
+					class="text-2xl mb-4 font-cubano bg-gradient-to-bl from-[#11cce9] to-[#028aba] bg-clip-text text-transparent font-bold p-0"
+				>
+					RowdyByte
+				</h2>
 				{#each linksRowdyByte as { name, url }}
 					{#if pathname !== url}
 						<a
 							aria-label={`link-to-${name}`}
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							class="hover:text-purple-500 font-cubano hover:scale-[1.05] transition-all"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -54,12 +58,16 @@
 			</section>
 
 			<section class="mt-10 flex flex-col justify-center items-center">
-				<h2 class="text-2xl mb-4 font-bold p-0">Projects</h2>
+				<h2
+					class="text-2xl mb-4 font-bold font-cubano bg-gradient-to-bl bg-clip-text text-transparent from-[#f3a704] to-[#f36104] p-0"
+				>
+					Projects
+				</h2>
 				{#each linksProjects as { name, url }}
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 hover:scale-[1.05] transition-all"
+							class="hover:text-purple-500 font-cubano hover:scale-[1.05] transition-all"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -81,8 +89,8 @@
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2
-					class="text-3xl mb-4 font-bold p-0 text-emerald-500 {`
-						${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+					class="text-3xl mb-4 font-bold font-cubano p-0 text-emerald-500 {`
+						${pathname === '/auth' ? ' text-blue-500' : ''}`}"
 				>
 					RowdyByte
 				</h2>
