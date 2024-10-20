@@ -7,11 +7,11 @@
 
 <h2 class="about__heading">Brief History</h2>
 
-<p class="about__paragraph">I've always been a creative and curious person. As a child, I spent a lot of time <span class="drawing__span tag">drawing</span>, <span class="crafting__span tag">crafting</span>, and <span class="writing__span tag">writing</span>. I made membership cards for imaginary libraries and Super Mario cards for my classmates. Back then, I didn’t have a computer, so everything I designed was handmade. I had beautiful handwriting, which surprised people because I was often told it looked more like a girl’s or woman’s handwriting.</p>
+<p class="about__paragraph">I've always been a creative and curious person. As a child, I spent a lot of time <span class="drawing__span tag">drawing</span>, <span class="crafting__span tag">crafting</span>, and <span class="writing__span tag">writing</span>. I made membership cards for imaginary libraries and Super Mario Club membercards for my classmates. Back then, I didn’t have a computer, so everything I designed was handmade. I had beautiful handwriting, which surprised people because I was often told it looked more like a girl’s or woman’s handwriting.</p>
 
 <br>
 
-<p class="about__paragraph">As I got older, I got my first personal computer. I’ll never forget it—it was a <span class="compaq__span tag">Compaq Presario</span> with a <span class="mhz__span tag">333Mhz</span> processor. Proudly, I told my computer science teacher in middle school that I had a "333". It was the fastest processor at the time, and he was amazed! I began learning about computers, quickly becoming familiar with the components and what they did. I even replaced the video card and installed a <span class="dvd__span tag">DVD</span> player that could also write DVDs. A friend of mine used to give me Twilight DVDs, each containing the latest software and games. But while others were playing games, I was more curious about how everything worked.</p>
+<p class="about__paragraph">As I got older, I got my first personal computer. I’ll never forget it—it was a <span class="compaq__span tag">Compaq Presario</span> with a <span class="mhz__span tag">333Mhz</span> processor. Proudly, I told my computer science teacher in middle school that I had a &lsquo;333&rsquo;. It was the fastest processor at the time, and he was amazed! I began learning about computers, quickly becoming familiar with the components and what they did. I even replaced the video card and installed a <span class="dvd__span tag">DVD</span> player that could also write DVDs. A friend of mine used to give me Twilight DVDs, each containing the latest software and games. But while others were playing games, I was more curious about how everything worked.</p>
 
 <br>
 <br>

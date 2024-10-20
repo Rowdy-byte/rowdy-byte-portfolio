@@ -29,7 +29,8 @@ export default {
         montserrat: ['montserrat', 'sans-serif'],
         supercell: ['supercell-magic'],
         cubano: ['cubano'],
-        modak: ['Modak']
+        modak: ['Modak'],
+        walsheim: ['gt walsheim pro']
       },
       screens: {
         'fullscreen': { 'raw': '(min-width: 1920px) and (min-height: 1080px)' },

@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 .about__heading {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 900;
 	font-size: 24px;
 	color: #a855f7;
 }
 
 .about__paragraph {
-	font-weight: 400;
+	font-family: 'GT Walsheim Pro';
+	// font-weight: 400;
+	font-size: 18px;
+	line-height: 1.75;
 
 	@media screen and (min-width: 1000px) {
 		padding: 10px 100px;
@@ -17,7 +21,8 @@
 }
 
 .drawing__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #ef4444;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -25,7 +30,8 @@
 }
 
 .crafting__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #ec4899;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -33,7 +39,8 @@
 }
 
 .writing__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #06b6d4;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -41,7 +48,9 @@
 }
 
 .compaq__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
+
 	background-color: #f43f5e;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -49,7 +58,8 @@
 }
 
 .mhz__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #d946ef;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -57,7 +67,8 @@
 }
 
 .dvd__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #06b6d4;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -65,7 +76,8 @@
 }
 
 .sketchup__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #ef4444;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -73,7 +85,8 @@
 }
 
 .vray__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #0ea5e9;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -81,7 +94,8 @@
 }
 
 .files__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #f59e0b;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -89,7 +103,8 @@
 }
 
 .files__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #0ea5e9;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -97,7 +112,8 @@
 }
 
 .folders__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	background-color: #eab308;
 	color: #1b1e28;
 	border-radius: 10px;
@@ -105,7 +121,8 @@
 }
 
 .css__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #3b82f6;
 	border-radius: 10px;
@@ -113,7 +130,8 @@
 }
 
 .html__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #ef4444;
 	border-radius: 10px;
@@ -121,7 +139,8 @@
 }
 
 .javascript__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #eab308;
 	border-radius: 10px;
@@ -129,7 +148,8 @@
 }
 
 .ruby__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #ef4444;
 	border-radius: 10px;
@@ -137,7 +157,8 @@
 }
 
 .rails__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #ef4444;
 	border-radius: 10px;
@@ -145,7 +166,8 @@
 }
 
 .cli__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #a855f7;
 	border-radius: 10px;
@@ -153,7 +175,8 @@
 }
 
 .mvc__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #22c55e;
 	border-radius: 10px;
@@ -161,7 +184,8 @@
 }
 
 .svelte__span {
-	font-family: 'cubano';
+	font-family: 'GT Walsheim Pro';
+	font-weight: 700;
 	color: #1b1e28;
 	background-color: #ef4444;
 	border-radius: 10px;

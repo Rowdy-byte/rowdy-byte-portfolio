@@ -12,6 +12,26 @@
 	src: url('/fonts/Cubano.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: GT Walsheim Pro;
+	src:
+		local('GT Walsheim Pro Regular'),
+		local('GTWalsheimProRegular'),
+		url('/fonts/GTWalsheimPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GT Walsheim Pro;
+	src:
+		local('GT Walsheim Pro Bold'),
+		local('GTWalsheimProBold'),
+		url('/fonts/GTWalsheimPro-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
 $backgroundcolor: #1b1e28;
 $texcolor: #a955f73f;
 $texcolor2: #a6accdc0;
