@@ -41,7 +41,7 @@
 			</div>
 			<section class="flex flex-col justify-center items-center">
 				<h2
-					class="text-2xl mb-4 font-cubano bg-gradient-to-bl from-[#11cce9] to-[#028aba] bg-clip-text text-transparent font-bold p-0"
+					class="text-3xl mb-4 font-cubano bg-gradient-to-bl from-[#11cce9] to-[#028aba] bg-clip-text text-transparent font-bold p-0"
 				>
 					RowdyByte
 				</h2>
@@ -50,7 +50,7 @@
 						<a
 							aria-label={`link-to-${name}`}
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 font-cubano hover:scale-[1.05] transition-all"
+							class=" hover:text-purple-500 text-2xl font-cubano hover:scale-[1.05] transition-all"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -59,7 +59,7 @@
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2
-					class="text-2xl mb-4 font-bold font-cubano bg-gradient-to-bl bg-clip-text text-transparent from-[#f3a704] to-[#f36104] p-0"
+					class="text-3xl mb-4 font-bold font-cubano bg-gradient-to-bl bg-clip-text text-transparent from-[#f3a704] to-[#f36104] p-0"
 				>
 					Projects
 				</h2>
@@ -67,7 +67,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 font-cubano hover:scale-[1.05] transition-all"
+							class="hover:text-purple-500 text-2xl font-cubano hover:scale-[1.05] transition-all"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -77,10 +77,10 @@
 	{:else}
 		<nav
 			use:animate={hamburgerMenuAnimation}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center border-[#f5f5f508] items-center border-b-[1px] {`
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center border-[#a6accd22] items-center border-b-[1px] {`
 				${
 					pathname === '/website/serialmapper'
-						? 'bg-black border-[#f5f5f508]'
+						? 'bg-black border-[#a6accd22]'
 						: pathname === '/auth'
 							? 'bg-slate-100 border-blue-500'
 							: ''
@@ -98,7 +98,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 text-xl hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:scale-0 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+							class="hover:text-purple-500 text-xl font-cubano hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:scale-0 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 							href={url}>{name}</a
 						>
 					{/if}
@@ -107,7 +107,7 @@
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2
-					class="text-3xl bg-gradient-to-bl bg-clip-text text-transparent from-[#f3a704] to-[#f36104] mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+					class="text-3xl bg-gradient-to-bl bg-clip-text font-cubano text-transparent from-[#f3a704] to-[#f36104] mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 				>
 					Projects
 				</h2>
@@ -115,7 +115,7 @@
 					{#if pathname !== url}
 						<a
 							onclick={closeMenuFromLinks}
-							class="hover:text-purple-500 text-xl hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+							class="hover:text-purple-500 text-xl font-cubano hover:scale-[1.05] transition-all {`${pathname === '/auth' ? 'text-slate-500 hover:bg-blue-500 hover:text-slate-200 hover:px-4 hover:rounded' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 							href={url}>{name}</a
 						>
 					{/if}

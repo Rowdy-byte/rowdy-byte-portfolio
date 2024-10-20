@@ -53,7 +53,7 @@
 			class="sidebar z-40 fixed top-[55%] left-2 2xl:left-20 fullscreen:left-40 transform -translate-y-1/2 mr-2 overflow-hidden opacity-0 rounded-md bg-[#1b1e28] shadow-custom-sidebar"
 		>
 			<header
-				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-emerald-500"
+				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-[#5de4c7]"
 			>
 				<h3 class="p-0 green text-center font-bold text-[#1b1e28]">Table Of Contents</h3>
 				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
@@ -80,7 +80,7 @@
 												${slug.replace(/ /g, '-').trim()}#${subheader.replace(/ /g, '-').toLowerCase()}`}
 										>
 											<p
-												class="text-slate-200 leading-loose ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all tracking-normal"
+												class="text-slate-200 ml-9 hover:text-purple-500 hover:scale-[1.05] transition-all tracking-normal"
 											>
 												{subheader}
 											</p>
