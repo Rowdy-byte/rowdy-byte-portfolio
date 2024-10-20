@@ -77,10 +77,10 @@
 	{:else}
 		<nav
 			use:animate={hamburgerMenuAnimation}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center border-[#f360047b] items-center border-b-[1px] {`
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center border-[#f5f5f508] items-center border-b-[1px] {`
 				${
 					pathname === '/website/serialmapper'
-						? 'bg-black border-[#f36104]'
+						? 'bg-black border-[#f5f5f508]'
 						: pathname === '/auth'
 							? 'bg-slate-100 border-blue-500'
 							: ''

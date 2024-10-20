@@ -18,7 +18,7 @@
 			viewBox="0,0,256,256"
 		>
 			<g
-				fill={`${pathname === '/website' ? '#e2e8f0' : pathname === '/auth' ? '#3b82f6' : pathname === 'website/docs' ? '#5de4c7' : '#5de4c7'}`}
+				fill={`${pathname === '/website' ? '#f5f5f580' : pathname === '/auth' ? '#3b82f6' : pathname === 'website/docs' ? 'rgba(245, 245, 245, 0.5)' : 'rgba(245, 245, 245, 0.5)'}`}
 				fill-rule="nonzero"
 				stroke="none"
 				stroke-width="1"
@@ -41,7 +41,7 @@
 		</svg></a
 	>
 	<p
-		class={`text-xs 
+		class={`text-xs text-[#f5f5f580]
 			${pathname === '/auth' ? 'text-gray-900' : ''}`}
 	>
 		RowdyByte &copy {new Date().getFullYear()}

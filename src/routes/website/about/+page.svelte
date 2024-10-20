@@ -24,7 +24,7 @@
 <FindTags>
 	<main class="mx-auto max-w-[800px] px-2 pt-40 pb-40">
 		<h1
-			class="text-center font-walsheim font-bold text-6xl mb-14 bg-gradient-to-b from-purple-300 to-purple-500"
+			class="text-center font-walsheim font-bold text-6xl mb-14 bg-gradient-to-bl from-[#f3a704] to-[#f36104]"
 		>
 			About me
 		</h1>
