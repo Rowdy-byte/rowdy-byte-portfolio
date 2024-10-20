@@ -77,19 +77,19 @@
 	{:else}
 		<nav
 			use:animate={hamburgerMenuAnimation}
-			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center items-center border-b-[1px] {`
+			class="hamburger__menu w-full bg-[#1b1e28] h-[40vh] absolute top-20 left-0 flex z-50 flex-col justify-center border-[#f360047b] items-center border-b-[1px] {`
 				${
 					pathname === '/website/serialmapper'
-						? 'bg-black border-emerald-500'
+						? 'bg-black border-[#f36104]'
 						: pathname === '/auth'
 							? 'bg-slate-100 border-blue-500'
-							: 'border-emerald-500'
+							: ''
 				}
 				`}"
 		>
 			<section class="flex flex-col justify-center items-center">
 				<h2
-					class="text-3xl mb-4 font-bold font-cubano p-0 text-emerald-500 {`
+					class="text-3xl mb-4 font-bold font-cubano p-0 bg-gradient-to-bl from-[#11cce9] to-[#028aba] bg-clip-text text-transparent {`
 						${pathname === '/auth' ? ' text-blue-500' : ''}`}"
 				>
 					RowdyByte
@@ -107,7 +107,7 @@
 
 			<section class="mt-10 flex flex-col justify-center items-center">
 				<h2
-					class="text-3xl text-emerald-500 mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
+					class="text-3xl bg-gradient-to-bl bg-clip-text text-transparent from-[#f3a704] to-[#f36104] mb-4 font-bold p-0 {`${pathname === '/auth' ? 'font-cubano text-blue-500' : pathname === '/website/about' ? 'font-cubano' : ''}`}"
 				>
 					Projects
 				</h2>
