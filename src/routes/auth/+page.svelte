@@ -30,13 +30,15 @@
 		/>
 	</div>
 
-	<button class="bg-blue-500 text-sm rounded py-1 px-8 text-slate-200 hover:scale-100"
+	<button
+		class="bg-blue-500 text-sm rounded py-2 px-8 text-slate-200 hover:shadow-lg hover:scale-[1.01]"
 		>sign in</button
 	>
 	<p class="text-slate-400 text-center text-xs font-bold">or</p>
 	<button
 		formaction="?/signup"
-		class="bg-blue-500 rounded text-sm py-1 px-8 text-slate-200 hover:scale-100">sign up</button
+		class="bg-blue-500 rounded text-sm py-2 px-8 text-slate-200 hover:shadow-lg hover:scale-[1.01]"
+		>sign up</button
 	>
 </form>
 

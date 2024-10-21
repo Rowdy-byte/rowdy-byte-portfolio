@@ -17,16 +17,16 @@
             <span class="hobby__tag">being at home</span>
     </section>
     <section class="softskills__tags">
-            <span class="softskills__tag">solving problems</span>
             <span class="softskills__tag">adoptability</span>
             <span class="softskills__tag">touch typing</span>
             <span class="softskills__tag">perseverance</span>
             <span class="softskills__tag">problem solving</span>
-            <span class="softskills__tag">self inprovment</span>
+            <span class="softskills__tag">self inprovement</span>
             <span class="softskills__tag">remote work</span>
             <span class="softskills__tag">curiosity</span>
             <span class="softskills__tag">documenting</span>
             <span class="softskills__tag">organized</span>
+            <span class="softskills__tag">analitic</span>
     </section>
     <section class="hardskills__tags">
             <span class="hardskills__tag">javascript</span>
@@ -34,11 +34,13 @@
             <span class="hardskills__tag">scss</span>
             <span class="hardskills__tag">html</span>
             <span class="hardskills__tag">css</span>
+            <span class="hardskills__tag">tailwind</span>
             <span class="hardskills__tag">svelte</span>
             <span class="hardskills__tag">sveltekit</span>
             <span class="hardskills__tag">zod</span>
             <span class="hardskills__tag">prisma</span>
             <span class="hardskills__tag">mdsvex</span>
+            <span class="hardskills__tag">github</span>
     </section>
 
 </main>
