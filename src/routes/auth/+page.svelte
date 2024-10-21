@@ -9,14 +9,14 @@
 
 <form
 	use:animate={pageAnimation}
-	class="flex flex-col border rounded max-w-[500px] mx-auto gap-4 p-4"
+	class="flex flex-col border rounded max-w-[300px] mx-auto gap-4 p-4"
 	method="POST"
 	action="?/login"
 >
 	<div class="flex flex-col">
 		<label for="email" class="text-slate-400 text-xs"> Email </label>
 		<input
-			class="bg-transparent outline-blue-600 text-lg p-1 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-none text-lg p-1 border-b-2 rounded border-blue-500 text-gray-800"
 			name="email"
 			type="email"
 		/>
@@ -24,19 +24,31 @@
 	<div class="flex flex-col">
 		<label for="password" class="text-slate-400 text-xs"> Password </label>
 		<input
-			class="bg-transparent outline-blue-600 text-lg p-1 border rounded border-blue-500 text-gray-800"
+			class="bg-transparent text-lg p-1 outline-none border-b-2 rounded border-blue-500 text-gray-800"
 			name="password"
 			type="password"
 		/>
 	</div>
 
-	<button class="bg-blue-500 rounded py-2 px-8 text-slate-200 hover:scale-100">Login</button>
+	<button class="bg-blue-500 text-sm rounded py-1 px-8 text-slate-200 hover:scale-100"
+		>sign in</button
+	>
 	<p class="text-slate-400 text-center text-xs font-bold">or</p>
-	<button formaction="?/signup" class="bg-blue-500 rounded py-2 px-8 text-slate-200 hover:scale-100"
-		>Sign up</button
+	<button
+		formaction="?/signup"
+		class="bg-blue-500 rounded text-sm py-1 px-8 text-slate-200 hover:scale-100">sign up</button
 	>
 </form>
 
 <footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-	<a href="/">RowdyByte</a>
+	<a href="/">⚧</a>
 </footer>
+
+<style>
+	a {
+		font-size: 80px;
+		text-decoration: none;
+		font-weight: 900;
+		color: #e2e8f0;
+	}
+</style>

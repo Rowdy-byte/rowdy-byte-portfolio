@@ -42,6 +42,6 @@
 		</CopyCodeInjector>
 	{:else}
 		<!-- <span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
-		></span> -->...
+		></span> -->
 	{/if}
 </main>

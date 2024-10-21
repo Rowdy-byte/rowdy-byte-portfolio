@@ -59,7 +59,7 @@
 <h2 class="about__heading">Concistency is Key</h2>
 
 <p class="about__paragraph">
-During difficult periods while learning the basics, it really helped me to hear stories from other people about how they dealt with challenges and the feeling of being stuck while learning <span class="dev__span tag">development</span>. I’m grateful to those amazing people who shared their stories and helped me push through. That’s one of the things I really appreciate about the <span class="javascript__span tag">JavaScript</span> <span class="community__span tag">community</span> and <span class="eco__span tag">ecosystem</span>. I see so many passionate, smart people doing what they love. Almost everything is <span class="open-source__span tag">open-source</span>, making learning <span class="javascript__span tag">JavaScript</span> accessible to anyone with an internet connection.
+During difficult periods while learning the basics, it really helped me to hear stories from other people about how they dealt with challenges, insecurity and the feeling of being stuck while learning <span class="dev__span tag">development</span>. I’m grateful to those amazing people who shared their stories and helped me push through. That’s one of the things I really appreciate about the <span class="javascript__span tag">JavaScript</span> <span class="community__span tag">community</span> and <span class="eco__span tag">ecosystem</span>. I see so many passionate, smart people doing what they love. Almost everything is <span class="open-source__span tag">open-source</span>, making learning <span class="javascript__span tag">JavaScript</span> accessible to anyone with an internet connection.
 </p>
 
 <br>
