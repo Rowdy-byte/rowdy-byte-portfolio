@@ -1,6 +1,19 @@
 <h2 class="about__heading">Introduction</h2>
 
 <p class="about__paragraph">As you might have guessed, my name is Rowdy, and I am 41 years young.</p>
+<p class="hobby__tags">
+<span class="skills__tag">savage garden, to the moon & back</span>
+<span class="skills__tag">yoga</span>
+<span class="skills__tag">fitness</span>
+<span class="skills__tag">music</span>
+<span class="skills__tag">cooking</span>
+<span class="skills__tag">mindfullness</span>
+<span class="skills__tag">doing nothing</span>
+<span class="skills__tag">pure chocolate whole hazelnut</span>
+<span class="skills__tag">salty popcorn</span>
+<span class="skills__tag">unhealthy amouts coffee</span>
+<span class="skills__tag">being at home</span>
+</p>
 
 <br>
 <br>
