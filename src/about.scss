@@ -158,7 +158,12 @@
 .hobby__tags {
 	max-width: 200px;
 	text-align: center;
-	text-wrap: pretty;
+	:hover {
+		cursor: pointer;
+		color: #d946ef;
+		border: 0.5px solid #d946ef;
+		transition: all;
+	}
 }
 
 .skills__tag {
@@ -169,8 +174,4 @@
 	padding: 4px 4px;
 	background-color: #a6accd22;
 	white-space: nowrap;
-}
-
-.skills__tag:hover {
-	scale: 2;
 }
