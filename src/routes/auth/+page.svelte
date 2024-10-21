@@ -16,7 +16,7 @@
 	<div class="flex flex-col">
 		<label for="email" class="text-slate-400 text-xs"> email </label>
 		<input
-			class="bg-transparent outline-none text-lg p-1 border-b-2 rounded border-blue-500 text-gray-800"
+			class="bg-transparent outline-none text-sm p-1 border-b-2 rounded border-blue-500 text-gray-800"
 			name="email"
 			type="email"
 		/>
@@ -24,7 +24,7 @@
 	<div class="flex flex-col">
 		<label for="password" class="text-slate-400 text-xs"> password </label>
 		<input
-			class="bg-transparent text-lg p-1 outline-none border-b-2 rounded border-blue-500 text-gray-800"
+			class="bg-transparent text-sm p-1 outline-none border-b-2 rounded border-blue-500 text-gray-800"
 			name="password"
 			type="password"
 		/>
