@@ -10,18 +10,16 @@
 
 	let { data } = $props();
 
+	// $effect(() => {
+	// 	const loadingAnimation = gsap.fromTo(
+	// 		'.loading__animation',
+	// 		{ width: '0%' },
+	// 		{ width: '100%', duration: 1, ease: 'linear' }
+	// 	);
 	$effect(() => {
-		const loadingAnimation = gsap.fromTo(
-			'.loading__animation',
-			{ width: '0%' },
-			{ width: '100%', duration: 1, ease: 'linear' }
-		);
-
-		setTimeout(() => {
-			if (data.content) {
-				Content = data.content;
-			}
-		}, 1000);
+		if (data.content) {
+			Content = data.content;
+		}
 	});
 </script>
 
@@ -43,7 +41,7 @@
 			</Content>
 		</CopyCodeInjector>
 	{:else}
-		<span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
-		></span>
+		<!-- <span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
+		></span> -->...
 	{/if}
 </main>
