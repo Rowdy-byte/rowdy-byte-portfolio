@@ -27,28 +27,28 @@
 		}, 2000);
 	});
 
-	const colors = ['#d946ef', '#f59e0b', '#06b6d4'];
+	// const colors = ['#d946ef', '#f59e0b', '#06b6d4'];
 
-	$effect(() => {
-		setTimeout(() => {
-			const skillsTags = document.querySelectorAll('.tags__wrapper span');
-			console.log(skillsTags);
+	// $effect(() => {
+	// 	setTimeout(() => {
+	// 		const skillsTags = document.querySelectorAll('.tags__wrapper span');
+	// 		console.log(skillsTags);
 
-			skillsTags.forEach((tag, i) => {
-				const randomColor = colors[Math.floor(Math.random() * colors.length)];
-				gsap.to(tag, {
-					borderColor: randomColor,
-					borderWidth: '.5px',
-					borderStyle: 'solid',
-					duration: 2,
-					ease: 'power1.out',
-					repeat: -1,
-					yoyo: true,
-					delay: i * 0.5
-				});
-			});
-		}, 1000);
-	});
+	// 		skillsTags.forEach((tag, i) => {
+	// 			const randomColor = colors[Math.floor(Math.random() * colors.length)];
+	// 			gsap.to(tag, {
+	// 				borderColor: randomColor,
+	// 				borderWidth: '.5px',
+	// 				borderStyle: 'solid',
+	// 				duration: 2,
+	// 				ease: 'power1.out',
+	// 				repeat: -1,
+	// 				yoyo: true,
+	// 				delay: i * 2
+	// 			});
+	// 		});
+	// 	}, 2000);
+	// });
 </script>
 
 {@render children()}
