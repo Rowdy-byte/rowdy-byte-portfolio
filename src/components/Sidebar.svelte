@@ -60,7 +60,7 @@
 				class="w-full h-ful flex justify-center relative p-2 bg-gradient-to-r to-purple-500 from-[#5de4c7]"
 			>
 				<h3 class="p-0 green text-center font-bold text-[#1b1e28]">Table Of Contents</h3>
-				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-2">
+				<button onclick={handleClick} class="text-[#1b1e28] absolute right-2 top-[9px]">
 					<CircleX size={24} />
 				</button>
 			</header>
@@ -69,7 +69,7 @@
 					<ul>
 						<li class="">
 							<a class="flex items-center" href={`/website/docs/${slug.replace(/ /g, '-').trim()}`}>
-								<h3 class="text-[#5de4c7] font-bold">
+								<h3 class="text-[#5de4c7]">
 									{slug
 										.replace(/[0-9]/, '')
 										.replace(/\b\w/g, (match: string) => match.toUpperCase())}

@@ -23,7 +23,7 @@
 <br>
 <br>
 
-<h2 class="about__heading">Path of Live</h2>
+<h2 class="about__heading">Path of Life</h2>
 
 <p class="about__paragraph">I never really had the nerve to turn my hobby into a job. I didn’t know how. I’ve held many different jobs, but I never experienced that feeling of “this is what I can do for the rest of my life”. I made some mistakes along the way, but hey, we’re all here to learn, right? In the meantime, I spent a lot of my free time behind the computer, writing stories and rhymes, learning 3D modeling with <span class="sketchup__span tag">Sketchup</span> and <span class="vray__span tag">V-RAY</span>, and building computers.</p>
 
@@ -51,7 +51,16 @@
 <br>
 <br>
 
-<p class="about__paragraph oran">So, back to my love-hate relationship with <span class="javascript__span tag">JavaScript</span>: I wanted to know how to get a basic full-stack app running with <span class="javascript__span tag">JavaScript</span> . For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—<span class="svelte__span tag">SvelteKit</span>.</p>
+<p class="about__paragraph">So, back to my love-hate relationship with <span class="javascript__span tag">JavaScript</span>: I wanted to know how to get a basic full-stack app running with <span class="javascript__span tag">JavaScript</span> . For a while, I was hopping from one framework or library to another, often without finishing anything. After some so-called "tutorial hell", I finally made up my mind about which framework clicked with me the most—<span class="svelte__span tag">SvelteKit</span>.</p>
+
+<br>
+<br>
+
+<h2 class="about__heading">Concistency is Key</h2>
+
+<p class="about__paragraph">
+During difficult periods while learning the basics, it really helped me to hear stories from other people about how they dealt with challenges and the feeling of being stuck while learning <span class="dev__span tag">development</span>. I’m grateful to those amazing people who shared their stories and helped me push through. That’s one of the things I really appreciate about the <span class="javascript__span tag">JavaScript</span> <span class="community__span tag">community</span> and <span class="eco__span tag">ecosystem</span>. I see so many passionate, smart people doing what they love. Almost everything is <span class="open-source__span tag">open-source</span>, making learning <span class="javascript__span tag">JavaScript</span> accessible to anyone with an internet connection.
+</p>
 
 <br>
 <br>
