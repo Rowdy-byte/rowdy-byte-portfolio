@@ -7,6 +7,7 @@
 	import '../epic-card.css';
 	import '../legendary-card.css';
 	import '../champion-card.css';
+	import '../about.scss';
 
 	import type { Snippet } from 'svelte';
 
