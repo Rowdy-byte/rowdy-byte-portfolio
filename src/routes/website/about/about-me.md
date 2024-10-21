@@ -16,8 +16,7 @@
             <span class="hobby__tag">unhealthy amouts coffee</span>
             <span class="hobby__tag">being at home</span>
     </section>
-    <section>
-        <p class="softskills__tags">
+    <section class="softskills__tags">
             <span class="softskills__tag">solving problems</span>
             <span class="softskills__tag">adoptability</span>
             <span class="softskills__tag">touch typing</span>
@@ -28,10 +27,8 @@
             <span class="softskills__tag">curiosity</span>
             <span class="softskills__tag">documenting</span>
             <span class="softskills__tag">organized</span>
-        </p>
     </section>
-    <section>
-        <p class="hardskills__tags">
+    <section class="hardskills__tags">
             <span class="hardskills__tag">javascript</span>
             <span class="hardskills__tag">typescript</span>
             <span class="hardskills__tag">scss</span>
@@ -42,7 +39,6 @@
             <span class="hardskills__tag">zod</span>
             <span class="hardskills__tag">prisma</span>
             <span class="hardskills__tag">mdsvex</span>
-        </p>
     </section>
 
 </main>

@@ -30,12 +30,10 @@
 		</h1>
 
 		{#if Component}
-			<!-- Toon de geladen content als het beschikbaar is -->
 			<Component>
 				{@const Component = data.content}
 			</Component>
 		{:else}
-			<!-- Loading bar terwijl de content nog wordt geladen -->
 			<span class="loading__animation min-w-screen h-[2px] bg-purple-500 absolute top-0 z-50 left-0"
 			></span>
 		{/if}
