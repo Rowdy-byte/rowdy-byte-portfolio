@@ -9,7 +9,7 @@
 	const { name, dateOfBirth, placeOfBirth, email } = person;
 </script>
 
-<article class="flex mx-auto mb-14 bg-[#a6accd22] w-96 h-52 rounded-xl">
+<article class="flex mb-14 sm:mx-auto bg-[#a6accd22] max-w-96 h-52 rounded-xl">
 	<section class="flex flex-col justify-start pt-5 items-center w-32 px-auto">
 		<span class=" h-24 w-24 rounded-full border-[#1b1e28] border-[2px] overflow-hidden">
 			<img class="" src="/me3.jpg" alt="" />
