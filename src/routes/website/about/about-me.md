@@ -1,5 +1,9 @@
 <script>
         import Personalia from './Personalia.svelte'
+        import GrowthTags from './GrowthTags.svelte'
+        import HobbiesTags from './HobbiesTags.svelte'
+        import SoftSkillsTags from './SoftSkillsTags.svelte'
+        import HardSkillsTags from './HardSkillsTags.svelte'
 </script>
 
 <Personalia />
@@ -8,47 +12,12 @@
 
 <p class="about__paragraph">As you might have guessed, my name is Rowdy, and I am 41 years young.</p>
 
-<main class="tags__wrapper">
-    <section class="hobby__tags">
-            <span class="hobby__tag">savage garden, to the moon & back</span>
-            <span class="hobby__tag">yoga</span>
-            <span class="hobby__tag">fitness</span>
-            <span class="hobby__tag">music</span>
-            <span class="hobby__tag">cooking</span>
-            <span class="hobby__tag">mindfullness</span>
-            <span class="hobby__tag">doing nothing</span>
-            <span class="hobby__tag">pure chocolate whole hazelnut</span>
-            <span class="hobby__tag">salty popcorn</span>
-            <span class="hobby__tag">unhealthy amouts coffee</span>
-            <span class="hobby__tag">being at home</span>
-    </section>
-    <section class="softskills__tags">
-            <span class="softskills__tag">adoptability</span>
-            <span class="softskills__tag">touch typing</span>
-            <span class="softskills__tag">perseverance</span>
-            <span class="softskills__tag">problem solving</span>
-            <span class="softskills__tag">self inprovement</span>
-            <span class="softskills__tag">remote work</span>
-            <span class="softskills__tag">curiosity</span>
-            <span class="softskills__tag">documenting</span>
-            <span class="softskills__tag">organized</span>
-            <span class="softskills__tag">analitic</span>
-    </section>
-    <section class="hardskills__tags">
-            <span class="hardskills__tag">javascript</span>
-            <span class="hardskills__tag">typescript</span>
-            <span class="hardskills__tag">scss</span>
-            <span class="hardskills__tag">html</span>
-            <span class="hardskills__tag">css</span>
-            <span class="hardskills__tag">tailwind</span>
-            <span class="hardskills__tag">svelte</span>
-            <span class="hardskills__tag">sveltekit</span>
-            <span class="hardskills__tag">zod</span>
-            <span class="hardskills__tag">prisma</span>
-            <span class="hardskills__tag">mdsvex</span>
-            <span class="hardskills__tag">github</span>
-    </section>
+<main class="tags__wrapper text-center">
 
+   <HobbiesTags />
+   <SoftSkillsTags />
+    <HardSkillsTags />
+   <GrowthTags />
 </main>
 
 <br>
