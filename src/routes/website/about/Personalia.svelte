@@ -1,0 +1,33 @@
+<script lang="ts">
+	const person = {
+		name: 'Rowdy Verbeek',
+		dateOfBirth: '08-05-1983',
+		placeOfBirth: 'Rotterdam'
+	};
+
+	const { name, dateOfBirth, placeOfBirth } = person;
+</script>
+
+<article class="flex mx-auto mb-14 bg-[#a6accd22] w-96 h-52 rounded-xl">
+	<section class="flex flex-col justify-start pt-5 items-center w-32 px-auto">
+		<span class=" h-24 w-24 rounded-full border-[#1b1e28] border-[2px] overflow-hidden">
+			<img class="" src="/me.jpg" alt="" />
+		</span>
+	</section>
+	<section class="flex flex-col justify-center items-center">
+		<ul class="">
+			<li class="font-ocr mb-2 text-xs">
+				<p class="text-xs p-0 font-roboto">name</p>
+				{name}
+			</li>
+			<li class="font-ocr mb-2 text-xs">
+				<p class="text-xs p-0 font-roboto">date of birth</p>
+				{dateOfBirth}
+			</li>
+			<li class="font-ocr text-xs">
+				<p class="text-xs p-0 font-roboto">place of birth</p>
+				{placeOfBirth}
+			</li>
+		</ul>
+	</section>
+</article>

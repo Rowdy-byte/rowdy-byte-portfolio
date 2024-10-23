@@ -30,7 +30,9 @@ export default {
         supercell: ['supercell-magic'],
         cubano: ['cubano'],
         modak: ['Modak'],
-        walsheim: ['gt walsheim pro']
+        walsheim: ['gt walsheim pro'],
+        roboto: ['roboto'],
+        ocr: ['ocr-b'],
       },
       screens: {
         'fullscreen': { 'raw': '(min-width: 1920px) and (min-height: 1080px)' },

@@ -1,3 +1,9 @@
+<script>
+        import Personalia from './Personalia.svelte'
+</script>
+
+<Personalia />
+
 <h2 class="about__heading">Introduction</h2>
 
 <p class="about__paragraph">As you might have guessed, my name is Rowdy, and I am 41 years young.</p>
