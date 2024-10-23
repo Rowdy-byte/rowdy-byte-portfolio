@@ -25,11 +25,11 @@
 				<p class="text-xs p-0 font-roboto">date of birth</p>
 				{dateOfBirth}
 			</li>
-			<li class="font-ocr text-xs">
+			<li class="font-ocr mb-2 text-xs">
 				<p class="text-xs p-0 font-roboto">place of birth</p>
 				{placeOfBirth}
 			</li>
-			<li class="font-ocr text-xs">
+			<li class="font-ocr text-[8px]">
 				<p class="text-xs p-0 font-roboto">e-mail</p>
 				{email}
 			</li>
