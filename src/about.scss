@@ -155,48 +155,6 @@
 	background-color: #06b6d4;
 }
 
-.hobby__tags {
-	min-width: 200px;
-	text-align: center;
-
-	:hover {
-		color: #d946ef;
-		border: 0.5px solid #d946ef;
-	}
-}
-
-.softskills__tags {
-	// min-width: 200px;
-	text-align: center;
-
-	:hover {
-		color: #f59e0b;
-		border: 0.5px solid #f59e0b;
-	}
-}
-
-.hardskills__tags {
-	min-width: 200px;
-	text-align: center;
-
-	:hover {
-		color: #06b6d4;
-		border: 0.5px solid #06b6d4;
-	}
-}
-
-.hobby__tag,
-.softskills__tag,
-.hardskills__tag {
-	font-size: 12px;
-	font-weight: 600;
-	color: #1b1e28;
-	border-radius: 3px;
-	padding: 4px 8px;
-	background-color: #a6accd22;
-	white-space: nowrap;
-}
-
 .tags__wrapper {
 	margin-top: 50px;
 	display: flex;

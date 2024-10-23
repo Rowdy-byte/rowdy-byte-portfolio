@@ -5,6 +5,7 @@
 		'fitness',
 		'music',
 		'cooking',
+		'dua lipa',
 		'mindfulness',
 		'doing nothing',
 		'pure chocolate whole hazelnut',
